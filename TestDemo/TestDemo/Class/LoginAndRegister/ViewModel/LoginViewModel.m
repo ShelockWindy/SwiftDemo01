@@ -21,6 +21,7 @@
 {
     if (!_loginView) {
         _loginView = [[LoginView alloc]init];
+        self.currentView = _loginView;
     }
     
     _loginView.userNameTextFiled.delegate = self;
@@ -56,6 +57,7 @@
 
 -(void)loginButtAction:(UIButton*)sender
 {
+    [self showSuccessMessageWithContent:@"登录成功" enable:NO];
     if (self.login_bind) {
         self.login_bind(YES, self);
     }

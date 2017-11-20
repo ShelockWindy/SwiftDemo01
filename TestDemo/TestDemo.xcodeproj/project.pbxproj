@@ -24,6 +24,13 @@
 		FF5A6B641FBED8F900D29C01 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B631FBED8F900D29C01 /* LoginView.m */; };
 		FF5A6B671FBED92A00D29C01 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B661FBED92A00D29C01 /* LoginViewModel.m */; };
 		FF5A6B6A1FBEDB4F00D29C01 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B691FBEDB4F00D29C01 /* BaseView.m */; };
+		FF799E391FC2D7AE00C86E40 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E351FC2D7AD00C86E40 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FF799E3A1FC2D7AE00C86E40 /* KeychainUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E361FC2D7AD00C86E40 /* KeychainUUID.m */; };
+		FF799E411FC2D89F00C86E40 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E3D1FC2D89F00C86E40 /* SecurityUtil.m */; };
+		FF799E421FC2D89F00C86E40 /* NSData+AES128.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E401FC2D89F00C86E40 /* NSData+AES128.m */; };
+		FF799E471FC2D8CB00C86E40 /* TJHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E431FC2D8CB00C86E40 /* TJHTTPSessionManager.m */; };
+		FF799E481FC2D8CB00C86E40 /* TJ_AFNetWorkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E441FC2D8CB00C86E40 /* TJ_AFNetWorkingManager.m */; };
+		FF799E4D1FC2D98900C86E40 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E4B1FC2D98800C86E40 /* Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +66,23 @@
 		FF5A6B661FBED92A00D29C01 /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		FF5A6B681FBEDB4F00D29C01 /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		FF5A6B691FBEDB4F00D29C01 /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		FF799E351FC2D7AD00C86E40 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		FF799E361FC2D7AD00C86E40 /* KeychainUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainUUID.m; sourceTree = "<group>"; };
+		FF799E371FC2D7AD00C86E40 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		FF799E381FC2D7AD00C86E40 /* KeychainUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainUUID.h; sourceTree = "<group>"; };
+		FF799E3D1FC2D89F00C86E40 /* SecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityUtil.m; sourceTree = "<group>"; };
+		FF799E3E1FC2D89F00C86E40 /* NSData+AES128.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES128.h"; sourceTree = "<group>"; };
+		FF799E3F1FC2D89F00C86E40 /* SecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityUtil.h; sourceTree = "<group>"; };
+		FF799E401FC2D89F00C86E40 /* NSData+AES128.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES128.m"; sourceTree = "<group>"; };
+		FF799E431FC2D8CB00C86E40 /* TJHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJHTTPSessionManager.m; sourceTree = "<group>"; };
+		FF799E441FC2D8CB00C86E40 /* TJ_AFNetWorkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJ_AFNetWorkingManager.m; sourceTree = "<group>"; };
+		FF799E451FC2D8CB00C86E40 /* TJ_AFNetWorkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJ_AFNetWorkingManager.h; sourceTree = "<group>"; };
+		FF799E461FC2D8CB00C86E40 /* TJHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJHTTPSessionManager.h; sourceTree = "<group>"; };
+		FF799E4A1FC2D98800C86E40 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		FF799E4B1FC2D98800C86E40 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		FF799E4C1FC2D98800C86E40 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		FF799E4F1FC2D9E600C86E40 /* InfoConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoConfig.h; sourceTree = "<group>"; };
+		FF799E521FC2DAA900C86E40 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +186,12 @@
 		FF5A6B471FBED3EE00D29C01 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				FF799E4E1FC2D9C600C86E40 /* Config */,
+				FF799E3B1FC2D89F00C86E40 /* BaseNetWork */,
+				FF799E451FC2D8CB00C86E40 /* TJ_AFNetWorkingManager.h */,
+				FF799E441FC2D8CB00C86E40 /* TJ_AFNetWorkingManager.m */,
+				FF799E461FC2D8CB00C86E40 /* TJHTTPSessionManager.h */,
+				FF799E431FC2D8CB00C86E40 /* TJHTTPSessionManager.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -169,6 +199,7 @@
 		FF5A6B481FBED3EE00D29C01 /* Unit */ = {
 			isa = PBXGroup;
 			children = (
+				FF799E341FC2D7AD00C86E40 /* TJKeyChain */,
 			);
 			path = Unit;
 			sourceTree = "<group>";
@@ -237,6 +268,56 @@
 				FF5A6B601FBED74D00D29C01 /* LoginModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FF799E341FC2D7AD00C86E40 /* TJKeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				FF799E371FC2D7AD00C86E40 /* KeychainItemWrapper.h */,
+				FF799E351FC2D7AD00C86E40 /* KeychainItemWrapper.m */,
+				FF799E381FC2D7AD00C86E40 /* KeychainUUID.h */,
+				FF799E361FC2D7AD00C86E40 /* KeychainUUID.m */,
+			);
+			path = TJKeyChain;
+			sourceTree = "<group>";
+		};
+		FF799E3B1FC2D89F00C86E40 /* BaseNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				FF799E491FC2D98800C86E40 /* Base64 */,
+				FF799E3C1FC2D89F00C86E40 /* Security */,
+			);
+			path = BaseNetWork;
+			sourceTree = "<group>";
+		};
+		FF799E3C1FC2D89F00C86E40 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				FF799E3E1FC2D89F00C86E40 /* NSData+AES128.h */,
+				FF799E401FC2D89F00C86E40 /* NSData+AES128.m */,
+				FF799E3F1FC2D89F00C86E40 /* SecurityUtil.h */,
+				FF799E3D1FC2D89F00C86E40 /* SecurityUtil.m */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		FF799E491FC2D98800C86E40 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				FF799E4A1FC2D98800C86E40 /* Base64.h */,
+				FF799E4B1FC2D98800C86E40 /* Base64.m */,
+				FF799E4C1FC2D98800C86E40 /* GTMDefines.h */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
+		FF799E4E1FC2D9C600C86E40 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				FF799E4F1FC2D9E600C86E40 /* InfoConfig.h */,
+				FF799E521FC2DAA900C86E40 /* PrefixHeader.pch */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,7 +418,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		CF93ED48DFA95566492EE64F /* [CP] Copy Pods Resources */ = {
@@ -363,16 +444,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF33C6E31FBC224300552A38 /* ViewController.m in Sources */,
+				FF799E391FC2D7AE00C86E40 /* KeychainItemWrapper.m in Sources */,
 				FF5A6B5A1FBED68A00D29C01 /* BaseViewModel.m in Sources */,
 				FF5A6B671FBED92A00D29C01 /* LoginViewModel.m in Sources */,
+				FF799E421FC2D89F00C86E40 /* NSData+AES128.m in Sources */,
+				FF799E471FC2D8CB00C86E40 /* TJHTTPSessionManager.m in Sources */,
+				FF799E481FC2D8CB00C86E40 /* TJ_AFNetWorkingManager.m in Sources */,
 				FF5A6B611FBED74D00D29C01 /* LoginModel.m in Sources */,
 				FF5A6B5D1FBED6CA00D29C01 /* BaseModel.m in Sources */,
+				FF799E4D1FC2D98900C86E40 /* Base64.m in Sources */,
 				FF5A6B4C1FBED45800D29C01 /* BaseViewController.m in Sources */,
 				FF5A6B4F1FBED4B000D29C01 /* LoginViewController.m in Sources */,
 				FF33C6EE1FBC224300552A38 /* main.m in Sources */,
 				FF5A6B441FBEB64800D29C01 /* CalulatorMaker.m in Sources */,
 				FF5A6B641FBED8F900D29C01 /* LoginView.m in Sources */,
 				FF33C6E01FBC224300552A38 /* AppDelegate.m in Sources */,
+				FF799E3A1FC2D7AE00C86E40 /* KeychainUUID.m in Sources */,
+				FF799E411FC2D89F00C86E40 /* SecurityUtil.m in Sources */,
 				FF5A6B6A1FBEDB4F00D29C01 /* BaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +598,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4BETC4J6Y;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/TestDemo/Core/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = TestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = helloWork.TestDemo;
@@ -525,6 +615,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4BETC4J6Y;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/TestDemo/Core/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = TestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = helloWork.TestDemo;
