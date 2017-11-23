@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PageControllerCenterProtocol.h"
 
-@interface BaseViewController : UIViewController
+
+@interface BaseViewController : UIViewController <PageControllerCenterProtocol>
 
 //绑定viewModel 业务
 -(void)viewModelBind;

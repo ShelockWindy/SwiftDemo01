@@ -69,4 +69,9 @@
     }
 }
 
+-(void)dealloc
+{
+    NSLog(@"%@ 已经被释放了", NSStringFromClass([self class]));
+}
+
 @end

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		997C6BFCFEE0659D883299BC /* libPods-TestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67136B56812BDBF7C7F2FB0E /* libPods-TestDemo.a */; };
+		D512E60A7AFC07D1A450EDBC /* Pods_TestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8FA131A4B670CE90F0C0DD9 /* Pods_TestDemo.framework */; };
 		FF33C6E01FBC224300552A38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33C6DF1FBC224300552A38 /* AppDelegate.m */; };
 		FF33C6E31FBC224300552A38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33C6E21FBC224300552A38 /* ViewController.m */; };
 		FF33C6E61FBC224300552A38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF33C6E41FBC224300552A38 /* Main.storyboard */; };
@@ -24,19 +24,20 @@
 		FF5A6B641FBED8F900D29C01 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B631FBED8F900D29C01 /* LoginView.m */; };
 		FF5A6B671FBED92A00D29C01 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B661FBED92A00D29C01 /* LoginViewModel.m */; };
 		FF5A6B6A1FBEDB4F00D29C01 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B691FBEDB4F00D29C01 /* BaseView.m */; };
-		FF799E391FC2D7AE00C86E40 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E351FC2D7AD00C86E40 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FF799E3A1FC2D7AE00C86E40 /* KeychainUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E361FC2D7AD00C86E40 /* KeychainUUID.m */; };
 		FF799E411FC2D89F00C86E40 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E3D1FC2D89F00C86E40 /* SecurityUtil.m */; };
 		FF799E421FC2D89F00C86E40 /* NSData+AES128.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E401FC2D89F00C86E40 /* NSData+AES128.m */; };
-		FF799E471FC2D8CB00C86E40 /* TJHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E431FC2D8CB00C86E40 /* TJHTTPSessionManager.m */; };
-		FF799E481FC2D8CB00C86E40 /* TJ_AFNetWorkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E441FC2D8CB00C86E40 /* TJ_AFNetWorkingManager.m */; };
 		FF799E4D1FC2D98900C86E40 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E4B1FC2D98800C86E40 /* Base64.m */; };
+		FF799E551FC2DEF500C86E40 /* BaseNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E541FC2DEF500C86E40 /* BaseNetWorkManager.m */; };
+		FFA0293E1FC554AE00F3B71D /* SwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA0293D1FC554AE00F3B71D /* SwitchViewController.m */; };
+		FFA029441FC55F3B00F3B71D /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA029401FC55F3A00F3B71D /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FFA029451FC55F3B00F3B71D /* KeychainUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA029411FC55F3A00F3B71D /* KeychainUUID.m */; };
+		FFA029491FC5601D00F3B71D /* PageControllerCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA029481FC5601D00F3B71D /* PageControllerCenter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		505609D8810E45C423AAF14E /* Pods-TestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestDemo/Pods-TestDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		67136B56812BDBF7C7F2FB0E /* libPods-TestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E49FFC51E532D7CD5D87A6 /* Pods-TestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestDemo/Pods-TestDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D8FA131A4B670CE90F0C0DD9 /* Pods_TestDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF33C6DB1FBC224300552A38 /* TestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF33C6DE1FBC224300552A38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FF33C6DF1FBC224300552A38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,23 +67,26 @@
 		FF5A6B661FBED92A00D29C01 /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		FF5A6B681FBEDB4F00D29C01 /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		FF5A6B691FBEDB4F00D29C01 /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
-		FF799E351FC2D7AD00C86E40 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
-		FF799E361FC2D7AD00C86E40 /* KeychainUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainUUID.m; sourceTree = "<group>"; };
-		FF799E371FC2D7AD00C86E40 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
-		FF799E381FC2D7AD00C86E40 /* KeychainUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainUUID.h; sourceTree = "<group>"; };
 		FF799E3D1FC2D89F00C86E40 /* SecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityUtil.m; sourceTree = "<group>"; };
 		FF799E3E1FC2D89F00C86E40 /* NSData+AES128.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES128.h"; sourceTree = "<group>"; };
 		FF799E3F1FC2D89F00C86E40 /* SecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityUtil.h; sourceTree = "<group>"; };
 		FF799E401FC2D89F00C86E40 /* NSData+AES128.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES128.m"; sourceTree = "<group>"; };
-		FF799E431FC2D8CB00C86E40 /* TJHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJHTTPSessionManager.m; sourceTree = "<group>"; };
-		FF799E441FC2D8CB00C86E40 /* TJ_AFNetWorkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJ_AFNetWorkingManager.m; sourceTree = "<group>"; };
-		FF799E451FC2D8CB00C86E40 /* TJ_AFNetWorkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJ_AFNetWorkingManager.h; sourceTree = "<group>"; };
-		FF799E461FC2D8CB00C86E40 /* TJHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJHTTPSessionManager.h; sourceTree = "<group>"; };
 		FF799E4A1FC2D98800C86E40 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
 		FF799E4B1FC2D98800C86E40 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
 		FF799E4C1FC2D98800C86E40 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		FF799E4F1FC2D9E600C86E40 /* InfoConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoConfig.h; sourceTree = "<group>"; };
 		FF799E521FC2DAA900C86E40 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FF799E531FC2DEF500C86E40 /* BaseNetWorkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNetWorkManager.h; sourceTree = "<group>"; };
+		FF799E541FC2DEF500C86E40 /* BaseNetWorkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNetWorkManager.m; sourceTree = "<group>"; };
+		FFA0293C1FC554AE00F3B71D /* SwitchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchViewController.h; sourceTree = "<group>"; };
+		FFA0293D1FC554AE00F3B71D /* SwitchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchViewController.m; sourceTree = "<group>"; };
+		FFA029401FC55F3A00F3B71D /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		FFA029411FC55F3A00F3B71D /* KeychainUUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainUUID.m; sourceTree = "<group>"; };
+		FFA029421FC55F3A00F3B71D /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		FFA029431FC55F3A00F3B71D /* KeychainUUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainUUID.h; sourceTree = "<group>"; };
+		FFA029471FC5601D00F3B71D /* PageControllerCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageControllerCenter.h; sourceTree = "<group>"; };
+		FFA029481FC5601D00F3B71D /* PageControllerCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageControllerCenter.m; sourceTree = "<group>"; };
+		FFA0294A1FC5707E00F3B71D /* PageControllerCenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageControllerCenterProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				997C6BFCFEE0659D883299BC /* libPods-TestDemo.a in Frameworks */,
+				D512E60A7AFC07D1A450EDBC /* Pods_TestDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +113,7 @@
 		D9BBA903F9F39DDE41D7936B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				67136B56812BDBF7C7F2FB0E /* libPods-TestDemo.a */,
+				D8FA131A4B670CE90F0C0DD9 /* Pods_TestDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,6 +169,7 @@
 		FF5A6B451FBED3EE00D29C01 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				FFA0293B1FC5542900F3B71D /* SwitchViewController */,
 				FF5A6B491FBED43200D29C01 /* BaseViewController */,
 				FF5A6B461FBED3EE00D29C01 /* LoginAndRegister */,
 			);
@@ -188,10 +193,6 @@
 			children = (
 				FF799E4E1FC2D9C600C86E40 /* Config */,
 				FF799E3B1FC2D89F00C86E40 /* BaseNetWork */,
-				FF799E451FC2D8CB00C86E40 /* TJ_AFNetWorkingManager.h */,
-				FF799E441FC2D8CB00C86E40 /* TJ_AFNetWorkingManager.m */,
-				FF799E461FC2D8CB00C86E40 /* TJHTTPSessionManager.h */,
-				FF799E431FC2D8CB00C86E40 /* TJHTTPSessionManager.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -199,7 +200,7 @@
 		FF5A6B481FBED3EE00D29C01 /* Unit */ = {
 			isa = PBXGroup;
 			children = (
-				FF799E341FC2D7AD00C86E40 /* TJKeyChain */,
+				FFA029461FC55FD300F3B71D /* PageControllerCenter */,
 			);
 			path = Unit;
 			sourceTree = "<group>";
@@ -270,22 +271,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		FF799E341FC2D7AD00C86E40 /* TJKeyChain */ = {
-			isa = PBXGroup;
-			children = (
-				FF799E371FC2D7AD00C86E40 /* KeychainItemWrapper.h */,
-				FF799E351FC2D7AD00C86E40 /* KeychainItemWrapper.m */,
-				FF799E381FC2D7AD00C86E40 /* KeychainUUID.h */,
-				FF799E361FC2D7AD00C86E40 /* KeychainUUID.m */,
-			);
-			path = TJKeyChain;
-			sourceTree = "<group>";
-		};
 		FF799E3B1FC2D89F00C86E40 /* BaseNetWork */ = {
 			isa = PBXGroup;
 			children = (
+				FFA0293F1FC55F3A00F3B71D /* TJKeyChain */,
 				FF799E491FC2D98800C86E40 /* Base64 */,
 				FF799E3C1FC2D89F00C86E40 /* Security */,
+				FF799E531FC2DEF500C86E40 /* BaseNetWorkManager.h */,
+				FF799E541FC2DEF500C86E40 /* BaseNetWorkManager.m */,
 			);
 			path = BaseNetWork;
 			sourceTree = "<group>";
@@ -318,6 +311,37 @@
 				FF799E521FC2DAA900C86E40 /* PrefixHeader.pch */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		FFA0293B1FC5542900F3B71D /* SwitchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FFA0293C1FC554AE00F3B71D /* SwitchViewController.h */,
+				FFA0293D1FC554AE00F3B71D /* SwitchViewController.m */,
+			);
+			path = SwitchViewController;
+			sourceTree = "<group>";
+		};
+		FFA0293F1FC55F3A00F3B71D /* TJKeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				FFA029421FC55F3A00F3B71D /* KeychainItemWrapper.h */,
+				FFA029401FC55F3A00F3B71D /* KeychainItemWrapper.m */,
+				FFA029431FC55F3A00F3B71D /* KeychainUUID.h */,
+				FFA029411FC55F3A00F3B71D /* KeychainUUID.m */,
+			);
+			name = TJKeyChain;
+			path = TestDemo/Core/TJKeyChain;
+			sourceTree = SOURCE_ROOT;
+		};
+		FFA029461FC55FD300F3B71D /* PageControllerCenter */ = {
+			isa = PBXGroup;
+			children = (
+				FFA029471FC5601D00F3B71D /* PageControllerCenter.h */,
+				FFA029481FC5601D00F3B71D /* PageControllerCenter.m */,
+				FFA0294A1FC5707E00F3B71D /* PageControllerCenterProtocol.h */,
+			);
+			path = PageControllerCenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,24 +468,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF33C6E31FBC224300552A38 /* ViewController.m in Sources */,
-				FF799E391FC2D7AE00C86E40 /* KeychainItemWrapper.m in Sources */,
+				FFA0293E1FC554AE00F3B71D /* SwitchViewController.m in Sources */,
 				FF5A6B5A1FBED68A00D29C01 /* BaseViewModel.m in Sources */,
 				FF5A6B671FBED92A00D29C01 /* LoginViewModel.m in Sources */,
 				FF799E421FC2D89F00C86E40 /* NSData+AES128.m in Sources */,
-				FF799E471FC2D8CB00C86E40 /* TJHTTPSessionManager.m in Sources */,
-				FF799E481FC2D8CB00C86E40 /* TJ_AFNetWorkingManager.m in Sources */,
 				FF5A6B611FBED74D00D29C01 /* LoginModel.m in Sources */,
 				FF5A6B5D1FBED6CA00D29C01 /* BaseModel.m in Sources */,
+				FF799E551FC2DEF500C86E40 /* BaseNetWorkManager.m in Sources */,
+				FFA029441FC55F3B00F3B71D /* KeychainItemWrapper.m in Sources */,
 				FF799E4D1FC2D98900C86E40 /* Base64.m in Sources */,
 				FF5A6B4C1FBED45800D29C01 /* BaseViewController.m in Sources */,
+				FFA029491FC5601D00F3B71D /* PageControllerCenter.m in Sources */,
 				FF5A6B4F1FBED4B000D29C01 /* LoginViewController.m in Sources */,
 				FF33C6EE1FBC224300552A38 /* main.m in Sources */,
 				FF5A6B441FBEB64800D29C01 /* CalulatorMaker.m in Sources */,
 				FF5A6B641FBED8F900D29C01 /* LoginView.m in Sources */,
 				FF33C6E01FBC224300552A38 /* AppDelegate.m in Sources */,
-				FF799E3A1FC2D7AE00C86E40 /* KeychainUUID.m in Sources */,
 				FF799E411FC2D89F00C86E40 /* SecurityUtil.m in Sources */,
 				FF5A6B6A1FBEDB4F00D29C01 /* BaseView.m in Sources */,
+				FFA029451FC55F3B00F3B71D /* KeychainUUID.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,6 +35,10 @@
     
 }
 
+
+#pragma mark- Public
+
+
 #pragma mark- Delegate
 
 #pragma mark  UITextFieldDelegate

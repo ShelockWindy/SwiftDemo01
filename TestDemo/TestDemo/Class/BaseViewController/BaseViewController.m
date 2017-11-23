@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "PageControllerCenter.h"
 
 @interface BaseViewController ()
 
@@ -44,6 +45,11 @@
 -(void)viewModelBind
 {
     
+}
+
+-(void)pageTurnToViewControllerClass:(NSString *)viewControllerClass fromCurrentViewController:(id)currentVC
+{
+    [[PageControllerCenter shareInstance]pageTurnToViewControllerClass:viewControllerClass fromCurrentViewController:currentVC];
 }
 
 #pragma amrk- Private Methods

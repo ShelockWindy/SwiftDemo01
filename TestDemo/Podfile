@@ -1,4 +1,6 @@
 platform :ios,’8.0’
+use_frameworks!
+
 target ‘TestDemo’ do
 
 pod 'Masonry'
@@ -6,5 +8,6 @@ pod 'IQKeyboardManager'
 pod 'AFNetworking'
 pod 'MBProgressHUD'
 pod 'ProgressHUD'
+pod 'ReactiveCocoa' , '2.0'
 
 end

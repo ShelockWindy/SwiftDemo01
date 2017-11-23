@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "LoginViewModel.h"
+#import "SwitchViewController.h"
 
 @interface LoginViewController ()
 
@@ -43,10 +44,8 @@
 {
    __weak typeof(self) weakSelf = self;
     self.loginViewModel.login_bind = ^(BOOL sucess, id viewModel) {
-      
-        UIViewController * successVC = [[UIViewController alloc]init];
-        successVC.view.backgroundColor = [UIColor orangeColor];
-        [weakSelf presentViewController:successVC animated:YES completion:nil];
+    
+        [weakSelf pageTurnToViewControllerClass:@"SwitchViewController" fromCurrentViewController:weakSelf];
     };
 }
 
@@ -59,6 +58,7 @@
         _loginViewModel = [LoginViewModel new];
         [self.view addSubview:_loginViewModel.loginView];
     }
+    
     return _loginViewModel;
 }
 

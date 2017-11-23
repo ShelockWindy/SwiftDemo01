@@ -19,4 +19,7 @@ typedef void(^LoginViewModel_Login)(BOOL sucess, id viewModel);
 @property (nonatomic,strong) LoginView * loginView;
 @property (nonatomic,copy) LoginViewModel_Login  login_bind;
 
+-(void)logLoginStyle;
+
+
 @end
