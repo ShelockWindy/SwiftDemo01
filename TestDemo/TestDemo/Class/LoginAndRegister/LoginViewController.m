@@ -20,16 +20,42 @@
 
 #pragma mark- Life Cycle
 - (void)viewDidLoad {
+    self.navgationBarHiden = YES;
+
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self subViewLoad];
     [self viewModelBind];
+    
+   
+    
 }
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    //设置导航栏背景图片为一个空的image，这样就透明了
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    
+    //去掉透明后导航栏下边的黑边
+    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
+//    self.extendedLayoutIncludesOpaqueBars = YES;
+//    self.navigationController.navigationBarHidden = YES;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark- Override
+
+-(UIBaseViewControllerNavgationBarStyle)navgationBarStyle
+{
+    return UIBaseViewControllerNavgationBarStyle_Default;
+}
+
 
 #pragma mark- Public Methods
 

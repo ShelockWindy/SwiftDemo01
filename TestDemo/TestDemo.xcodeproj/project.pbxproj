@@ -157,6 +157,13 @@
 			path = TestDemo;
 			sourceTree = "<group>";
 		};
+		FF54BD201FC669790031E838 /* UINavgationBar+Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "UINavgationBar+Category";
+			sourceTree = "<group>";
+		};
 		FF5A6B3E1FBE851B00D29C01 /* 函数式编程 */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +215,7 @@
 		FF5A6B491FBED43200D29C01 /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
+				FF54BD201FC669790031E838 /* UINavgationBar+Category */,
 				FF5A6B521FBED5F200D29C01 /* BaseModel */,
 				FF5A6B501FBED5F200D29C01 /* BaseView */,
 				FF5A6B511FBED5F200D29C01 /* BaseViewModel */,

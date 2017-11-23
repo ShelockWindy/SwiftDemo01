@@ -37,6 +37,13 @@
         [self setCustomDisplay];
     }else
     {
+        
+        if (self.navigationController) {
+            self.navigationController.navigationBar.hidden = NO;
+            self.navigationController.navigationBar.translucent = YES;
+            [self.my_NavgationBar removeFromSuperview];
+        }
+        
         [self setDefaultDisplay];
     }
 
