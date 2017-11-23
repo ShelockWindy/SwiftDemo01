@@ -15,6 +15,8 @@
 		FF33C6EB1FBC224300552A38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF33C6E91FBC224300552A38 /* LaunchScreen.storyboard */; };
 		FF33C6EE1FBC224300552A38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33C6ED1FBC224300552A38 /* main.m */; };
 		FF33C6F51FBC227B00552A38 /* 44.png in Resources */ = {isa = PBXBuildFile; fileRef = FF33C6F41FBC227A00552A38 /* 44.png */; };
+		FF54BD291FC6B3F50031E838 /* CustomNavgationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FF54BD281FC6B3F50031E838 /* CustomNavgationBar.m */; };
+		FF54BD2D1FC6C37D0031E838 /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF54BD2C1FC6C37D0031E838 /* MainPageViewController.m */; };
 		FF5A6B441FBEB64800D29C01 /* CalulatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B431FBEB64800D29C01 /* CalulatorMaker.m */; };
 		FF5A6B4C1FBED45800D29C01 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B4B1FBED45800D29C01 /* BaseViewController.m */; };
 		FF5A6B4F1FBED4B000D29C01 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B4E1FBED4B000D29C01 /* LoginViewController.m */; };
@@ -49,6 +51,10 @@
 		FF33C6EC1FBC224300552A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF33C6ED1FBC224300552A38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FF33C6F41FBC227A00552A38 /* 44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 44.png; sourceTree = "<group>"; };
+		FF54BD271FC6B3F50031E838 /* CustomNavgationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavgationBar.h; sourceTree = "<group>"; };
+		FF54BD281FC6B3F50031E838 /* CustomNavgationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavgationBar.m; sourceTree = "<group>"; };
+		FF54BD2B1FC6C37D0031E838 /* MainPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainPageViewController.h; sourceTree = "<group>"; };
+		FF54BD2C1FC6C37D0031E838 /* MainPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPageViewController.m; sourceTree = "<group>"; };
 		FF5A6B421FBEB64800D29C01 /* CalulatorMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalulatorMaker.h; sourceTree = "<group>"; };
 		FF5A6B431FBEB64800D29C01 /* CalulatorMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalulatorMaker.m; sourceTree = "<group>"; };
 		FF5A6B4A1FBED45800D29C01 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -157,11 +163,22 @@
 			path = TestDemo;
 			sourceTree = "<group>";
 		};
-		FF54BD201FC669790031E838 /* UINavgationBar+Category */ = {
+		FF54BD201FC669790031E838 /* UINavgationBar+Custom */ = {
 			isa = PBXGroup;
 			children = (
+				FF54BD271FC6B3F50031E838 /* CustomNavgationBar.h */,
+				FF54BD281FC6B3F50031E838 /* CustomNavgationBar.m */,
 			);
-			path = "UINavgationBar+Category";
+			path = "UINavgationBar+Custom";
+			sourceTree = "<group>";
+		};
+		FF54BD2A1FC6C3630031E838 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				FF54BD2B1FC6C37D0031E838 /* MainPageViewController.h */,
+				FF54BD2C1FC6C37D0031E838 /* MainPageViewController.m */,
+			);
+			path = MainPage;
 			sourceTree = "<group>";
 		};
 		FF5A6B3E1FBE851B00D29C01 /* 函数式编程 */ = {
@@ -176,9 +193,10 @@
 		FF5A6B451FBED3EE00D29C01 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				FFA0293B1FC5542900F3B71D /* SwitchViewController */,
 				FF5A6B491FBED43200D29C01 /* BaseViewController */,
+				FFA0293B1FC5542900F3B71D /* SwitchViewController */,
 				FF5A6B461FBED3EE00D29C01 /* LoginAndRegister */,
+				FF54BD2A1FC6C3630031E838 /* MainPage */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -215,7 +233,7 @@
 		FF5A6B491FBED43200D29C01 /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
-				FF54BD201FC669790031E838 /* UINavgationBar+Category */,
+				FF54BD201FC669790031E838 /* UINavgationBar+Custom */,
 				FF5A6B521FBED5F200D29C01 /* BaseModel */,
 				FF5A6B501FBED5F200D29C01 /* BaseView */,
 				FF5A6B511FBED5F200D29C01 /* BaseViewModel */,
@@ -477,11 +495,13 @@
 			files = (
 				FF33C6E31FBC224300552A38 /* ViewController.m in Sources */,
 				FFA0293E1FC554AE00F3B71D /* SwitchViewController.m in Sources */,
+				FF54BD2D1FC6C37D0031E838 /* MainPageViewController.m in Sources */,
 				FF5A6B5A1FBED68A00D29C01 /* BaseViewModel.m in Sources */,
 				FF5A6B671FBED92A00D29C01 /* LoginViewModel.m in Sources */,
 				FF799E421FC2D89F00C86E40 /* NSData+AES128.m in Sources */,
 				FF5A6B611FBED74D00D29C01 /* LoginModel.m in Sources */,
 				FF5A6B5D1FBED6CA00D29C01 /* BaseModel.m in Sources */,
+				FF54BD291FC6B3F50031E838 /* CustomNavgationBar.m in Sources */,
 				FF799E551FC2DEF500C86E40 /* BaseNetWorkManager.m in Sources */,
 				FFA029441FC55F3B00F3B71D /* KeychainItemWrapper.m in Sources */,
 				FF799E4D1FC2D98900C86E40 /* Base64.m in Sources */,
@@ -634,6 +654,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/TestDemo/Core/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = TestDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = helloWork.TestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -651,6 +672,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/TestDemo/Core/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = TestDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = helloWork.TestDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

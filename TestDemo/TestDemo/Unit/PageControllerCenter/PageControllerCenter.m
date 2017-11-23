@@ -10,6 +10,7 @@
 #import <objc/runtime.h>
 #import "SwitchViewController.h"
 #import "LoginViewController.h"
+#import "MainPageViewController.h"
 
 @implementation PageControllerCenter
 
@@ -45,8 +46,9 @@
 
 -(UIViewController*)getParamWithOrignViewControllerWithClass:(NSString*)viewControllerClass fromController:(id)fromController
 {
+    
     if ([viewControllerClass isEqualToString:NSStringFromClass([SwitchViewController class])]) {
-        
+#pragma mark-  SwitchViewController
         SwitchViewController * switchVC = [[SwitchViewController alloc]init];
 
         if ([NSStringFromClass([fromController class]) isEqualToString:NSStringFromClass([LoginViewController class])]) {
@@ -61,6 +63,23 @@
         }
         return nil;
     }
+    else if ([viewControllerClass isEqualToString:NSStringFromClass([UIViewController class])])
+    {
+#pragma mark-  UIViewController
+        UIViewController * viewController = [[UIViewController alloc]init];
+        viewController.view.backgroundColor = [UIColor brownColor];
+        return viewController;
+    
+    }
+    else if ([viewControllerClass isEqualToString:NSStringFromClass([MainPageViewController class])])
+    {
+#pragma mark-  UIViewController
+        MainPageViewController * viewController = [[MainPageViewController alloc]init];
+        viewController.view.backgroundColor = [UIColor brownColor];
+        return viewController;
+        
+    }
+
     return nil;
 }
 

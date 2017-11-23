@@ -24,14 +24,37 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark- Public
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+#pragma mark- Override
+-(UIBaseViewControllerNavgationBarStyle)navgationBarStyle
+{
+    return UIBaseViewControllerNavgationBarStyle_Custom;
 }
-*/
+
+//-(UIButton *)backItem
+//{
+//    UIButton * butt = [UIButton buttonWithType:UIButtonTypeCustom];
+//    butt.frame = CGRectMake(0, 0, 65, 30);
+//    [butt setTitle:@"454" forState:UIControlStateNormal];
+//    [butt setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//    [butt addTarget:self action:@selector(backItemAction:) forControlEvents:UIControlEventTouchUpInside];
+//    
+//    return butt;
+//}
+
+#pragma mark- Events
+
+-(void)backItemAction:(UIButton*)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+
+
+
+#pragma mark- Gether
+
 
 @end

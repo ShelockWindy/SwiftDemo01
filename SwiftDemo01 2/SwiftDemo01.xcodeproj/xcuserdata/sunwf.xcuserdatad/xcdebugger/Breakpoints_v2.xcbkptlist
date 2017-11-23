@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "149"
             endingLineNumber = "149"
-            landmarkName = "@implementation NSObject(CallSelector)"
+            landmarkName = "NSObject(CallSelector)"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
@@ -31,7 +31,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "174"
             endingLineNumber = "174"
-            landmarkName = "@implementation NSObject(CallSelector)"
+            landmarkName = "NSObject(CallSelector)"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
@@ -47,7 +47,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "173"
             endingLineNumber = "173"
-            landmarkName = "@implementation NSObject(CallSelector)"
+            landmarkName = "NSObject(CallSelector)"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
@@ -63,7 +63,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "185"
             endingLineNumber = "185"
-            landmarkName = "@implementation NSObject(CallSelector)"
+            landmarkName = "NSObject(CallSelector)"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>

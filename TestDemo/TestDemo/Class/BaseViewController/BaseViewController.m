@@ -11,8 +11,6 @@
 
 @interface BaseViewController ()
 
-@property (nonatomic,strong) UINavigationBar * my_NavgationBar;//自定义导航条
-
 @end
 
 @implementation BaseViewController
@@ -22,7 +20,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self setUpNavgationBar];
     [self subViewLoad];
     [self viewModelBind];
 }
@@ -30,6 +27,27 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    //开启优化手势返回
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.navigationController.interactivePopGestureRecognizer.delegate = nil;
+    }
+    [self setUpNavgationBar];
+
+}
+
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    if (self.navigationController.navigationBarHidden&&self.navgationBarStyle != UIBaseViewControllerNavgationBarStyle_Custom) {
+        self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    }else
+    {
+        self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+    }
 }
 
 -(void)viewDidDisappear:(BOOL)animated
@@ -109,17 +127,26 @@
         self.navigationController.navigationBar.hidden = YES;
         [self.view addSubview:self.my_NavgationBar];
     }
-    
-    self.my_NavgationBar.backgroundColor = [UIColor orangeColor];
-    
-    for (UIView * sub in self.my_NavgationBar.subviews) {
-        sub.hidden = YES;
+        
+    if ([self.navigationController.childViewControllers count]>1) {
+        
+        UIBarButtonItem * backItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(backAction:)];
+        self.my_NavgationItem = [[UINavigationItem alloc] initWithTitle:self.title];
+
+        if (self.backItem) {
+        
+            UIView * customBack = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 65, 30)];
+            customBack.backgroundColor = [UIColor redColor];
+            [customBack addSubview:self.backItem];
+            [self.my_NavgationItem setLeftBarButtonItem:[[UIBarButtonItem alloc]initWithCustomView:customBack]];
+
+        }else
+        {
+            [self.my_NavgationItem setLeftBarButtonItem:backItem];
+        }
     }
     
-    
-    UIBarButtonItem * backItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(backAction:)];
-    
-    self.navigationItem.leftBarButtonItem = backItem;
+    [self.my_NavgationBar pushNavigationItem:self.my_NavgationItem animated:YES];
 }
 
 #pragma mark- Setter And Getter
@@ -135,11 +162,11 @@
 }
 
 
--(UINavigationBar *)my_NavgationBar
+-(CustomNavgationBar *)my_NavgationBar
 {
     if (!_my_NavgationBar) {
-        _my_NavgationBar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 64)];
-        
+        _my_NavgationBar = [[CustomNavgationBar alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
+        _my_NavgationBar.backgroundColor = [UIColor orangeColor];
     }
     
     return _my_NavgationBar;

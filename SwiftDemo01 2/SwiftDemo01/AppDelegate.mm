@@ -42,7 +42,7 @@
         
         self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
         self.window.backgroundColor = [UIColor whiteColor];
-        UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:[[ViewController alloc] init]];
+        UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:[[SwitchViewController alloc] init]];
         
         self.window.rootViewController = nav;
         [self.window makeKeyAndVisible];
@@ -101,19 +101,7 @@
     
     
     
-//    //字符串的导出（写入到文件）
-//    void test3(){
-//        NSString *str = @"123123123这是一个导出的字符串";
-//        //文件不存在会自动创建，文件夹不存在则不会自动创建会报错
-//        NSString *path = @"/Users/gx/Desktop/test_export.txt";
-//        NSError *error;
-//        [str writeToFile:path atomically:YES encoding:NSUTF8StringEncoding error:&error];
-//        if (error) {
-//            NSLog(@"导出失败:%@",error);
-//        }else{
-//            NSLog(@"导出成功");
-//        }
-//    }
+
     
     
     
