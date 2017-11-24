@@ -8,10 +8,9 @@
 
 #import "SwitchViewController.h"
 #import "CustomNavgationBar.h"
-#import "PageControllerCenterProtocol.h"
 #import "PageControllerCenter.h"
 
-@interface SwitchViewController ()<PageControllerCenterProtocol>
+@interface SwitchViewController ()
 
 @end
 
@@ -35,6 +34,7 @@
     self.navigationController.hidesBottomBarWhenPushed = YES;
     CustomNavgationBar * customNavBar = [[CustomNavgationBar alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
     [self.navigationController setNavigationBarHidden:YES animated:NO];
+    
     [self.view addSubview:customNavBar];
     
     UIBarButtonItem * backItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(backAction:)];

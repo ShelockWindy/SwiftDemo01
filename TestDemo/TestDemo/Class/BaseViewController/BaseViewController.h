@@ -19,8 +19,8 @@ typedef NS_ENUM(NSInteger,UIBaseViewControllerNavgationBarStyle) {
 @interface BaseViewController : UIViewController <PageControllerCenterProtocol>
 
 /* 导航条item  */
-@property (nonatomic,strong) UIButton * backItem;
-@property (nonatomic,strong) UIButton * rightItem;
+@property (nonatomic,strong) UIView * backItem; //有默认样式
+@property (nonatomic,strong) UIView * rightItem; //默认无
 
 @property (nonatomic,strong) CustomNavgationBar * my_NavgationBar;//自定义导航条
 @property (nonatomic,strong) UINavigationItem * my_NavgationItem;//自定义导航条按钮
@@ -29,11 +29,6 @@ typedef NS_ENUM(NSInteger,UIBaseViewControllerNavgationBarStyle) {
  导航条样式   子类如果需要自定义样式，需要重写 navgationBarStyle的getter方法
  */
 @property (nonatomic,assign) UIBaseViewControllerNavgationBarStyle  navgationBarStyle;
-
-@property (nonatomic,strong) UIColor * navgationBarTintColor;//导航条item 文字颜色
-@property (nonatomic,strong) UIColor * navgationBarTitleColor;//导航条 title 颜色
-@property (nonatomic,strong) UIColor * navgationBarBackGroundColor;//导航条的背景色
-@property (nonatomic,strong) UIImage * navgationBarBackGroundImage;//导航条背景图片
 @property (nonatomic,assign) BOOL  navgationBarHiden;//导航条是否隐藏
 
 //绑定viewModel 业务

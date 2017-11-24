@@ -33,8 +33,8 @@
     if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
         self.navigationController.interactivePopGestureRecognizer.delegate = nil;
     }
-    [self setUpNavgationBar];
-
+   [self setUpNavgationBar];
+    
 }
 
 
@@ -122,20 +122,18 @@
 
 -(void)setCustomDisplay
 {
-    if (!self.my_NavgationBar.superview) {
-        self.navigationController.navigationBar.translucent = NO;
-        self.navigationController.navigationBar.hidden = YES;
-        [self.view addSubview:self.my_NavgationBar];
-    }
-        
+    self.my_NavgationBar = nil;
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    [self.view addSubview:self.my_NavgationBar];
+    
     if ([self.navigationController.childViewControllers count]>1) {
-        
+
         UIBarButtonItem * backItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(backAction:)];
         self.my_NavgationItem = [[UINavigationItem alloc] initWithTitle:self.title];
 
         if (self.backItem) {
-        
-            UIView * customBack = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 65, 30)];
+
+            UIView * customBack = [[UIView alloc]initWithFrame:self.backItem.bounds];
             customBack.backgroundColor = [UIColor redColor];
             [customBack addSubview:self.backItem];
             [self.my_NavgationItem setLeftBarButtonItem:[[UIBarButtonItem alloc]initWithCustomView:customBack]];
@@ -144,9 +142,11 @@
         {
             [self.my_NavgationItem setLeftBarButtonItem:backItem];
         }
+
+        [self.my_NavgationBar pushNavigationItem:self.my_NavgationItem animated:YES];
+
     }
     
-    [self.my_NavgationBar pushNavigationItem:self.my_NavgationItem animated:YES];
 }
 
 #pragma mark- Setter And Getter
@@ -166,7 +166,7 @@
 {
     if (!_my_NavgationBar) {
         _my_NavgationBar = [[CustomNavgationBar alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
-        _my_NavgationBar.backgroundColor = [UIColor orangeColor];
+        _my_NavgationBar.translucent = NO;
     }
     
     return _my_NavgationBar;
