@@ -122,6 +122,8 @@
 
 -(void)setCustomDisplay
 {
+    CGRect screenBounds = [[UIScreen mainScreen]bounds];
+    
     self.my_NavgationBar = nil;
     [self.navigationController setNavigationBarHidden:YES animated:NO];
     [self.view addSubview:self.my_NavgationBar];
@@ -177,5 +179,12 @@
     return UIBaseViewControllerNavgationBarStyle_Default;
 }
 
+
+#pragma mark- dealloc
+
+-(void)dealloc
+{
+    NSLog(@"%@-------已经被释放了", NSStringFromClass([self class]));
+}
 
 @end

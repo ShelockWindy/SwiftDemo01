@@ -9,6 +9,7 @@
 #import "BaseViewModel.h"
 #import "MBProgressHUD.h"
 #import "ProgressHUD.h"
+#import "NetWorkManagerCenter.h"
 
 @implementation BaseViewModel
 
@@ -32,7 +33,13 @@
     _currentView = currentView;
     
     
-    
+}
+
+#pragma mark- Override
+
+-(void)requestWithDestination:(NSString *)destination forViewModel:(id)viewModel completionHandler:(void (^)(NSData *, NSURLResponse *, NSError *))completionHandler
+{
+    [[NetWorkManagerCenter shareInstance]requestWithDestination:destination forViewModel:viewModel completionHandler:completionHandler];
 }
 
 

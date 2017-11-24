@@ -24,7 +24,7 @@
         _loginView.backgroundColor = [UIColor lightGrayColor];
         self.currentView = _loginView;
     }
-    
+
     _loginView.userNameTextFiled.delegate = self;
     [_loginView.userNameTextFiled addTarget:self action:@selector(textFiledChanged:) forControlEvents:UIControlEventEditingChanged];
     
@@ -62,13 +62,23 @@
 
 -(void)loginButtAction:(UIButton*)sender
 {
+    [self userPassWordLoginRequest];
+    
     [self showSuccessMessageWithContent:@"登录成功" enable:NO];
     if (self.login_bind) {
         self.login_bind(YES, self);
     }
 }
 
-
-
+#pragma mark- NetWork
+-(void)userPassWordLoginRequest
+{
+    [self showNetWorkProgressHUD];
+    
+    [self requestWithDestination:@"Login" forViewModel:self completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        
+        [self hidenNetWorkProgressHUD];
+    }];
+}
 
 @end

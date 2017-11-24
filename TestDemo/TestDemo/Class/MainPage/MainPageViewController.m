@@ -7,37 +7,30 @@
 //
 
 #import "MainPageViewController.h"
-#import "CustomNavgationBar.h"
+#import "MainPageViewModel.h"
 
 @interface MainPageViewController ()
+
+@property (nonatomic,strong) MainPageViewModel * mainPageViewModel;
 
 @end
 
 @implementation MainPageViewController
 
+#pragma mark- Life Cycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+ 
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     
-//    CustomNavgationBar * customNavBar = [[CustomNavgationBar alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
-//    [self.navigationController setNavigationBarHidden:YES animated:NO];
-//    [self.view addSubview:customNavBar];
-//
-//    UIBarButtonItem * backItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(backAction:)];
-//    UINavigationItem * navgationItem = [[UINavigationItem alloc] initWithTitle:self.title];
-//    [navgationItem setLeftBarButtonItem:backItem];
-//    [customNavBar pushNavigationItem:navgationItem animated:YES];
-//
-//    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
-//    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
-//        self.navigationController.interactivePopGestureRecognizer.delegate = nil;
-//    }
-    
+   
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,7 +38,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark- Public
+#pragma mark- Public Methods
+
+
+#pragma mark- Private Methods
 
 
 #pragma mark- Override
@@ -53,6 +49,17 @@
 {
     return UIBaseViewControllerNavgationBarStyle_Custom;
 }
+
+-(void)subViewLoad
+{
+    self.mainPageViewModel.mainPageView.frame = self.view.bounds;
+}
+
+-(void)viewModelBind
+{
+    
+}
+
 
 -(UIButton *)backItem
 {
@@ -78,7 +85,15 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-#pragma mark- Gether
-
+#pragma mark- ViewModel
+-(MainPageViewModel *)mainPageViewModel
+{
+    if (!_mainPageViewModel) {
+        _mainPageViewModel = [[MainPageViewModel alloc]init];
+        [self.view addSubview:_mainPageViewModel.mainPageView];
+    }
+    
+    return _mainPageViewModel;
+}
 
 @end

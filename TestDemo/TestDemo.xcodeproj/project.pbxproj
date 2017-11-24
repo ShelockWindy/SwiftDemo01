@@ -17,6 +17,9 @@
 		FF33C6F51FBC227B00552A38 /* 44.png in Resources */ = {isa = PBXBuildFile; fileRef = FF33C6F41FBC227A00552A38 /* 44.png */; };
 		FF54BD291FC6B3F50031E838 /* CustomNavgationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FF54BD281FC6B3F50031E838 /* CustomNavgationBar.m */; };
 		FF54BD2D1FC6C37D0031E838 /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF54BD2C1FC6C37D0031E838 /* MainPageViewController.m */; };
+		FF56CB561FC7F31300A52EAD /* NetWorkManagerCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FF56CB551FC7F31300A52EAD /* NetWorkManagerCenter.m */; };
+		FF56CB5D1FC803A700A52EAD /* MainPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF56CB5C1FC803A700A52EAD /* MainPageView.m */; };
+		FF56CB601FC8057500A52EAD /* MainPageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF56CB5F1FC8057500A52EAD /* MainPageViewModel.m */; };
 		FF5A6B441FBEB64800D29C01 /* CalulatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B431FBEB64800D29C01 /* CalulatorMaker.m */; };
 		FF5A6B4C1FBED45800D29C01 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B4B1FBED45800D29C01 /* BaseViewController.m */; };
 		FF5A6B4F1FBED4B000D29C01 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B4E1FBED4B000D29C01 /* LoginViewController.m */; };
@@ -55,6 +58,13 @@
 		FF54BD281FC6B3F50031E838 /* CustomNavgationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavgationBar.m; sourceTree = "<group>"; };
 		FF54BD2B1FC6C37D0031E838 /* MainPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainPageViewController.h; sourceTree = "<group>"; };
 		FF54BD2C1FC6C37D0031E838 /* MainPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPageViewController.m; sourceTree = "<group>"; };
+		FF56CB541FC7F31300A52EAD /* NetWorkManagerCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkManagerCenter.h; sourceTree = "<group>"; };
+		FF56CB551FC7F31300A52EAD /* NetWorkManagerCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkManagerCenter.m; sourceTree = "<group>"; };
+		FF56CB571FC7FCE500A52EAD /* NetWorkManagerCenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkManagerCenterProtocol.h; sourceTree = "<group>"; };
+		FF56CB5B1FC803A700A52EAD /* MainPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainPageView.h; sourceTree = "<group>"; };
+		FF56CB5C1FC803A700A52EAD /* MainPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPageView.m; sourceTree = "<group>"; };
+		FF56CB5E1FC8057500A52EAD /* MainPageViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainPageViewModel.h; sourceTree = "<group>"; };
+		FF56CB5F1FC8057500A52EAD /* MainPageViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPageViewModel.m; sourceTree = "<group>"; };
 		FF5A6B421FBEB64800D29C01 /* CalulatorMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalulatorMaker.h; sourceTree = "<group>"; };
 		FF5A6B431FBEB64800D29C01 /* CalulatorMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalulatorMaker.m; sourceTree = "<group>"; };
 		FF5A6B4A1FBED45800D29C01 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -175,10 +185,48 @@
 		FF54BD2A1FC6C3630031E838 /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
+				FF56CB581FC8035300A52EAD /* Model */,
+				FF56CB591FC8035300A52EAD /* View */,
+				FF56CB5A1FC8035300A52EAD /* ViewModel */,
 				FF54BD2B1FC6C37D0031E838 /* MainPageViewController.h */,
 				FF54BD2C1FC6C37D0031E838 /* MainPageViewController.m */,
 			);
 			path = MainPage;
+			sourceTree = "<group>";
+		};
+		FF56CB531FC7F2E500A52EAD /* NetworkManagerCenter */ = {
+			isa = PBXGroup;
+			children = (
+				FF56CB541FC7F31300A52EAD /* NetWorkManagerCenter.h */,
+				FF56CB551FC7F31300A52EAD /* NetWorkManagerCenter.m */,
+				FF56CB571FC7FCE500A52EAD /* NetWorkManagerCenterProtocol.h */,
+			);
+			path = NetworkManagerCenter;
+			sourceTree = "<group>";
+		};
+		FF56CB581FC8035300A52EAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF56CB591FC8035300A52EAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF56CB5B1FC803A700A52EAD /* MainPageView.h */,
+				FF56CB5C1FC803A700A52EAD /* MainPageView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FF56CB5A1FC8035300A52EAD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF56CB5E1FC8057500A52EAD /* MainPageViewModel.h */,
+				FF56CB5F1FC8057500A52EAD /* MainPageViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FF5A6B3E1FBE851B00D29C01 /* 函数式编程 */ = {
@@ -225,6 +273,7 @@
 		FF5A6B481FBED3EE00D29C01 /* Unit */ = {
 			isa = PBXGroup;
 			children = (
+				FF56CB531FC7F2E500A52EAD /* NetworkManagerCenter */,
 				FFA029461FC55FD300F3B71D /* PageControllerCenter */,
 			);
 			path = Unit;
@@ -510,10 +559,13 @@
 				FF5A6B4F1FBED4B000D29C01 /* LoginViewController.m in Sources */,
 				FF33C6EE1FBC224300552A38 /* main.m in Sources */,
 				FF5A6B441FBEB64800D29C01 /* CalulatorMaker.m in Sources */,
+				FF56CB561FC7F31300A52EAD /* NetWorkManagerCenter.m in Sources */,
+				FF56CB601FC8057500A52EAD /* MainPageViewModel.m in Sources */,
 				FF5A6B641FBED8F900D29C01 /* LoginView.m in Sources */,
 				FF33C6E01FBC224300552A38 /* AppDelegate.m in Sources */,
 				FF799E411FC2D89F00C86E40 /* SecurityUtil.m in Sources */,
 				FF5A6B6A1FBEDB4F00D29C01 /* BaseView.m in Sources */,
+				FF56CB5D1FC803A700A52EAD /* MainPageView.m in Sources */,
 				FFA029451FC55F3B00F3B71D /* KeychainUUID.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

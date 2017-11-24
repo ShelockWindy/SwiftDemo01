@@ -58,11 +58,6 @@
     return UIBaseViewControllerNavgationBarStyle_Default;
 }
 
-
-#pragma mark- Public Methods
-
-
-#pragma mark- Privates Methods
 -(void)subViewLoad
 {
     self.loginViewModel.loginView.frame = self.view.bounds;
@@ -70,15 +65,22 @@
 
 -(void)viewModelBind
 {
-   __weak typeof(self) weakSelf = self;
+    __weak typeof(self) weakSelf = self;
     self.loginViewModel.login_bind = ^(BOOL sucess, id viewModel) {
-    
+        
         [weakSelf pageTurnToViewControllerClass:@"SwitchViewController" fromCurrentViewController:weakSelf];
     };
 }
 
 
-#pragma mark- Lazy Load
+
+#pragma mark- Public Methods
+
+
+#pragma mark- Privates Methods
+
+
+#pragma mark- ViewModel
 
 -(LoginViewModel *)loginViewModel
 {
@@ -89,6 +91,9 @@
     
     return _loginViewModel;
 }
+
+
+
 
 
 

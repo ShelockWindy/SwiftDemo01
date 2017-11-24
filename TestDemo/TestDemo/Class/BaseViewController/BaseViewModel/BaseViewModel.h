@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "NetWorkManagerCenterProtocol.h"
 
-@interface BaseViewModel : NSObject
+@interface BaseViewModel : NSObject<NetWorkManagerCenterProtocol>
 
 @property (nonatomic,strong) UIView * currentView;//被绑定的viewController的界面
 
