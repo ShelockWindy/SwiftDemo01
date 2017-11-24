@@ -73,7 +73,7 @@
     }
     else if ([viewControllerClass isEqualToString:NSStringFromClass([MainPageViewController class])])
     {
-#pragma mark-  UIViewController
+#pragma mark-  MainPageViewController
         MainPageViewController * viewController = [[MainPageViewController alloc]init];
         viewController.view.backgroundColor = [UIColor brownColor];
         return viewController;

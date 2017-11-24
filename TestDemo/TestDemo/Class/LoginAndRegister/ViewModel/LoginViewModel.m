@@ -75,6 +75,9 @@
 {
     [self showNetWorkProgressHUD];
     
+    NSLog(@"%@",[self currentGroupFilePathWithMFilePath:__FILE__]);
+
+    
     [self requestWithDestination:@"Login" forViewModel:self completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         
         [self hidenNetWorkProgressHUD];

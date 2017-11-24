@@ -35,5 +35,6 @@
 -(void)showNetWorkProgressHUD;
 //隐藏网络请求进度
 -(void)hidenNetWorkProgressHUD;
+-(NSString*)currentGroupFilePathWithMFilePath:(char[])path;
 
 @end

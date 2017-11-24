@@ -95,4 +95,15 @@
     NSLog(@"%@ 已经被释放了", NSStringFromClass([self class]));
 }
 
+
+
+-(NSString*)currentGroupFilePathWithMFilePath:(char[])path
+{
+    NSString * currentFilePath = [NSString stringWithFormat:@"%s",path];
+    NSArray * pathArr = [currentFilePath componentsSeparatedByString:@"ViewModel"];
+    currentFilePath = [[pathArr firstObject] stringByAppendingString:@"Model"];
+    
+    return currentFilePath;
+}
+
 @end
