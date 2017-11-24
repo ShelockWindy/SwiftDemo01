@@ -21,6 +21,7 @@
 {
     if (!_loginView) {
         _loginView = [[LoginView alloc]init];
+        _loginView.backgroundColor = [UIColor lightGrayColor];
         self.currentView = _loginView;
     }
     

@@ -25,6 +25,20 @@
 {
 }
 
+#pragma mark- Setter
+
+-(void)setCurrentView:(UIView *)currentView
+{
+    _currentView = currentView;
+    
+    
+    
+}
+
+
+
+#pragma mark- Public
+
 -(void)showSuccessMessageWithContent:(NSString *)message
 {
     if (self.currentView) {
