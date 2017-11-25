@@ -54,7 +54,7 @@
         if ([NSStringFromClass([fromController class]) isEqualToString:NSStringFromClass([LoginViewController class])]) {
             switchVC.view.backgroundColor = [UIColor redColor];
             LoginViewController * loginVC = fromController;
-            switchVC.loginStyle = @"密码登录！！！";
+            switchVC.loginStyle = @"短信登录！！！";
             [switchVC logLoginStyle];
 
             return switchVC;
