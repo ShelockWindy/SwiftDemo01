@@ -20,6 +20,7 @@
 		FF56CB561FC7F31300A52EAD /* NetWorkManagerCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FF56CB551FC7F31300A52EAD /* NetWorkManagerCenter.m */; };
 		FF56CB5D1FC803A700A52EAD /* MainPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF56CB5C1FC803A700A52EAD /* MainPageView.m */; };
 		FF56CB601FC8057500A52EAD /* MainPageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF56CB5F1FC8057500A52EAD /* MainPageViewModel.m */; };
+		FF56CB671FCBAC2C00A52EAD /* CommonUnitCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FF56CB661FCBAC2C00A52EAD /* CommonUnitCenter.m */; };
 		FF5A6B441FBEB64800D29C01 /* CalulatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B431FBEB64800D29C01 /* CalulatorMaker.m */; };
 		FF5A6B4C1FBED45800D29C01 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B4B1FBED45800D29C01 /* BaseViewController.m */; };
 		FF5A6B4F1FBED4B000D29C01 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B4E1FBED4B000D29C01 /* LoginViewController.m */; };
@@ -65,6 +66,9 @@
 		FF56CB5C1FC803A700A52EAD /* MainPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPageView.m; sourceTree = "<group>"; };
 		FF56CB5E1FC8057500A52EAD /* MainPageViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainPageViewModel.h; sourceTree = "<group>"; };
 		FF56CB5F1FC8057500A52EAD /* MainPageViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPageViewModel.m; sourceTree = "<group>"; };
+		FF56CB651FCBAC2C00A52EAD /* CommonUnitCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUnitCenter.h; sourceTree = "<group>"; };
+		FF56CB661FCBAC2C00A52EAD /* CommonUnitCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonUnitCenter.m; sourceTree = "<group>"; };
+		FF56CB681FCBAD9200A52EAD /* CommonUnitCenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUnitCenterProtocol.h; sourceTree = "<group>"; };
 		FF5A6B421FBEB64800D29C01 /* CalulatorMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalulatorMaker.h; sourceTree = "<group>"; };
 		FF5A6B431FBEB64800D29C01 /* CalulatorMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalulatorMaker.m; sourceTree = "<group>"; };
 		FF5A6B4A1FBED45800D29C01 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -229,6 +233,16 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		FF56CB641FCBABFD00A52EAD /* CommonUnitCenter */ = {
+			isa = PBXGroup;
+			children = (
+				FF56CB651FCBAC2C00A52EAD /* CommonUnitCenter.h */,
+				FF56CB661FCBAC2C00A52EAD /* CommonUnitCenter.m */,
+				FF56CB681FCBAD9200A52EAD /* CommonUnitCenterProtocol.h */,
+			);
+			path = CommonUnitCenter;
+			sourceTree = "<group>";
+		};
 		FF5A6B3E1FBE851B00D29C01 /* 函数式编程 */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +287,7 @@
 		FF5A6B481FBED3EE00D29C01 /* Unit */ = {
 			isa = PBXGroup;
 			children = (
+				FF56CB641FCBABFD00A52EAD /* CommonUnitCenter */,
 				FF56CB531FC7F2E500A52EAD /* NetworkManagerCenter */,
 				FFA029461FC55FD300F3B71D /* PageControllerCenter */,
 			);
@@ -557,6 +572,7 @@
 				FF5A6B4C1FBED45800D29C01 /* BaseViewController.m in Sources */,
 				FFA029491FC5601D00F3B71D /* PageControllerCenter.m in Sources */,
 				FF5A6B4F1FBED4B000D29C01 /* LoginViewController.m in Sources */,
+				FF56CB671FCBAC2C00A52EAD /* CommonUnitCenter.m in Sources */,
 				FF33C6EE1FBC224300552A38 /* main.m in Sources */,
 				FF5A6B441FBEB64800D29C01 /* CalulatorMaker.m in Sources */,
 				FF56CB561FC7F31300A52EAD /* NetWorkManagerCenter.m in Sources */,
