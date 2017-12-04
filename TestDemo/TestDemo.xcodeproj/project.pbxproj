@@ -38,6 +38,8 @@
 		FFA029441FC55F3B00F3B71D /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA029401FC55F3A00F3B71D /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FFA029451FC55F3B00F3B71D /* KeychainUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA029411FC55F3A00F3B71D /* KeychainUUID.m */; };
 		FFA029491FC5601D00F3B71D /* PageControllerCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA029481FC5601D00F3B71D /* PageControllerCenter.m */; };
+		FFEE48A01FD52DCB00C75354 /* BusinessConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = FFEE489F1FD52DCB00C75354 /* BusinessConstants.m */; };
+		FFEE48A31FD5344100C75354 /* CommonUnitCenter+ShowProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FFEE48A21FD5344100C75354 /* CommonUnitCenter+ShowProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +109,10 @@
 		FFA029471FC5601D00F3B71D /* PageControllerCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageControllerCenter.h; sourceTree = "<group>"; };
 		FFA029481FC5601D00F3B71D /* PageControllerCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageControllerCenter.m; sourceTree = "<group>"; };
 		FFA0294A1FC5707E00F3B71D /* PageControllerCenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageControllerCenterProtocol.h; sourceTree = "<group>"; };
+		FFEE489E1FD52DCB00C75354 /* BusinessConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessConstants.h; sourceTree = "<group>"; };
+		FFEE489F1FD52DCB00C75354 /* BusinessConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessConstants.m; sourceTree = "<group>"; };
+		FFEE48A11FD5344100C75354 /* CommonUnitCenter+ShowProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CommonUnitCenter+ShowProgressHUD.h"; sourceTree = "<group>"; };
+		FFEE48A21FD5344100C75354 /* CommonUnitCenter+ShowProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CommonUnitCenter+ShowProgressHUD.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +165,7 @@
 		FF33C6DD1FBC224300552A38 /* TestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FFEE489A1FD525A900C75354 /* Config */,
 				FF5A6B451FBED3EE00D29C01 /* Class */,
 				FF5A6B471FBED3EE00D29C01 /* Core */,
 				FF5A6B481FBED3EE00D29C01 /* Unit */,
@@ -238,6 +245,8 @@
 			children = (
 				FF56CB651FCBAC2C00A52EAD /* CommonUnitCenter.h */,
 				FF56CB661FCBAC2C00A52EAD /* CommonUnitCenter.m */,
+				FFEE48A11FD5344100C75354 /* CommonUnitCenter+ShowProgressHUD.h */,
+				FFEE48A21FD5344100C75354 /* CommonUnitCenter+ShowProgressHUD.m */,
 				FF56CB681FCBAD9200A52EAD /* CommonUnitCenterProtocol.h */,
 			);
 			path = CommonUnitCenter;
@@ -434,6 +443,15 @@
 			path = PageControllerCenter;
 			sourceTree = "<group>";
 		};
+		FFEE489A1FD525A900C75354 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				FFEE489E1FD52DCB00C75354 /* BusinessConstants.h */,
+				FFEE489F1FD52DCB00C75354 /* BusinessConstants.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -567,6 +585,7 @@
 				FF5A6B5D1FBED6CA00D29C01 /* BaseModel.m in Sources */,
 				FF54BD291FC6B3F50031E838 /* CustomNavgationBar.m in Sources */,
 				FF799E551FC2DEF500C86E40 /* BaseNetWorkManager.m in Sources */,
+				FFEE48A01FD52DCB00C75354 /* BusinessConstants.m in Sources */,
 				FFA029441FC55F3B00F3B71D /* KeychainItemWrapper.m in Sources */,
 				FF799E4D1FC2D98900C86E40 /* Base64.m in Sources */,
 				FF5A6B4C1FBED45800D29C01 /* BaseViewController.m in Sources */,
@@ -581,6 +600,7 @@
 				FF33C6E01FBC224300552A38 /* AppDelegate.m in Sources */,
 				FF799E411FC2D89F00C86E40 /* SecurityUtil.m in Sources */,
 				FF5A6B6A1FBEDB4F00D29C01 /* BaseView.m in Sources */,
+				FFEE48A31FD5344100C75354 /* CommonUnitCenter+ShowProgressHUD.m in Sources */,
 				FF56CB5D1FC803A700A52EAD /* MainPageView.m in Sources */,
 				FFA029451FC55F3B00F3B71D /* KeychainUUID.m in Sources */,
 			);

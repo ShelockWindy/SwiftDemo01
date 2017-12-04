@@ -30,6 +30,9 @@
 		FF5CE4A51E5435A700164067 /* ExclView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5CE4A41E5435A700164067 /* ExclView.m */; };
 		FF6103D71EEE9E7600AD4873 /* UIFontView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6103D61EEE9E7600AD4873 /* UIFontView.m */; };
 		FF65DC5B1EA84B4400989111 /* NSObject+Cl_Ivars_Method_Protocol.m in Sources */ = {isa = PBXBuildFile; fileRef = FF65DC5A1EA84B4400989111 /* NSObject+Cl_Ivars_Method_Protocol.m */; };
+		FF671E001FCFF14500B338B7 /* UIFont+AutoChange.m in Sources */ = {isa = PBXBuildFile; fileRef = FF671DFF1FCFF14500B338B7 /* UIFont+AutoChange.m */; };
+		FF671E041FD0041500B338B7 /* TestAutoHeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FF671E021FD0041500B338B7 /* TestAutoHeightCell.m */; };
+		FF671E051FD0041500B338B7 /* TestAutoHeightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF671E031FD0041500B338B7 /* TestAutoHeightCell.xib */; };
 		FF6C57261E8B839F00703E1E /* UITextField+Restrict.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6C57251E8B839F00703E1E /* UITextField+Restrict.m */; };
 		FF6CDAA71ED3DF5100339505 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6CDAA61ED3DF5100339505 /* Aspects.m */; };
 		FF6CDAAA1ED3DFA100339505 /* UIViewController+aspecttest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6CDAA91ED3DFA100339505 /* UIViewController+aspecttest.m */; };
@@ -57,6 +60,8 @@
 		FFAE04131ECA9E1300FCE236 /* NSObject+CallSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAE04121ECA9E1300FCE236 /* NSObject+CallSelector.m */; };
 		FFAEBAAF1EC1B2EA00C3C643 /* TTViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FFAEBAAE1EC1B2EA00C3C643 /* TTViewController.mm */; };
 		FFC9DC331EA6131200D457E9 /* UITextField+Adjust.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC9DC321EA6131200D457E9 /* UITextField+Adjust.m */; };
+		FFCBFD501FD149FF0057661E /* UIWebView+HOOKDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCBFD4F1FD149FF0057661E /* UIWebView+HOOKDelegate.m */; };
+		FFCBFD531FD14A4A0057661E /* HookWebViewDelegateMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCBFD521FD14A4A0057661E /* HookWebViewDelegateMonitor.m */; };
 		FFDD9B9E1EFA6C7B00DB0EA8 /* GoodBoy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFDD9B9C1EFA6C7B00DB0EA8 /* GoodBoy.cpp */; };
 		FFE0D94E1EAEF3A200D1E9E9 /* UICustomAlertSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE0D94D1EAEF3A200D1E9E9 /* UICustomAlertSheetView.m */; };
 		FFE0D9521EAF1ABD00D1E9E9 /* SycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE0D9511EAF1ABD00D1E9E9 /* SycleScrollView.m */; };
@@ -115,6 +120,11 @@
 		FF6103D61EEE9E7600AD4873 /* UIFontView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFontView.m; sourceTree = "<group>"; };
 		FF65DC591EA84B4400989111 /* NSObject+Cl_Ivars_Method_Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Cl_Ivars_Method_Protocol.h"; sourceTree = "<group>"; };
 		FF65DC5A1EA84B4400989111 /* NSObject+Cl_Ivars_Method_Protocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Cl_Ivars_Method_Protocol.m"; sourceTree = "<group>"; };
+		FF671DFE1FCFF14500B338B7 /* UIFont+AutoChange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+AutoChange.h"; sourceTree = "<group>"; };
+		FF671DFF1FCFF14500B338B7 /* UIFont+AutoChange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+AutoChange.m"; sourceTree = "<group>"; };
+		FF671E011FD0041500B338B7 /* TestAutoHeightCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAutoHeightCell.h; sourceTree = "<group>"; };
+		FF671E021FD0041500B338B7 /* TestAutoHeightCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAutoHeightCell.m; sourceTree = "<group>"; };
+		FF671E031FD0041500B338B7 /* TestAutoHeightCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestAutoHeightCell.xib; sourceTree = "<group>"; };
 		FF6C57241E8B839F00703E1E /* UITextField+Restrict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Restrict.h"; sourceTree = "<group>"; };
 		FF6C57251E8B839F00703E1E /* UITextField+Restrict.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Restrict.m"; sourceTree = "<group>"; };
 		FF6CDAA51ED3DF5100339505 /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
@@ -166,6 +176,10 @@
 		FFAEBAAE1EC1B2EA00C3C643 /* TTViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TTViewController.mm; sourceTree = "<group>"; };
 		FFC9DC311EA6131200D457E9 /* UITextField+Adjust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Adjust.h"; sourceTree = "<group>"; };
 		FFC9DC321EA6131200D457E9 /* UITextField+Adjust.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Adjust.m"; sourceTree = "<group>"; };
+		FFCBFD4E1FD149FF0057661E /* UIWebView+HOOKDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWebView+HOOKDelegate.h"; sourceTree = "<group>"; };
+		FFCBFD4F1FD149FF0057661E /* UIWebView+HOOKDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+HOOKDelegate.m"; sourceTree = "<group>"; };
+		FFCBFD511FD14A4A0057661E /* HookWebViewDelegateMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HookWebViewDelegateMonitor.h; sourceTree = "<group>"; };
+		FFCBFD521FD14A4A0057661E /* HookWebViewDelegateMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HookWebViewDelegateMonitor.m; sourceTree = "<group>"; };
 		FFDD9B9C1EFA6C7B00DB0EA8 /* GoodBoy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoodBoy.cpp; sourceTree = "<group>"; };
 		FFDD9B9D1EFA6C7B00DB0EA8 /* GoodBoy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GoodBoy.hpp; sourceTree = "<group>"; };
 		FFE0D94C1EAEF3A200D1E9E9 /* UICustomAlertSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICustomAlertSheetView.h; sourceTree = "<group>"; };
@@ -293,6 +307,12 @@
 				FFAE04121ECA9E1300FCE236 /* NSObject+CallSelector.m */,
 				FF6CDAA81ED3DFA100339505 /* UIViewController+aspecttest.h */,
 				FF6CDAA91ED3DFA100339505 /* UIViewController+aspecttest.m */,
+				FF671DFE1FCFF14500B338B7 /* UIFont+AutoChange.h */,
+				FF671DFF1FCFF14500B338B7 /* UIFont+AutoChange.m */,
+				FFCBFD4E1FD149FF0057661E /* UIWebView+HOOKDelegate.h */,
+				FFCBFD4F1FD149FF0057661E /* UIWebView+HOOKDelegate.m */,
+				FFCBFD511FD14A4A0057661E /* HookWebViewDelegateMonitor.h */,
+				FFCBFD521FD14A4A0057661E /* HookWebViewDelegateMonitor.m */,
 			);
 			name = Runtime;
 			sourceTree = "<group>";
@@ -361,6 +381,9 @@
 				FF6103D61EEE9E7600AD4873 /* UIFontView.m */,
 				FFAEBAAD1EC1B2EA00C3C643 /* TTViewController.h */,
 				FFAEBAAE1EC1B2EA00C3C643 /* TTViewController.mm */,
+				FF671E011FD0041500B338B7 /* TestAutoHeightCell.h */,
+				FF671E021FD0041500B338B7 /* TestAutoHeightCell.m */,
+				FF671E031FD0041500B338B7 /* TestAutoHeightCell.xib */,
 				FF0B8B951E4D99CA009222AB /* aaViewController.xib */,
 				FF6D685E1E2F4B69002289D0 /* Main.storyboard */,
 				FF0B8B8A1E4D9707009222AB /* mainPage_service.png */,
@@ -542,9 +565,9 @@
 				TargetAttributes = {
 					FF6D68511E2F4B69002289D0 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 3DP8CVS45F;
+						DevelopmentTeam = H4BETC4J6Y;
 						LastSwiftMigration = 0820;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					FF6D686A1E2F4B6A002289D0 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -588,6 +611,7 @@
 				FF6D68651E2F4B69002289D0 /* LaunchScreen.storyboard in Resources */,
 				FF998DC11F03B66C00086C31 /* 33.png in Resources */,
 				FF6D68621E2F4B69002289D0 /* Assets.xcassets in Resources */,
+				FF671E051FD0041500B338B7 /* TestAutoHeightCell.xib in Resources */,
 				FF0B8B8F1E4D9707009222AB /* mainPage_service@3x.png in Resources */,
 				FF0B8B8E1E4D9707009222AB /* mainPage_service@2x.png in Resources */,
 				FF0B8B8D1E4D9707009222AB /* mainPage_service.png in Resources */,
@@ -641,6 +665,7 @@
 				FF95F88D1E8DF82900ABC162 /* FourViewController.m in Sources */,
 				FF0B8B9D1E4DAA65009222AB /* aa.c in Sources */,
 				FF95F8811E8DF62F00ABC162 /* SwitchViewController.m in Sources */,
+				FF671E041FD0041500B338B7 /* TestAutoHeightCell.m in Sources */,
 				FF6D685D1E2F4B69002289D0 /* ViewController.m in Sources */,
 				FF03CD081ECB1E6100DFDA37 /* UINavigationController+Extesion.m in Sources */,
 				FF49A7BC1E49BC7A002B3C5E /* UIAlertController(show).swift in Sources */,
@@ -649,9 +674,11 @@
 				FF95F8871E8DF80E00ABC162 /* TwoViewController.m in Sources */,
 				FF74664A1F31FCD800B08F95 /* UITextView+Restrict.m in Sources */,
 				FF6C57261E8B839F00703E1E /* UITextField+Restrict.m in Sources */,
+				FF671E001FCFF14500B338B7 /* UIFont+AutoChange.m in Sources */,
 				FF5CE4A51E5435A700164067 /* ExclView.m in Sources */,
 				FFDD9B9E1EFA6C7B00DB0EA8 /* GoodBoy.cpp in Sources */,
 				FF5753FD1EC340F0007D7DB5 /* MainPageViewController.m in Sources */,
+				FFCBFD531FD14A4A0057661E /* HookWebViewDelegateMonitor.m in Sources */,
 				FFE0D94E1EAEF3A200D1E9E9 /* UICustomAlertSheetView.m in Sources */,
 				FF0B8B991E4DA10C009222AB /* UIButton(Layout).swift in Sources */,
 				FFC9DC331EA6131200D457E9 /* UITextField+Adjust.m in Sources */,
@@ -659,6 +686,7 @@
 				FF6D68571E2F4B69002289D0 /* main.m in Sources */,
 				FFE0D9521EAF1ABD00D1E9E9 /* SycleScrollView.m in Sources */,
 				FF49A7B11E4870CD002B3C5E /* UserLocationManager.swift in Sources */,
+				FFCBFD501FD149FF0057661E /* UIWebView+HOOKDelegate.m in Sources */,
 				FFAE04131ECA9E1300FCE236 /* NSObject+CallSelector.m in Sources */,
 				FF5AFB891E4AAFBA00B48E82 /* JumpPageTool.swift in Sources */,
 				FF94F9A91E7128B100D7A6A8 /* PhotoBrowseNavigationViewController.m in Sources */,
@@ -812,15 +840,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 3DP8CVS45F;
+				DEVELOPMENT_TEAM = H4BETC4J6Y;
 				INFOPLIST_FILE = SwiftDemo01/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.walletOfGoods;
+				PRODUCT_BUNDLE_IDENTIFIER = com.helloWork.cc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "102137ba-97e9-4b8e-a35d-b6c39b5c5f87";
-				PROVISIONING_PROFILE_SPECIFIER = devwalletOfGoods;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftDemo01/SwiftDemo01-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -832,13 +862,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = H4BETC4J6Y;
 				INFOPLIST_FILE = SwiftDemo01/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.walletOfGoods;
+				PRODUCT_BUNDLE_IDENTIFIER = com.helloWork.cc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftDemo01/SwiftDemo01-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};

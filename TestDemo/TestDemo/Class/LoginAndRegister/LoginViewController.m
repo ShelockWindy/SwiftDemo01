@@ -8,7 +8,6 @@
 
 #import "LoginViewController.h"
 #import "LoginViewModel.h"
-#import "SwitchViewController.h"
 
 @interface LoginViewController ()
 

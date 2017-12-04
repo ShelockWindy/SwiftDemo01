@@ -10,6 +10,7 @@
 
 @protocol CommonUnitCenterProtocol <NSObject>
 
+#pragma mark- ProgressHUD
 //显示提示信息成功或失败
 -(void)showSuccessMessageWithContent:(NSString *)message;
 -(void)showFailMessageWithContent:(NSString*)message;
@@ -30,5 +31,6 @@
 -(void)hidenNetWorkProgressHUDforView:(UIView*)view;
 -(void)hidenNetWorkProgressHUD;
 
+#pragma mark-
 
 @end

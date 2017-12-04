@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "NetWorkManagerCenterProtocol.h"
 #import "CommonUnitCenterProtocol.h"
+#import "BusinessConstants.h"
 
 @interface BaseViewModel : NSObject<NetWorkManagerCenterProtocol,CommonUnitCenterProtocol>
 

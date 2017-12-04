@@ -8,6 +8,7 @@
 
 #import "NetWorkManagerCenter.h"
 #import "LoginViewModel.h"
+#import "BusinessConstants.h"
 
 @implementation NetWorkManagerCenter
 
@@ -24,9 +25,13 @@
 
 -(void)requestWithDestination:(NSString*)destination forViewModel:(id)viewModel  completionHandler:(void (^)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error))completionHandler
 {
-    if ([destination isEqualToString:@"Login"]) {
+    if ([destination isEqualToString:Business_Login]) {
         
         LoginViewModel * loginViewModel = viewModel;
+        
+        NSString * userName = loginViewModel.userName;
+        NSString * password = loginViewModel.password;
+        
         NSURL * url = [NSURL URLWithString:@"https://www.baidu.com"];
         NSURLRequest * request = [NSURLRequest requestWithURL:url];
         

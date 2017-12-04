@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "CommonUnitCenterProtocol.h"
 
-@interface CommonUnitCenter : NSObject <CommonUnitCenterProtocol>
+@interface CommonUnitCenter : NSObject
 
 
 /**

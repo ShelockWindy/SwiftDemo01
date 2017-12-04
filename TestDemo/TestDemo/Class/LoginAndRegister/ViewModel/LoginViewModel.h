@@ -16,8 +16,14 @@ typedef void(^LoginViewModel_Login)(BOOL sucess, id viewModel);
 
 @interface LoginViewModel : BaseViewModel
 
+#pragma mark- outer
+@property (nonatomic,copy) NSString * userName;
+@property (nonatomic,copy) NSString * password;
+
+#pragma mark- inner
 @property (nonatomic,strong) LoginView * loginView;
 @property (nonatomic,copy) LoginViewModel_Login  login_bind;
+
 
 
 @end

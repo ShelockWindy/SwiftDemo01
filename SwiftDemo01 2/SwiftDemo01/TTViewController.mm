@@ -7,9 +7,12 @@
 //
 
 #import "TTViewController.h"
-
-@interface TTViewController ()
-
+#import "TestAutoHeightCell.h"
+#import "UIWebView+HOOKDelegate.h"
+@interface TTViewController ()<UITableViewDelegate,UITableViewDataSource,UIWebViewDelegate>
+{
+    UIWebView * _webView ;
+}
 @end
 
 @implementation TTViewController
@@ -20,11 +23,26 @@
 
     // Do any additional setup after loading the view.
     
-    UITableView * tableView = [[UITableView alloc]initWithFrame:self.view.bounds];
-    [self.view addSubview:tableView];
+//    UITableView * tableView = [[UITableView alloc]initWithFrame:self.view.bounds];
+//    tableView.delegate = self;
+//    tableView.dataSource = self;
+//    [self.view addSubview:tableView];
+//    [tableView registerNib:[UINib nibWithNibName:( NSStringFromClass([TestAutoHeightCell class])) bundle:nil] forCellReuseIdentifier:@"reuseId"];
+//
+//    tableView.estimatedRowHeight = 20.f;
+//    tableView.rowHeight = UITableViewAutomaticDimension;
+//    [tableView reloadData];
     
-}
+    UIWebView * webView = [[UIWebView alloc]initWithFrame:self.view.bounds];
+    [webView setDelegate:self];
+    [self.view addSubview:webView];
 
+    NSURL * url = [NSURL URLWithString:@"https://www.baidu.com"];
+    NSURLRequest * request = [NSURLRequest requestWithURL:url];
+    [webView loadRequest:request];
+    _webView = webView;
+
+}
 
 
 -(void)viewWillAppear:(BOOL)animated
@@ -47,6 +65,69 @@
 {
     [super viewWillDisappear:animated];
 }
+
+#pragma mark-  UIWebViewDelegate
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    return YES;
+}
+- (void)webViewDidStartLoad:(UIWebView *)webView
+{
+    
+}
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    
+}
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    
+}
+
+
+#pragma mark- UITableViewDelegate,UITableViewDataSource
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString * cellReuseId = @"reuseId";
+    
+    TestAutoHeightCell * cell = [tableView dequeueReusableCellWithIdentifier:cellReuseId];
+    
+    
+    if (indexPath.row%3==0) {
+        cell.nameLab.text = @"11111";
+        cell.contentLab.text = @"这是一个测试的内容，为了查看字体大小改变";
+    }
+
+    if (indexPath.row%3==1) {
+        cell.nameLab.text = @"222";
+        cell.contentLab.text = @"  这是一个测试的内容，为了查看字体大小改变的效果为了查看字体大小改变的效果为了查看字体大小改变的效果为了查看字体大小改变的效果为了查看字体大小改变的效果为了查看字体大小改变的效果为了查看字体大小改变的效果这是一个测试的内容，为了查看字体大小改变的效果为了查看字体大小改变的效果为了查看字体大小改变的效果为了查看字体大小改变的效果为了查看字体大小改变的效果为了查看字体大小改变的效果为了查看字体大小改变的效果这是一个测试的内容，为了查看字体大小改变的效果为了\n\n查看字体大小改变的效果为了查看字体大小改变的效果为了查看字体大小改变的效果为了查看字体大小改变的效果为了查看字体大小改变的效果这是一个测试的内容，为了查看字体大小改变的效果为了查看字体大小改变的效果为了查看字体大小改变的效果为了查看字体大小改变的效果为了查看字体大小改变的效果为了查看字体大小改变的效果为了查看字体dasdada";
+    }
+
+    if (indexPath.row%3==2) {
+        cell.nameLab.text = @"333";
+        cell.contentLab.text = @"  这是一个测试的内容，为了查看字体大小改变的效果这是一个测试的内容，\n  为了查看字体大小改变的效果这是一个测试的内容，为了查看字体大小改变的效果这是一个测试的内容，为了查看字体大小改变的效果这是一个测试的内容，为了查看字体大小改变的效果这是一个测试的内容，为了查看字体大小改变的效果这是一个测试的内容为了查看字体大小改变的效果";
+    }
+    
+    
+
+    return cell;
+}
+
+
+
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 20;
+}
+
+//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return 120;
+//}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

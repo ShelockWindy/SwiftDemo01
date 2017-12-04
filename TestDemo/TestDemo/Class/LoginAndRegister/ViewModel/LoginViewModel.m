@@ -77,11 +77,32 @@
     
     NSLog(@"%@",[self currentGroupFilePathWithMFilePath:__FILE__]);
 
-    
-    [self requestWithDestination:@"Login" forViewModel:self completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+    [self requestWithDestination:Business_Login forViewModel:self completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         
         [self hidenNetWorkProgressHUD];
     }];
 }
+
+
+#pragma mark- Getter
+
+-(NSString *)userName
+{
+    if (_userName==nil) {
+        _userName = self.loginView.userNameTextFiled.text;
+    }
+    return _userName;
+}
+
+-(NSString *)password
+{
+    if (_password==nil) {
+        _password = self.loginView.passWordTextFiled.text;
+    }
+    return _userName;
+}
+
+#pragma mark- UI
+
 
 @end
