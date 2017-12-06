@@ -21,7 +21,7 @@
 {
     if (!_loginView) {
         _loginView = [[LoginView alloc]init];
-        _loginView.backgroundColor = [UIColor lightGrayColor];
+        _loginView.backgroundColor = [UIColor whiteColor];
         self.currentView = _loginView;
     }
 
@@ -32,6 +32,9 @@
     [_loginView.passWordTextFiled addTarget:self action:@selector(textFiledChanged:) forControlEvents:UIControlEventEditingChanged];
     
     [_loginView.loginButt addTarget:self action:@selector(loginButtAction:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [_loginView.cityButt addTarget:self action:@selector(cityButtAction:) forControlEvents:UIControlEventTouchUpInside];
+
     
     
 }
@@ -69,6 +72,14 @@
         self.login_bind(YES, self);
     }
 }
+
+-(void)cityButtAction:(UIButton*)sender
+{
+    if (self.citySelect_bind) {
+        self.citySelect_bind();
+    }
+}
+
 
 #pragma mark- NetWork
 -(void)userPassWordLoginRequest

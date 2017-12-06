@@ -12,6 +12,7 @@
 
 
 typedef void(^LoginViewModel_Login)(BOOL sucess, id viewModel);
+typedef void(^LoginViewModel_CitySelect)(void);
 
 
 @interface LoginViewModel : BaseViewModel
@@ -23,7 +24,10 @@ typedef void(^LoginViewModel_Login)(BOOL sucess, id viewModel);
 #pragma mark- inner
 @property (nonatomic,strong) LoginView * loginView;
 @property (nonatomic,copy) LoginViewModel_Login  login_bind;
+@property (nonatomic,copy) LoginViewModel_CitySelect  citySelect_bind;
 
+//登录
+-(void)userPassWordLoginRequest;
 
 
 @end

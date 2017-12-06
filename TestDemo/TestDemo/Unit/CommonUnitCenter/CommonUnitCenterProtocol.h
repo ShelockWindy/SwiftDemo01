@@ -31,6 +31,9 @@
 -(void)hidenNetWorkProgressHUDforView:(UIView*)view;
 -(void)hidenNetWorkProgressHUD;
 
-#pragma mark-
+#pragma mark-  MyTool
+
+//城市选择
+-(void)chooseCityFinishHandle:(void(^)(id cityViewModel))handle;
 
 @end

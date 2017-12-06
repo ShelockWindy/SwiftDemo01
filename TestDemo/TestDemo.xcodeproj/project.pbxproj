@@ -40,6 +40,10 @@
 		FFA029491FC5601D00F3B71D /* PageControllerCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA029481FC5601D00F3B71D /* PageControllerCenter.m */; };
 		FFEE48A01FD52DCB00C75354 /* BusinessConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = FFEE489F1FD52DCB00C75354 /* BusinessConstants.m */; };
 		FFEE48A31FD5344100C75354 /* CommonUnitCenter+ShowProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FFEE48A21FD5344100C75354 /* CommonUnitCenter+ShowProgressHUD.m */; };
+		FFEE48A61FD5376300C75354 /* CommonUnitCenter+MyTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FFEE48A51FD5376300C75354 /* CommonUnitCenter+MyTool.m */; };
+		FFEE48AD1FD53D0C00C75354 /* CityChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFEE48AC1FD53D0C00C75354 /* CityChooseView.m */; };
+		FFEE48B01FD53D5300C75354 /* CityViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFEE48AF1FD53D5300C75354 /* CityViewModel.m */; };
+		FFEE48B41FD53DF100C75354 /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FFEE48B31FD53DF100C75354 /* CityModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,10 +113,19 @@
 		FFA029471FC5601D00F3B71D /* PageControllerCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageControllerCenter.h; sourceTree = "<group>"; };
 		FFA029481FC5601D00F3B71D /* PageControllerCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageControllerCenter.m; sourceTree = "<group>"; };
 		FFA0294A1FC5707E00F3B71D /* PageControllerCenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageControllerCenterProtocol.h; sourceTree = "<group>"; };
+		FFE828651FD7C9A7007417C9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FFEE489E1FD52DCB00C75354 /* BusinessConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessConstants.h; sourceTree = "<group>"; };
 		FFEE489F1FD52DCB00C75354 /* BusinessConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessConstants.m; sourceTree = "<group>"; };
 		FFEE48A11FD5344100C75354 /* CommonUnitCenter+ShowProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CommonUnitCenter+ShowProgressHUD.h"; sourceTree = "<group>"; };
 		FFEE48A21FD5344100C75354 /* CommonUnitCenter+ShowProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CommonUnitCenter+ShowProgressHUD.m"; sourceTree = "<group>"; };
+		FFEE48A41FD5376300C75354 /* CommonUnitCenter+MyTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CommonUnitCenter+MyTool.h"; sourceTree = "<group>"; };
+		FFEE48A51FD5376300C75354 /* CommonUnitCenter+MyTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CommonUnitCenter+MyTool.m"; sourceTree = "<group>"; };
+		FFEE48AB1FD53D0C00C75354 /* CityChooseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityChooseView.h; sourceTree = "<group>"; };
+		FFEE48AC1FD53D0C00C75354 /* CityChooseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityChooseView.m; sourceTree = "<group>"; };
+		FFEE48AE1FD53D5300C75354 /* CityViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityViewModel.h; sourceTree = "<group>"; };
+		FFEE48AF1FD53D5300C75354 /* CityViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityViewModel.m; sourceTree = "<group>"; };
+		FFEE48B21FD53DF100C75354 /* CityModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityModel.h; sourceTree = "<group>"; };
+		FFEE48B31FD53DF100C75354 /* CityModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +160,7 @@
 		FF33C6D21FBC224300552A38 = {
 			isa = PBXGroup;
 			children = (
+				FFE828651FD7C9A7007417C9 /* README.md */,
 				FF33C6DD1FBC224300552A38 /* TestDemo */,
 				FF33C6DC1FBC224300552A38 /* Products */,
 				01AD6674F56E5B4179E22C94 /* Pods */,
@@ -247,6 +261,8 @@
 				FF56CB661FCBAC2C00A52EAD /* CommonUnitCenter.m */,
 				FFEE48A11FD5344100C75354 /* CommonUnitCenter+ShowProgressHUD.h */,
 				FFEE48A21FD5344100C75354 /* CommonUnitCenter+ShowProgressHUD.m */,
+				FFEE48A41FD5376300C75354 /* CommonUnitCenter+MyTool.h */,
+				FFEE48A51FD5376300C75354 /* CommonUnitCenter+MyTool.m */,
 				FF56CB681FCBAD9200A52EAD /* CommonUnitCenterProtocol.h */,
 			);
 			path = CommonUnitCenter;
@@ -264,6 +280,7 @@
 		FF5A6B451FBED3EE00D29C01 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				FFEE48A71FD53C0800C75354 /* Features */,
 				FF5A6B491FBED43200D29C01 /* BaseViewController */,
 				FFA0293B1FC5542900F3B71D /* SwitchViewController */,
 				FF5A6B461FBED3EE00D29C01 /* LoginAndRegister */,
@@ -287,7 +304,6 @@
 		FF5A6B471FBED3EE00D29C01 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				FF799E4E1FC2D9C600C86E40 /* Config */,
 				FF799E3B1FC2D89F00C86E40 /* BaseNetWork */,
 			);
 			path = Core;
@@ -403,15 +419,6 @@
 			path = Base64;
 			sourceTree = "<group>";
 		};
-		FF799E4E1FC2D9C600C86E40 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				FF799E4F1FC2D9E600C86E40 /* InfoConfig.h */,
-				FF799E521FC2DAA900C86E40 /* PrefixHeader.pch */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
 		FFA0293B1FC5542900F3B71D /* SwitchViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -446,10 +453,57 @@
 		FFEE489A1FD525A900C75354 /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				FF799E4F1FC2D9E600C86E40 /* InfoConfig.h */,
+				FF799E521FC2DAA900C86E40 /* PrefixHeader.pch */,
 				FFEE489E1FD52DCB00C75354 /* BusinessConstants.h */,
 				FFEE489F1FD52DCB00C75354 /* BusinessConstants.m */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		FFEE48A71FD53C0800C75354 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				FFEE48A81FD53C3D00C75354 /* CityChooseFeature */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		FFEE48A81FD53C3D00C75354 /* CityChooseFeature */ = {
+			isa = PBXGroup;
+			children = (
+				FFEE48A91FD53C9400C75354 /* CityChooseView */,
+				FFEE48AA1FD53C9400C75354 /* CityViewModel */,
+			);
+			path = CityChooseFeature;
+			sourceTree = "<group>";
+		};
+		FFEE48A91FD53C9400C75354 /* CityChooseView */ = {
+			isa = PBXGroup;
+			children = (
+				FFEE48B11FD53DDB00C75354 /* CityModel */,
+				FFEE48AB1FD53D0C00C75354 /* CityChooseView.h */,
+				FFEE48AC1FD53D0C00C75354 /* CityChooseView.m */,
+			);
+			path = CityChooseView;
+			sourceTree = "<group>";
+		};
+		FFEE48AA1FD53C9400C75354 /* CityViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FFEE48AE1FD53D5300C75354 /* CityViewModel.h */,
+				FFEE48AF1FD53D5300C75354 /* CityViewModel.m */,
+			);
+			path = CityViewModel;
+			sourceTree = "<group>";
+		};
+		FFEE48B11FD53DDB00C75354 /* CityModel */ = {
+			isa = PBXGroup;
+			children = (
+				FFEE48B21FD53DF100C75354 /* CityModel.h */,
+				FFEE48B31FD53DF100C75354 /* CityModel.m */,
+			);
+			path = CityModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -576,6 +630,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF33C6E31FBC224300552A38 /* ViewController.m in Sources */,
+				FFEE48B01FD53D5300C75354 /* CityViewModel.m in Sources */,
 				FFA0293E1FC554AE00F3B71D /* SwitchViewController.m in Sources */,
 				FF54BD2D1FC6C37D0031E838 /* MainPageViewController.m in Sources */,
 				FF5A6B5A1FBED68A00D29C01 /* BaseViewModel.m in Sources */,
@@ -583,17 +638,20 @@
 				FF799E421FC2D89F00C86E40 /* NSData+AES128.m in Sources */,
 				FF5A6B611FBED74D00D29C01 /* LoginModel.m in Sources */,
 				FF5A6B5D1FBED6CA00D29C01 /* BaseModel.m in Sources */,
+				FFEE48A61FD5376300C75354 /* CommonUnitCenter+MyTool.m in Sources */,
 				FF54BD291FC6B3F50031E838 /* CustomNavgationBar.m in Sources */,
 				FF799E551FC2DEF500C86E40 /* BaseNetWorkManager.m in Sources */,
 				FFEE48A01FD52DCB00C75354 /* BusinessConstants.m in Sources */,
 				FFA029441FC55F3B00F3B71D /* KeychainItemWrapper.m in Sources */,
 				FF799E4D1FC2D98900C86E40 /* Base64.m in Sources */,
 				FF5A6B4C1FBED45800D29C01 /* BaseViewController.m in Sources */,
+				FFEE48B41FD53DF100C75354 /* CityModel.m in Sources */,
 				FFA029491FC5601D00F3B71D /* PageControllerCenter.m in Sources */,
 				FF5A6B4F1FBED4B000D29C01 /* LoginViewController.m in Sources */,
 				FF56CB671FCBAC2C00A52EAD /* CommonUnitCenter.m in Sources */,
 				FF33C6EE1FBC224300552A38 /* main.m in Sources */,
 				FF5A6B441FBEB64800D29C01 /* CalulatorMaker.m in Sources */,
+				FFEE48AD1FD53D0C00C75354 /* CityChooseView.m in Sources */,
 				FF56CB561FC7F31300A52EAD /* NetWorkManagerCenter.m in Sources */,
 				FF56CB601FC8057500A52EAD /* MainPageViewModel.m in Sources */,
 				FF5A6B641FBED8F900D29C01 /* LoginView.m in Sources */,
@@ -740,7 +798,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4BETC4J6Y;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/TestDemo/Core/Config/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/TestDemo/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = TestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -758,7 +816,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H4BETC4J6Y;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/TestDemo/Core/Config/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/TestDemo/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = TestDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

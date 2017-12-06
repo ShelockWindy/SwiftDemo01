@@ -17,5 +17,6 @@
 @property (nonatomic,strong) UILabel * passwordLabel;
 @property (nonatomic,strong) UIButton * loginButt;
 @property (nonatomic,strong) UIButton * forgetButt;
+@property (nonatomic,strong) UIButton * cityButt;
 
 @end

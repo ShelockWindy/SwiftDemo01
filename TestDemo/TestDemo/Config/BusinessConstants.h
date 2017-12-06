@@ -13,5 +13,5 @@
 #define EXTERN extern
 #endif
 
-EXTERN NSString * const Business_Login;
-EXTERN NSString * const Business_Register;
+EXTERN NSString * const Business_Login;//登录
+EXTERN NSString * const Business_Register;//注册

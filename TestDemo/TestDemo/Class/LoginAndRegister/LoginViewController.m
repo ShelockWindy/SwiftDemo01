@@ -8,10 +8,12 @@
 
 #import "LoginViewController.h"
 #import "LoginViewModel.h"
+#import "CityViewModel.h"
 
 @interface LoginViewController ()
 
 @property (nonatomic,strong) LoginViewModel * loginViewModel;
+@property (nonatomic,strong) CityViewModel * cityViewModel;
 
 @end
 
@@ -21,10 +23,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self subViewLoad];
-    [self viewModelBind];
-    
-   
     
 }
 
@@ -60,6 +58,7 @@
 -(void)subViewLoad
 {
     self.loginViewModel.loginView.frame = self.view.bounds;
+    
 }
 
 -(void)viewModelBind
@@ -68,7 +67,21 @@
     self.loginViewModel.login_bind = ^(BOOL sucess, id viewModel) {
         
         [weakSelf pageTurnToViewControllerClass:@"SwitchViewController" fromCurrentViewController:weakSelf];
+        
     };
+    
+
+    self.loginViewModel.citySelect_bind = ^{
+        
+        [weakSelf.cityViewModel citySelectFinishHandle:^(CityModel *cityModel) {
+           
+            NSLog(@"已经完成城市选择！");
+            NSLog(@"cityName---%@",cityModel.cityName);
+            NSLog(@"cityId---%@",cityModel.cityCode);
+            
+        }];
+    };
+    
 }
 
 
@@ -91,7 +104,13 @@
     return _loginViewModel;
 }
 
-
+-(CityViewModel *)cityViewModel
+{
+    if (!_cityViewModel) {
+        _cityViewModel = [CityViewModel new];
+    }
+    return _cityViewModel;
+}
 
 
 

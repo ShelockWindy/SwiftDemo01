@@ -49,6 +49,13 @@
     }];
     
     
+    //城市选择
+    [self.cityButt mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.equalTo(@100);
+        make.height.equalTo(@50);
+        make.bottom.equalTo(self.mas_bottom).offset(-20);
+        make.centerX.equalTo(self);
+    }];
     
 }
 
@@ -123,6 +130,16 @@
     return _loginButt;
 }
 
-
+-(UIButton *)cityButt
+{
+    if (_cityButt == nil) {
+        _cityButt = [UIButton new];
+        [_cityButt setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_cityButt setTitle:@"城市选择" forState:UIControlStateNormal];
+        [self addSubview:_cityButt];
+    }
+    
+    return _cityButt;
+}
 
 @end
