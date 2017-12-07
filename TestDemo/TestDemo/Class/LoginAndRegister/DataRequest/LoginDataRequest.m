@@ -17,24 +17,16 @@
         NSString * userName = loginViewModel.userName;
         NSString * password = loginViewModel.password;
         
-        NSURL * url = [NSURL URLWithString:@"https://www.baidu.com"];
-        NSURLRequest * request = [NSURLRequest requestWithURL:url];
+    [self requestWithDestination:@"Login" paramDic:@{@"userName":userName,@"password":password} finishBlock:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+       
+        NSString * content  =  [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];;
+        NSLog(@"%@---%@",NSStringFromClass([viewModel class]),content);
         
-        NSURLSession * session = [NSURLSession sharedSession];
-        NSURLSessionDataTask * dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-            NSString * content  =  [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];;
-            NSLog(@"%@---%@",NSStringFromClass([viewModel class]),content);
-            
-            dispatch_async(dispatch_get_main_queue(), ^{
-                
-                if (completionHandler) {
-                    completionHandler(data,response,error);
-                }
-            });
-            
-        }];
+        if (completionHandler) {
+            completionHandler(data,response,error);
+        }
         
-        [dataTask resume];
+    }];
     
 }
 

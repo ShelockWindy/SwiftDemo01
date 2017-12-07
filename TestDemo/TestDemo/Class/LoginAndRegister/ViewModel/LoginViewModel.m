@@ -35,8 +35,6 @@
     
     [_loginView.cityButt addTarget:self action:@selector(cityButtAction:) forControlEvents:UIControlEventTouchUpInside];
 
-    
-    
 }
 
 
@@ -84,7 +82,7 @@
 #pragma mark- NetWork
 -(void)userPassWordLoginRequest
 {
-    [self showNetWorkProgressHUD];
+   [self showNetWorkProgressHUD];
     
     NSLog(@"%@",[self currentGroupFilePathWithMFilePath:__FILE__]);
 

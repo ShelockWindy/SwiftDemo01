@@ -12,6 +12,8 @@
 		FF2605F31FD8DEAA00FF3E17 /* SwitchPageTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2605F21FD8DEAA00FF3E17 /* SwitchPageTurn.m */; };
 		FF2605F71FD8ECB700FF3E17 /* MainPageTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2605F61FD8ECB700FF3E17 /* MainPageTurn.m */; };
 		FF2605FB1FD8F7F600FF3E17 /* LoginDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2605FA1FD8F7F600FF3E17 /* LoginDataRequest.m */; };
+		FF2606001FD90A7E00FF3E17 /* CustomNavgationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2605FE1FD90A7D00FF3E17 /* CustomNavgationBar.m */; };
+		FF2606031FD90AC100FF3E17 /* BaseRequestData.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2606021FD90AC100FF3E17 /* BaseRequestData.m */; };
 		FF33C6E01FBC224300552A38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33C6DF1FBC224300552A38 /* AppDelegate.m */; };
 		FF33C6E31FBC224300552A38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33C6E21FBC224300552A38 /* ViewController.m */; };
 		FF33C6E61FBC224300552A38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF33C6E41FBC224300552A38 /* Main.storyboard */; };
@@ -19,7 +21,6 @@
 		FF33C6EB1FBC224300552A38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF33C6E91FBC224300552A38 /* LaunchScreen.storyboard */; };
 		FF33C6EE1FBC224300552A38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33C6ED1FBC224300552A38 /* main.m */; };
 		FF33C6F51FBC227B00552A38 /* 44.png in Resources */ = {isa = PBXBuildFile; fileRef = FF33C6F41FBC227A00552A38 /* 44.png */; };
-		FF54BD291FC6B3F50031E838 /* CustomNavgationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FF54BD281FC6B3F50031E838 /* CustomNavgationBar.m */; };
 		FF54BD2D1FC6C37D0031E838 /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF54BD2C1FC6C37D0031E838 /* MainPageViewController.m */; };
 		FF56CB561FC7F31300A52EAD /* NetWorkManagerCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FF56CB551FC7F31300A52EAD /* NetWorkManagerCenter.m */; };
 		FF56CB5D1FC803A700A52EAD /* MainPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF56CB5C1FC803A700A52EAD /* MainPageView.m */; };
@@ -63,6 +64,10 @@
 		FF2605F61FD8ECB700FF3E17 /* MainPageTurn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPageTurn.m; sourceTree = "<group>"; };
 		FF2605F91FD8F7F600FF3E17 /* LoginDataRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginDataRequest.h; sourceTree = "<group>"; };
 		FF2605FA1FD8F7F600FF3E17 /* LoginDataRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginDataRequest.m; sourceTree = "<group>"; };
+		FF2605FE1FD90A7D00FF3E17 /* CustomNavgationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavgationBar.m; sourceTree = "<group>"; };
+		FF2605FF1FD90A7D00FF3E17 /* CustomNavgationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavgationBar.h; sourceTree = "<group>"; };
+		FF2606011FD90AC100FF3E17 /* BaseRequestData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRequestData.h; sourceTree = "<group>"; };
+		FF2606021FD90AC100FF3E17 /* BaseRequestData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseRequestData.m; sourceTree = "<group>"; };
 		FF33C6DB1FBC224300552A38 /* TestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF33C6DE1FBC224300552A38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FF33C6DF1FBC224300552A38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,8 +79,6 @@
 		FF33C6EC1FBC224300552A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF33C6ED1FBC224300552A38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FF33C6F41FBC227A00552A38 /* 44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 44.png; sourceTree = "<group>"; };
-		FF54BD271FC6B3F50031E838 /* CustomNavgationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavgationBar.h; sourceTree = "<group>"; };
-		FF54BD281FC6B3F50031E838 /* CustomNavgationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavgationBar.m; sourceTree = "<group>"; };
 		FF54BD2B1FC6C37D0031E838 /* MainPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainPageViewController.h; sourceTree = "<group>"; };
 		FF54BD2C1FC6C37D0031E838 /* MainPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPageViewController.m; sourceTree = "<group>"; };
 		FF56CB541FC7F31300A52EAD /* NetWorkManagerCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkManagerCenter.h; sourceTree = "<group>"; };
@@ -209,6 +212,24 @@
 			path = DataRequest;
 			sourceTree = "<group>";
 		};
+		FF2605FC1FD90A2A00FF3E17 /* BaseRequestData */ = {
+			isa = PBXGroup;
+			children = (
+				FF2606011FD90AC100FF3E17 /* BaseRequestData.h */,
+				FF2606021FD90AC100FF3E17 /* BaseRequestData.m */,
+			);
+			path = BaseRequestData;
+			sourceTree = "<group>";
+		};
+		FF2605FD1FD90A7D00FF3E17 /* UINavgationBar+Custom */ = {
+			isa = PBXGroup;
+			children = (
+				FF2605FF1FD90A7D00FF3E17 /* CustomNavgationBar.h */,
+				FF2605FE1FD90A7D00FF3E17 /* CustomNavgationBar.m */,
+			);
+			path = "UINavgationBar+Custom";
+			sourceTree = "<group>";
+		};
 		FF33C6D21FBC224300552A38 = {
 			isa = PBXGroup;
 			children = (
@@ -249,15 +270,6 @@
 				FF33C6ED1FBC224300552A38 /* main.m */,
 			);
 			path = TestDemo;
-			sourceTree = "<group>";
-		};
-		FF54BD201FC669790031E838 /* UINavgationBar+Custom */ = {
-			isa = PBXGroup;
-			children = (
-				FF54BD271FC6B3F50031E838 /* CustomNavgationBar.h */,
-				FF54BD281FC6B3F50031E838 /* CustomNavgationBar.m */,
-			);
-			path = "UINavgationBar+Custom";
 			sourceTree = "<group>";
 		};
 		FF54BD2A1FC6C3630031E838 /* MainPage */ = {
@@ -378,7 +390,7 @@
 		FF5A6B491FBED43200D29C01 /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
-				FF54BD201FC669790031E838 /* UINavgationBar+Custom */,
+				FF2605FC1FD90A2A00FF3E17 /* BaseRequestData */,
 				FF5A6B521FBED5F200D29C01 /* BaseModel */,
 				FF5A6B501FBED5F200D29C01 /* BaseView */,
 				FF5A6B511FBED5F200D29C01 /* BaseViewModel */,
@@ -539,6 +551,7 @@
 		FFE82A0E1FD7DA03007417C9 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				FF2605FD1FD90A7D00FF3E17 /* UINavgationBar+Custom */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -723,7 +736,6 @@
 				FF5A6B611FBED74D00D29C01 /* LoginModel.m in Sources */,
 				FF5A6B5D1FBED6CA00D29C01 /* BaseModel.m in Sources */,
 				FFEE48A61FD5376300C75354 /* CommonUnitCenter+MyTool.m in Sources */,
-				FF54BD291FC6B3F50031E838 /* CustomNavgationBar.m in Sources */,
 				FF799E551FC2DEF500C86E40 /* BaseNetWorkManager.m in Sources */,
 				FFA029441FC55F3B00F3B71D /* KeychainItemWrapper.m in Sources */,
 				FF799E4D1FC2D98900C86E40 /* Base64.m in Sources */,
@@ -738,6 +750,7 @@
 				FF2605F71FD8ECB700FF3E17 /* MainPageTurn.m in Sources */,
 				FFEE48AD1FD53D0C00C75354 /* CityChooseView.m in Sources */,
 				FF56CB561FC7F31300A52EAD /* NetWorkManagerCenter.m in Sources */,
+				FF2606031FD90AC100FF3E17 /* BaseRequestData.m in Sources */,
 				FF56CB601FC8057500A52EAD /* MainPageViewModel.m in Sources */,
 				FF5A6B641FBED8F900D29C01 /* LoginView.m in Sources */,
 				FF33C6E01FBC224300552A38 /* AppDelegate.m in Sources */,
@@ -748,6 +761,7 @@
 				FFE82A091FD7D9A7007417C9 /* BusinessConstants.m in Sources */,
 				FF2605FB1FD8F7F600FF3E17 /* LoginDataRequest.m in Sources */,
 				FFA029451FC55F3B00F3B71D /* KeychainUUID.m in Sources */,
+				FF2606001FD90A7E00FF3E17 /* CustomNavgationBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

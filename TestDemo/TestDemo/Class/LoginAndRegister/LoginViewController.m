@@ -66,7 +66,8 @@
     __weak typeof(self) weakSelf = self;
     self.loginViewModel.login_bind = ^(BOOL sucess, id viewModel) {
         
-        [weakSelf pageTurnToViewControllerClass:@"SwitchViewController" fromCurrentViewController:weakSelf];
+        __strong typeof(self)  strongSelf = weakSelf;
+        [strongSelf pageTurnToViewControllerClass:@"SwitchViewController" fromCurrentViewController:weakSelf];
         
     };
     
