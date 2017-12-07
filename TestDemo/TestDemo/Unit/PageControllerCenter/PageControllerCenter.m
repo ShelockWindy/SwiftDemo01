@@ -8,9 +8,8 @@
 
 #import "PageControllerCenter.h"
 #import <objc/runtime.h>
-#import "SwitchViewController.h"
-#import "LoginViewController.h"
-#import "MainPageViewController.h"
+#import "SwitchPageTurn.h"
+#import "MainPageTurn.h"
 
 @implementation PageControllerCenter
 
@@ -49,19 +48,7 @@
     
     if ([viewControllerClass isEqualToString:NSStringFromClass([SwitchViewController class])]) {
 #pragma mark-  SwitchViewController
-        SwitchViewController * switchVC = [[SwitchViewController alloc]init];
-
-        if ([NSStringFromClass([fromController class]) isEqualToString:NSStringFromClass([LoginViewController class])]) {
-            switchVC.view.backgroundColor = [UIColor redColor];
-            LoginViewController * loginVC = fromController;
-            switchVC.loginStyle = @"密码登录！！！";
-            [switchVC logLoginStyle];
-
-            return switchVC;
-            
-            
-        }
-        return nil;
+        return [[[SwitchPageTurn alloc]init] turnToSwitchPageFromVC:fromController];
     }
     else if ([viewControllerClass isEqualToString:NSStringFromClass([UIViewController class])])
     {
@@ -74,9 +61,7 @@
     else if ([viewControllerClass isEqualToString:NSStringFromClass([MainPageViewController class])])
     {
 #pragma mark-  MainPageViewController
-        MainPageViewController * viewController = [[MainPageViewController alloc]init];
-        viewController.view.backgroundColor = [UIColor brownColor];
-        return viewController;
+        return [[[MainPageTurn alloc]init]turnToMainPageFromVC:fromController];
         
     }
 

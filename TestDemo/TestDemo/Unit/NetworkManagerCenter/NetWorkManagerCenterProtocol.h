@@ -13,7 +13,7 @@
 /**
  具体的接口请求
  
- @param destination 接口的名字
+ @param destination  业务常量 如 BusinessLogin
  @param viewModel 负责调用接口的对象
  @param completionHandler 接口的回调
  
