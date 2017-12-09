@@ -16,6 +16,7 @@
 #import <CoreLocation/CoreLocation.h>
 #include "GoodBoy.cpp"
 #import "UIAlertController+AttibuteText.h"
+#import "TTViewController.h"
 
 @interface AppDelegate ()<CLLocationManagerDelegate>
 {
@@ -42,7 +43,7 @@
         
         self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
         self.window.backgroundColor = [UIColor whiteColor];
-        UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:[[SwitchViewController alloc] init]];
+        UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:[[TTViewController alloc] init]];
         
         self.window.rootViewController = nav;
         [self.window makeKeyAndVisible];

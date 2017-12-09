@@ -7,9 +7,8 @@
 //
 
 #import "BaseViewModel.h"
-#import "MBProgressHUD.h"
-#import "ProgressHUD.h"
 #import "NetWorkManagerCenter.h"
+#import "CommonUnitCenter.h"
 
 @implementation BaseViewModel
 
@@ -49,14 +48,14 @@
 -(void)showSuccessMessageWithContent:(NSString *)message
 {
     if (self.currentView) {
-        [ProgressHUD showSuccess:message Interaction:NO];
+        [[CommonUnitCenter shareCommon]showSuccessMessageWithContent:message];
     }
 }
 
 -(void)showFailMessageWithContent:(NSString *)message
 {
     if (self.currentView) {
-        [ProgressHUD showError:message Interaction:NO];
+        [[CommonUnitCenter shareCommon]showFailMessageWithContent:message];
     }
 }
 
@@ -64,31 +63,47 @@
 -(void)showSuccessMessageWithContent:(NSString *)message enable:(BOOL)enable
 {
     if (self.currentView) {
-        [ProgressHUD showSuccess:message Interaction:enable];
+        [[CommonUnitCenter shareCommon]showSuccessMessageWithContent:message enable:enable];
     }
 }
 
 -(void)showFailMessageWithContent:(NSString *)message enable:(BOOL)enable
 {
     if (self.currentView) {
-        [ProgressHUD showError:message Interaction:enable];
+        [[CommonUnitCenter shareCommon]showFailMessageWithContent:message enable:enable];
     }
 }
 
 
--(void)showNetWorkProgressHUD
+-(void)showNetWorkProgressHUD 
 {
     if (self.currentView) {
-        [MBProgressHUD showHUDAddedTo:self.currentView  animated:YES];
+        [[CommonUnitCenter shareCommon]showNetWorkProgressHUDforView:self.currentView];
     }
 }
 
 -(void)hidenNetWorkProgressHUD
 {
     if (self.currentView) {
-        [MBProgressHUD hideHUDForView:self.currentView animated:NO];
+        [[CommonUnitCenter shareCommon]hidenNetWorkProgressHUDforView:self.currentView];
     }
 }
+
+-(void)showNetWorkProgressHUDforView:(UIView*)view
+{
+    if (view) {
+        [[CommonUnitCenter shareCommon]showNetWorkProgressHUDforView:view];
+    }
+}
+
+-(void)hidenNetWorkProgressHUDforView:(UIView*)view
+{
+    if (view) {
+        [[CommonUnitCenter shareCommon]hidenNetWorkProgressHUDforView:view];
+    }
+}
+
+
 
 -(void)dealloc
 {

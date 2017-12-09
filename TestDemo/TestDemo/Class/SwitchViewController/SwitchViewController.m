@@ -66,6 +66,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)dealloc
+{
+    NSLog(@"SwitchViewController ---- 已经被释放了");
+}
 
 #pragma mark- Override
 

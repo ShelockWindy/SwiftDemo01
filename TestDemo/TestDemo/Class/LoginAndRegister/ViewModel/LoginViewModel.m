@@ -21,7 +21,7 @@
 {
     if (!_loginView) {
         _loginView = [[LoginView alloc]init];
-        _loginView.backgroundColor = [UIColor lightGrayColor];
+        _loginView.backgroundColor = [UIColor whiteColor];
         self.currentView = _loginView;
     }
 
@@ -33,7 +33,8 @@
     
     [_loginView.loginButt addTarget:self action:@selector(loginButtAction:) forControlEvents:UIControlEventTouchUpInside];
     
-    
+    [_loginView.cityButt addTarget:self action:@selector(cityButtAction:) forControlEvents:UIControlEventTouchUpInside];
+
 }
 
 
@@ -70,18 +71,47 @@
     }
 }
 
+-(void)cityButtAction:(UIButton*)sender
+{
+    if (self.citySelect_bind) {
+        self.citySelect_bind();
+    }
+}
+
+
 #pragma mark- NetWork
 -(void)userPassWordLoginRequest
 {
-    [self showNetWorkProgressHUD];
+   [self showNetWorkProgressHUD];
     
     NSLog(@"%@",[self currentGroupFilePathWithMFilePath:__FILE__]);
 
-    
-    [self requestWithDestination:@"Login" forViewModel:self completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+    [self requestWithDestination:Business_Login forViewModel:self completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         
         [self hidenNetWorkProgressHUD];
     }];
 }
+
+
+#pragma mark- Getter
+
+-(NSString *)userName
+{
+    if (_userName==nil) {
+        _userName = self.loginView.userNameTextFiled.text;
+    }
+    return _userName;
+}
+
+-(NSString *)password
+{
+    if (_password==nil) {
+        _password = self.loginView.passWordTextFiled.text;
+    }
+    return _userName;
+}
+
+#pragma mark- UI
+
 
 @end

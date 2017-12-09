@@ -9,8 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "NetWorkManagerCenterProtocol.h"
+#import "CommonUnitCenterProtocol.h"
+#import "BusinessConstants.h"
 
-@interface BaseViewModel : NSObject<NetWorkManagerCenterProtocol>
+@interface BaseViewModel : NSObject<NetWorkManagerCenterProtocol,CommonUnitCenterProtocol>
 
 @property (nonatomic,strong) UIView * currentView;//被绑定的viewController的界面
 
@@ -18,23 +20,12 @@
 //加载view
 -(void)loadView;
 
-//显示提示信息
--(void)showSuccessMessageWithContent:(NSString *)message;
--(void)showFailMessageWithContent:(NSString*)message;
-
 /**
- 显示网络加载进度
- 
- @param message 显示的文本
- @param enable 是否可操作界面，默认不可以
- */
--(void)showSuccessMessageWithContent:(NSString *)message  enable:(BOOL)enable;
--(void)showFailMessageWithContent:(NSString*)message enable:(BOOL)enable;
+ 获取当前model 的所在Group路径
 
-//显示网络请求进度
--(void)showNetWorkProgressHUD;
-//隐藏网络请求进度
--(void)hidenNetWorkProgressHUD;
+ @param path  __file__ 当前代码执行文件所在路径
+ @return Group路径
+ */
 -(NSString*)currentGroupFilePathWithMFilePath:(char[])path;
 
 @end
