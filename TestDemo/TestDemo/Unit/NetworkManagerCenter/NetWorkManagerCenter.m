@@ -7,8 +7,9 @@
 //
 
 #import "NetWorkManagerCenter.h"
+#import <objc/runtime.h>
+#import "BaseRequestData.h"
 #import "BusinessConstants.h"
-#import "LoginDataRequest.h"
 
 @implementation NetWorkManagerCenter
 
@@ -22,16 +23,38 @@
     return netWorkManagerCenter;
 }
 
+-(instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.requestDictionary = [NSMutableDictionary dictionary];
+    }
+    return self;
+}
+
+
+
 
 -(void)requestWithDestination:(NSString*)destination forViewModel:(id)viewModel  completionHandler:(void (^)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error))completionHandler
 {
-    //登录
-    if ([destination isEqualToString:Business_Login]) {
-        
-        [[[LoginDataRequest alloc]init]requestForViewModel:viewModel completionHandler:completionHandler];
-
-    }
     
+    NSString *  dataRequestName = [[[NetWorkManagerCenter shareInstance]requestDictionary]valueForKey:NSStringFromClass([viewModel class])];
+    
+    if (dataRequestName) {
+        
+        Class dataRequestClass = NSClassFromString(dataRequestName);
+        id dataRequestObj = [[dataRequestClass alloc]init];
+        if ([[dataRequestObj superclass]isEqual:[BaseRequestData class]]) {
+            
+            BaseRequestData * requestData = dataRequestObj;
+            
+            if ([requestData respondsToSelector:@selector(requestForViewModel:destination:completionHandler:)]) {
+                
+                [requestData requestForViewModel:viewModel destination:destination completionHandler:completionHandler];
+            }
+        }
+        
+    }
     
     
 }

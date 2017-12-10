@@ -12,6 +12,12 @@
 @interface NetWorkManagerCenter : NSObject <NetWorkManagerCenterProtocol>
 
 /**
+ 保存所有的网络请求
+ */
+@property (nonatomic,strong) NSMutableDictionary * requestDictionary;
+
+
+/**
  管理所有界面的接口调用
 
  @return NetWorkManagerCenter

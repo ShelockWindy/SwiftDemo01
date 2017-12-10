@@ -10,6 +10,12 @@
 
 @implementation BaseRequestData
 
+-(void)requestForViewModel:(id)viewModel destination:(NSString *)destination completionHandler:(void (^)(NSData * _Nullable, NSURLResponse * _Nullable, NSError * _Nullable))completionHandler
+{
+    
+}
+
+
 -(void)requestWithDestination:(NSString*)destination paramDic:(NSDictionary*)paramDic finishBlock:(RequstDataHandle)handle
 {
     self.destination = destination;

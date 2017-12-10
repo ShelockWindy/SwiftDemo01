@@ -11,22 +11,33 @@
 
 @implementation LoginDataRequest
 
--(void)requestForViewModel:(id)viewModel  completionHandler:(void (^)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error))completionHandler
++(void)load
+{
+    NSString * value = NSStringFromClass([self class]);
+    NSString * key =  NSStringFromClass([LoginViewModel class]);
+    [[[NetWorkManagerCenter shareInstance] requestDictionary] setValue:value forKey:key];
+}
+
+
+-(void)requestForViewModel:(id)viewModel destination:(NSString* _Nullable)destination completionHandler:(void (^)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error))completionHandler
 {
         LoginViewModel * loginViewModel = viewModel;
         NSString * userName = loginViewModel.userName;
         NSString * password = loginViewModel.password;
+    
+    if ([destination isEqualToString:Business_Login]) {
         
-    [self requestWithDestination:@"Login" paramDic:@{@"userName":userName,@"password":password} finishBlock:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-       
-        NSString * content  =  [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];;
-        NSLog(@"%@---%@",NSStringFromClass([viewModel class]),content);
-        
-        if (completionHandler) {
-            completionHandler(data,response,error);
-        }
-        
-    }];
+        [self requestWithDestination:@"Login" paramDic:@{@"userName":userName,@"password":password} finishBlock:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            
+            NSString * content  =  [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];;
+            NSLog(@"%@---%@",NSStringFromClass([viewModel class]),content);
+            
+            if (completionHandler) {
+                completionHandler(data,response,error);
+            }
+            
+        }];
+    }
     
 }
 

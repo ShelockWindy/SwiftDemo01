@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		531E072A1FDBAA4400EFBB48 /* CalulatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 531E07291FDBAA4300EFBB48 /* CalulatorMaker.m */; };
 		531E072E1FDD189300EFBB48 /* BasePageTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = 531E072D1FDD189300EFBB48 /* BasePageTurn.m */; };
+		531E073B1FDD20D200EFBB48 /* MainPageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 531E07311FDD20D200EFBB48 /* MainPageViewModel.m */; };
+		531E073C1FDD20D200EFBB48 /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 531E07331FDD20D200EFBB48 /* MainPageViewController.m */; };
+		531E073D1FDD20D200EFBB48 /* MainPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 531E07361FDD20D200EFBB48 /* MainPageView.m */; };
+		531E073E1FDD20D200EFBB48 /* MainPageTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = 531E07391FDD20D200EFBB48 /* MainPageTurn.m */; };
 		D512E60A7AFC07D1A450EDBC /* Pods_TestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8FA131A4B670CE90F0C0DD9 /* Pods_TestDemo.framework */; };
 		FF2605F01FD8DCD000FF3E17 /* LoginPageTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2605EF1FD8DCD000FF3E17 /* LoginPageTurn.m */; };
 		FF2605F31FD8DEAA00FF3E17 /* SwitchPageTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2605F21FD8DEAA00FF3E17 /* SwitchPageTurn.m */; };
-		FF2605F71FD8ECB700FF3E17 /* MainPageTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2605F61FD8ECB700FF3E17 /* MainPageTurn.m */; };
 		FF2605FB1FD8F7F600FF3E17 /* LoginDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2605FA1FD8F7F600FF3E17 /* LoginDataRequest.m */; };
 		FF2606031FD90AC100FF3E17 /* BaseRequestData.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2606021FD90AC100FF3E17 /* BaseRequestData.m */; };
 		FF33C6E01FBC224300552A38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33C6DF1FBC224300552A38 /* AppDelegate.m */; };
@@ -22,10 +25,7 @@
 		FF33C6EB1FBC224300552A38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF33C6E91FBC224300552A38 /* LaunchScreen.storyboard */; };
 		FF33C6EE1FBC224300552A38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33C6ED1FBC224300552A38 /* main.m */; };
 		FF33C6F51FBC227B00552A38 /* 44.png in Resources */ = {isa = PBXBuildFile; fileRef = FF33C6F41FBC227A00552A38 /* 44.png */; };
-		FF54BD2D1FC6C37D0031E838 /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF54BD2C1FC6C37D0031E838 /* MainPageViewController.m */; };
 		FF56CB561FC7F31300A52EAD /* NetWorkManagerCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FF56CB551FC7F31300A52EAD /* NetWorkManagerCenter.m */; };
-		FF56CB5D1FC803A700A52EAD /* MainPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF56CB5C1FC803A700A52EAD /* MainPageView.m */; };
-		FF56CB601FC8057500A52EAD /* MainPageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF56CB5F1FC8057500A52EAD /* MainPageViewModel.m */; };
 		FF56CB671FCBAC2C00A52EAD /* CommonUnitCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FF56CB661FCBAC2C00A52EAD /* CommonUnitCenter.m */; };
 		FF5A6B4C1FBED45800D29C01 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B4B1FBED45800D29C01 /* BaseViewController.m */; };
 		FF5A6B4F1FBED4B000D29C01 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B4E1FBED4B000D29C01 /* LoginViewController.m */; };
@@ -59,14 +59,20 @@
 		531E07291FDBAA4300EFBB48 /* CalulatorMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalulatorMaker.m; sourceTree = "<group>"; };
 		531E072C1FDD189300EFBB48 /* BasePageTurn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasePageTurn.h; sourceTree = "<group>"; };
 		531E072D1FDD189300EFBB48 /* BasePageTurn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasePageTurn.m; sourceTree = "<group>"; };
+		531E07311FDD20D200EFBB48 /* MainPageViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPageViewModel.m; sourceTree = "<group>"; };
+		531E07321FDD20D200EFBB48 /* MainPageViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPageViewModel.h; sourceTree = "<group>"; };
+		531E07331FDD20D200EFBB48 /* MainPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPageViewController.m; sourceTree = "<group>"; };
+		531E07351FDD20D200EFBB48 /* MainPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPageView.h; sourceTree = "<group>"; };
+		531E07361FDD20D200EFBB48 /* MainPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPageView.m; sourceTree = "<group>"; };
+		531E07371FDD20D200EFBB48 /* MainPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPageViewController.h; sourceTree = "<group>"; };
+		531E07391FDD20D200EFBB48 /* MainPageTurn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPageTurn.m; sourceTree = "<group>"; };
+		531E073A1FDD20D200EFBB48 /* MainPageTurn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPageTurn.h; sourceTree = "<group>"; };
 		98E49FFC51E532D7CD5D87A6 /* Pods-TestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestDemo/Pods-TestDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D8FA131A4B670CE90F0C0DD9 /* Pods_TestDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2605EE1FD8DCD000FF3E17 /* LoginPageTurn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginPageTurn.h; sourceTree = "<group>"; };
 		FF2605EF1FD8DCD000FF3E17 /* LoginPageTurn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginPageTurn.m; sourceTree = "<group>"; };
 		FF2605F11FD8DEAA00FF3E17 /* SwitchPageTurn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchPageTurn.h; sourceTree = "<group>"; };
 		FF2605F21FD8DEAA00FF3E17 /* SwitchPageTurn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchPageTurn.m; sourceTree = "<group>"; };
-		FF2605F51FD8ECB700FF3E17 /* MainPageTurn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainPageTurn.h; sourceTree = "<group>"; };
-		FF2605F61FD8ECB700FF3E17 /* MainPageTurn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPageTurn.m; sourceTree = "<group>"; };
 		FF2605F91FD8F7F600FF3E17 /* LoginDataRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginDataRequest.h; sourceTree = "<group>"; };
 		FF2605FA1FD8F7F600FF3E17 /* LoginDataRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginDataRequest.m; sourceTree = "<group>"; };
 		FF2606011FD90AC100FF3E17 /* BaseRequestData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRequestData.h; sourceTree = "<group>"; };
@@ -82,15 +88,9 @@
 		FF33C6EC1FBC224300552A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF33C6ED1FBC224300552A38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FF33C6F41FBC227A00552A38 /* 44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 44.png; sourceTree = "<group>"; };
-		FF54BD2B1FC6C37D0031E838 /* MainPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainPageViewController.h; sourceTree = "<group>"; };
-		FF54BD2C1FC6C37D0031E838 /* MainPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPageViewController.m; sourceTree = "<group>"; };
 		FF56CB541FC7F31300A52EAD /* NetWorkManagerCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkManagerCenter.h; sourceTree = "<group>"; };
 		FF56CB551FC7F31300A52EAD /* NetWorkManagerCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkManagerCenter.m; sourceTree = "<group>"; };
 		FF56CB571FC7FCE500A52EAD /* NetWorkManagerCenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkManagerCenterProtocol.h; sourceTree = "<group>"; };
-		FF56CB5B1FC803A700A52EAD /* MainPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainPageView.h; sourceTree = "<group>"; };
-		FF56CB5C1FC803A700A52EAD /* MainPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPageView.m; sourceTree = "<group>"; };
-		FF56CB5E1FC8057500A52EAD /* MainPageViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainPageViewModel.h; sourceTree = "<group>"; };
-		FF56CB5F1FC8057500A52EAD /* MainPageViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPageViewModel.m; sourceTree = "<group>"; };
 		FF56CB651FCBAC2C00A52EAD /* CommonUnitCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUnitCenter.h; sourceTree = "<group>"; };
 		FF56CB661FCBAC2C00A52EAD /* CommonUnitCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonUnitCenter.m; sourceTree = "<group>"; };
 		FF56CB681FCBAD9200A52EAD /* CommonUnitCenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUnitCenterProtocol.h; sourceTree = "<group>"; };
@@ -184,6 +184,45 @@
 			path = BasePageTurn;
 			sourceTree = "<group>";
 		};
+		531E072F1FDD20D200EFBB48 /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				531E07371FDD20D200EFBB48 /* MainPageViewController.h */,
+				531E07331FDD20D200EFBB48 /* MainPageViewController.m */,
+				531E07381FDD20D200EFBB48 /* PageTurn */,
+				531E07341FDD20D200EFBB48 /* View */,
+				531E07301FDD20D200EFBB48 /* ViewModel */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		531E07301FDD20D200EFBB48 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				531E07321FDD20D200EFBB48 /* MainPageViewModel.h */,
+				531E07311FDD20D200EFBB48 /* MainPageViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		531E07341FDD20D200EFBB48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				531E07351FDD20D200EFBB48 /* MainPageView.h */,
+				531E07361FDD20D200EFBB48 /* MainPageView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		531E07381FDD20D200EFBB48 /* PageTurn */ = {
+			isa = PBXGroup;
+			children = (
+				531E073A1FDD20D200EFBB48 /* MainPageTurn.h */,
+				531E07391FDD20D200EFBB48 /* MainPageTurn.m */,
+			);
+			path = PageTurn;
+			sourceTree = "<group>";
+		};
 		D9BBA903F9F39DDE41D7936B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,15 +246,6 @@
 			children = (
 				FF2605EE1FD8DCD000FF3E17 /* LoginPageTurn.h */,
 				FF2605EF1FD8DCD000FF3E17 /* LoginPageTurn.m */,
-			);
-			path = PageTurn;
-			sourceTree = "<group>";
-		};
-		FF2605F41FD8ECA700FF3E17 /* PageTurn */ = {
-			isa = PBXGroup;
-			children = (
-				FF2605F51FD8ECB700FF3E17 /* MainPageTurn.h */,
-				FF2605F61FD8ECB700FF3E17 /* MainPageTurn.m */,
 			);
 			path = PageTurn;
 			sourceTree = "<group>";
@@ -281,19 +311,6 @@
 			path = TestDemo;
 			sourceTree = "<group>";
 		};
-		FF54BD2A1FC6C3630031E838 /* MainPage */ = {
-			isa = PBXGroup;
-			children = (
-				FF2605F41FD8ECA700FF3E17 /* PageTurn */,
-				FF56CB581FC8035300A52EAD /* Model */,
-				FF56CB591FC8035300A52EAD /* View */,
-				FF56CB5A1FC8035300A52EAD /* ViewModel */,
-				FF54BD2B1FC6C37D0031E838 /* MainPageViewController.h */,
-				FF54BD2C1FC6C37D0031E838 /* MainPageViewController.m */,
-			);
-			path = MainPage;
-			sourceTree = "<group>";
-		};
 		FF56CB531FC7F2E500A52EAD /* NetworkManagerCenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,31 +319,6 @@
 				FF56CB571FC7FCE500A52EAD /* NetWorkManagerCenterProtocol.h */,
 			);
 			path = NetworkManagerCenter;
-			sourceTree = "<group>";
-		};
-		FF56CB581FC8035300A52EAD /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		FF56CB591FC8035300A52EAD /* View */ = {
-			isa = PBXGroup;
-			children = (
-				FF56CB5B1FC803A700A52EAD /* MainPageView.h */,
-				FF56CB5C1FC803A700A52EAD /* MainPageView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		FF56CB5A1FC8035300A52EAD /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				FF56CB5E1FC8057500A52EAD /* MainPageViewModel.h */,
-				FF56CB5F1FC8057500A52EAD /* MainPageViewModel.m */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FF56CB641FCBABFD00A52EAD /* CommonUnitCenter */ = {
@@ -357,7 +349,7 @@
 				FF5A6B491FBED43200D29C01 /* BaseViewController */,
 				FFA0293B1FC5542900F3B71D /* SwitchViewController */,
 				FF5A6B461FBED3EE00D29C01 /* LoginAndRegister */,
-				FF54BD2A1FC6C3630031E838 /* MainPage */,
+				531E072F1FDD20D200EFBB48 /* MainPage */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -726,7 +718,6 @@
 				FFEE48B01FD53D5300C75354 /* CityViewModel.m in Sources */,
 				FFE82A0F1FD7DA03007417C9 /* UITableView+UpdateFont.m in Sources */,
 				FFA0293E1FC554AE00F3B71D /* SwitchViewController.m in Sources */,
-				FF54BD2D1FC6C37D0031E838 /* MainPageViewController.m in Sources */,
 				FF2605F01FD8DCD000FF3E17 /* LoginPageTurn.m in Sources */,
 				FF5A6B5A1FBED68A00D29C01 /* BaseViewModel.m in Sources */,
 				FF5A6B671FBED92A00D29C01 /* LoginViewModel.m in Sources */,
@@ -736,6 +727,7 @@
 				FFEE48A61FD5376300C75354 /* CommonUnitCenter+MyTool.m in Sources */,
 				FF799E551FC2DEF500C86E40 /* BaseNetWorkManager.m in Sources */,
 				FFA029441FC55F3B00F3B71D /* KeychainItemWrapper.m in Sources */,
+				531E073B1FDD20D200EFBB48 /* MainPageViewModel.m in Sources */,
 				FF799E4D1FC2D98900C86E40 /* Base64.m in Sources */,
 				FF5A6B4C1FBED45800D29C01 /* BaseViewController.m in Sources */,
 				FFEE48B41FD53DF100C75354 /* CityModel.m in Sources */,
@@ -743,20 +735,20 @@
 				531E072E1FDD189300EFBB48 /* BasePageTurn.m in Sources */,
 				FF2605F31FD8DEAA00FF3E17 /* SwitchPageTurn.m in Sources */,
 				FF5A6B4F1FBED4B000D29C01 /* LoginViewController.m in Sources */,
+				531E073D1FDD20D200EFBB48 /* MainPageView.m in Sources */,
 				FF56CB671FCBAC2C00A52EAD /* CommonUnitCenter.m in Sources */,
 				FF33C6EE1FBC224300552A38 /* main.m in Sources */,
-				FF2605F71FD8ECB700FF3E17 /* MainPageTurn.m in Sources */,
 				FFEE48AD1FD53D0C00C75354 /* CityChooseView.m in Sources */,
 				FF56CB561FC7F31300A52EAD /* NetWorkManagerCenter.m in Sources */,
+				531E073E1FDD20D200EFBB48 /* MainPageTurn.m in Sources */,
 				FF2606031FD90AC100FF3E17 /* BaseRequestData.m in Sources */,
-				FF56CB601FC8057500A52EAD /* MainPageViewModel.m in Sources */,
 				FF5A6B641FBED8F900D29C01 /* LoginView.m in Sources */,
 				FF33C6E01FBC224300552A38 /* AppDelegate.m in Sources */,
 				FF799E411FC2D89F00C86E40 /* SecurityUtil.m in Sources */,
 				FF5A6B6A1FBEDB4F00D29C01 /* BaseView.m in Sources */,
 				FFEE48A31FD5344100C75354 /* CommonUnitCenter+ShowProgressHUD.m in Sources */,
-				FF56CB5D1FC803A700A52EAD /* MainPageView.m in Sources */,
 				531E072A1FDBAA4400EFBB48 /* CalulatorMaker.m in Sources */,
+				531E073C1FDD20D200EFBB48 /* MainPageViewController.m in Sources */,
 				FFE82A091FD7D9A7007417C9 /* BusinessConstants.m in Sources */,
 				FF2605FB1FD8F7F600FF3E17 /* LoginDataRequest.m in Sources */,
 				FFA029451FC55F3B00F3B71D /* KeychainUUID.m in Sources */,

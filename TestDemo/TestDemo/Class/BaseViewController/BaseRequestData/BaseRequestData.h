@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NetWorkManagerCenter.h"
 
 typedef void(^RequstDataHandle)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error);
 
@@ -29,6 +30,9 @@ typedef void(^RequstDataHandle)(NSData * _Nullable data, NSURLResponse * _Nullab
 
 
 -(void)requestWithDestination:(NSString*_Nullable)destination paramDic:(NSDictionary*_Nonnull)paramDic finishBlock:(RequstDataHandle _Nullable )handle;
+
+-(void)requestForViewModel:(id)viewModel destination:(NSString* _Nullable)destination  completionHandler:(void (^_Nullable)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error))completionHandler;
+
 
 
 @end
