@@ -8,9 +8,7 @@
 
 #import "PageControllerCenter.h"
 #import <objc/runtime.h>
-#import "SwitchViewController.h"
-#import "LoginViewController.h"
-#import "MainPageViewController.h"
+#import "BasePageTurn.h"
 
 @implementation PageControllerCenter
 
@@ -24,6 +22,17 @@
     });
     return pageControllerCenter;
 }
+
+
+-(instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.pageDictionary = [NSMutableDictionary dictionary];
+    }
+    return self;
+}
+
 
 -(void)pageTurnToViewControllerClass:(NSString *)viewControllerClass fromCurrentViewController:(id)currentVC
 {
@@ -46,38 +55,18 @@
 
 -(UIViewController*)getParamWithOrignViewControllerWithClass:(NSString*)viewControllerClass fromController:(id)fromController
 {
-    
-    if ([viewControllerClass isEqualToString:NSStringFromClass([SwitchViewController class])]) {
-#pragma mark-  SwitchViewController
-        SwitchViewController * switchVC = [[SwitchViewController alloc]init];
-
-        if ([NSStringFromClass([fromController class]) isEqualToString:NSStringFromClass([LoginViewController class])]) {
-            switchVC.view.backgroundColor = [UIColor redColor];
-            LoginViewController * loginVC = fromController;
-            switchVC.loginStyle = @"短信登录！！！";
-            [switchVC logLoginStyle];
-
-            return switchVC;
-            
-            
-        }
-        return nil;
-    }
-    else if ([viewControllerClass isEqualToString:NSStringFromClass([UIViewController class])])
-    {
-#pragma mark-  UIViewController
-        UIViewController * viewController = [[UIViewController alloc]init];
-        viewController.view.backgroundColor = [UIColor brownColor];
-        return viewController;
-    
-    }
-    else if ([viewControllerClass isEqualToString:NSStringFromClass([MainPageViewController class])])
-    {
-#pragma mark-  MainPageViewController
-        MainPageViewController * viewController = [[MainPageViewController alloc]init];
-        viewController.view.backgroundColor = [UIColor brownColor];
-        return viewController;
+    NSString * pageTurnClassName = [self.pageDictionary valueForKey:viewControllerClass];
+    if (pageTurnClassName) {
         
+        Class  pageTurnClass = NSClassFromString(pageTurnClassName);
+        id  pageTurnObj  = [[pageTurnClass alloc]init];
+        if ([[pageTurnObj superclass]isEqual:[BasePageTurn class]]) {
+            BasePageTurn * pageTurn  = [[pageTurnClass alloc]init];
+            if ([pageTurn respondsToSelector:@selector(pageTurnFromVC:)]) {
+                return   [pageTurn pageTurnFromVC:fromController];
+            }
+        }
+       
     }
 
     return nil;
@@ -87,19 +76,7 @@
 
 -(UIViewController*)getOrignViewControllerWithClass:(NSString*)viewControllerClass withParamDic:(NSDictionary*)paramDic
 {
-    if ([viewControllerClass isEqualToString:NSStringFromClass([SwitchViewController class])]) {
-        
    
-    }else if ([viewControllerClass isEqualToString:NSStringFromClass([UIViewController class])])
-    {
-      
-        
-    }
-    else
-    {
-       //待扩展运行时获取视图控制器
-        
-    }
     
     return nil;
 }

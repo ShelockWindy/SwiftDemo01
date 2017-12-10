@@ -7,7 +7,6 @@
 //
 
 #import "SwitchViewController.h"
-#import "CustomNavgationBar.h"
 #import "PageControllerCenter.h"
 
 @interface SwitchViewController ()
@@ -32,20 +31,20 @@
 {
     [super viewWillAppear:animated];
     self.navigationController.hidesBottomBarWhenPushed = YES;
-    CustomNavgationBar * customNavBar = [[CustomNavgationBar alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
-    [self.navigationController setNavigationBarHidden:YES animated:NO];
-    
-    [self.view addSubview:customNavBar];
-    
-    UIBarButtonItem * backItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(backAction:)];
-    UINavigationItem * navgationItem = [[UINavigationItem alloc] initWithTitle:self.title];
-    [navgationItem setLeftBarButtonItem:backItem];
-    [customNavBar pushNavigationItem:navgationItem animated:YES];
-    
-    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
-    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
-        self.navigationController.interactivePopGestureRecognizer.delegate = nil;
-    }
+//    CustomNavgationBar * customNavBar = [[CustomNavgationBar alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
+//    [self.navigationController setNavigationBarHidden:YES animated:NO];
+//
+//    [self.view addSubview:customNavBar];
+//
+//    UIBarButtonItem * backItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(backAction:)];
+//    UINavigationItem * navgationItem = [[UINavigationItem alloc] initWithTitle:self.title];
+//    [navgationItem setLeftBarButtonItem:backItem];
+//    [customNavBar pushNavigationItem:navgationItem animated:YES];
+//
+//    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+//    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+//        self.navigationController.interactivePopGestureRecognizer.delegate = nil;
+//    }
     
 }
 

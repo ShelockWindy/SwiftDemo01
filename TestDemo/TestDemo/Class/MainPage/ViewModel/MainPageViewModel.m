@@ -15,6 +15,7 @@
 {
     if (!_mainPageView) {
         _mainPageView = [[MainPageView alloc]init];
+        _mainPageView.backgroundColor = [UIColor whiteColor];
         self.currentView = _mainPageView;
     }
 }

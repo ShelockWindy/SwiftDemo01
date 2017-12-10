@@ -8,16 +8,24 @@
 
 #import "SwitchPageTurn.h"
 #import "LoginViewController.h"
+#import "SwitchViewController.h"
 
 @implementation SwitchPageTurn
 
--(UIViewController*)turnToSwitchPageFromVC:(UIViewController *)fromVC
++(void)load
+{
+    NSString * value = NSStringFromClass([self class]);
+    NSString * key = NSStringFromClass([SwitchViewController class]);
+    [[[PageControllerCenter shareInstance]pageDictionary]setValue:value forKey:key];
+}
+
+
+-(UIViewController*)pageTurnFromVC:(UIViewController *)fromVC
 {
     SwitchViewController * switchVC = [[SwitchViewController alloc]init];
     
     if ([fromVC isKindOfClass:[LoginViewController class]]) {
         LoginViewController * loginVC = (LoginViewController*)fromVC;
-        loginVC.backgroundColor = [UIColor orangeColor];
         switchVC.view.backgroundColor = [UIColor redColor];
         switchVC.loginStyle = @"密码登录！！！";
         [switchVC logLoginStyle];

@@ -8,10 +8,19 @@
 
 #import "MainPageTurn.h"
 #import "LoginViewController.h"
+#import "MainPageViewController.h"
 
 @implementation MainPageTurn
 
--(UIViewController*)turnToMainPageFromVC:(UIViewController *)fromVC
++(void)load
+{
+    NSString * value = NSStringFromClass([self class]);
+    NSString * key =  NSStringFromClass([MainPageViewController class]);
+    [[[PageControllerCenter shareInstance]pageDictionary]setValue:value forKey:key];
+}
+
+
+-(UIViewController *)pageTurnFromVC:(UIViewController *)fromVC
 {
     MainPageViewController * viewController = [[MainPageViewController alloc]init];
     if ([fromVC isKindOfClass:[LoginViewController class]]) {

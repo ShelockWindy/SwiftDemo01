@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		531E072A1FDBAA4400EFBB48 /* CalulatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 531E07291FDBAA4300EFBB48 /* CalulatorMaker.m */; };
+		531E072E1FDD189300EFBB48 /* BasePageTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = 531E072D1FDD189300EFBB48 /* BasePageTurn.m */; };
 		D512E60A7AFC07D1A450EDBC /* Pods_TestDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8FA131A4B670CE90F0C0DD9 /* Pods_TestDemo.framework */; };
 		FF2605F01FD8DCD000FF3E17 /* LoginPageTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2605EF1FD8DCD000FF3E17 /* LoginPageTurn.m */; };
 		FF2605F31FD8DEAA00FF3E17 /* SwitchPageTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2605F21FD8DEAA00FF3E17 /* SwitchPageTurn.m */; };
 		FF2605F71FD8ECB700FF3E17 /* MainPageTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2605F61FD8ECB700FF3E17 /* MainPageTurn.m */; };
 		FF2605FB1FD8F7F600FF3E17 /* LoginDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2605FA1FD8F7F600FF3E17 /* LoginDataRequest.m */; };
-		FF2606001FD90A7E00FF3E17 /* CustomNavgationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2605FE1FD90A7D00FF3E17 /* CustomNavgationBar.m */; };
 		FF2606031FD90AC100FF3E17 /* BaseRequestData.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2606021FD90AC100FF3E17 /* BaseRequestData.m */; };
 		FF33C6E01FBC224300552A38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33C6DF1FBC224300552A38 /* AppDelegate.m */; };
 		FF33C6E31FBC224300552A38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33C6E21FBC224300552A38 /* ViewController.m */; };
@@ -26,7 +27,6 @@
 		FF56CB5D1FC803A700A52EAD /* MainPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF56CB5C1FC803A700A52EAD /* MainPageView.m */; };
 		FF56CB601FC8057500A52EAD /* MainPageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF56CB5F1FC8057500A52EAD /* MainPageViewModel.m */; };
 		FF56CB671FCBAC2C00A52EAD /* CommonUnitCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FF56CB661FCBAC2C00A52EAD /* CommonUnitCenter.m */; };
-		FF5A6B441FBEB64800D29C01 /* CalulatorMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B431FBEB64800D29C01 /* CalulatorMaker.m */; };
 		FF5A6B4C1FBED45800D29C01 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B4B1FBED45800D29C01 /* BaseViewController.m */; };
 		FF5A6B4F1FBED4B000D29C01 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B4E1FBED4B000D29C01 /* LoginViewController.m */; };
 		FF5A6B5A1FBED68A00D29C01 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B591FBED68A00D29C01 /* BaseViewModel.m */; };
@@ -54,6 +54,11 @@
 
 /* Begin PBXFileReference section */
 		505609D8810E45C423AAF14E /* Pods-TestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestDemo/Pods-TestDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		531E07261FDBA84D00EFBB48 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		531E07281FDBAA4300EFBB48 /* CalulatorMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalulatorMaker.h; sourceTree = "<group>"; };
+		531E07291FDBAA4300EFBB48 /* CalulatorMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalulatorMaker.m; sourceTree = "<group>"; };
+		531E072C1FDD189300EFBB48 /* BasePageTurn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasePageTurn.h; sourceTree = "<group>"; };
+		531E072D1FDD189300EFBB48 /* BasePageTurn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasePageTurn.m; sourceTree = "<group>"; };
 		98E49FFC51E532D7CD5D87A6 /* Pods-TestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestDemo/Pods-TestDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D8FA131A4B670CE90F0C0DD9 /* Pods_TestDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2605EE1FD8DCD000FF3E17 /* LoginPageTurn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginPageTurn.h; sourceTree = "<group>"; };
@@ -64,8 +69,6 @@
 		FF2605F61FD8ECB700FF3E17 /* MainPageTurn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPageTurn.m; sourceTree = "<group>"; };
 		FF2605F91FD8F7F600FF3E17 /* LoginDataRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginDataRequest.h; sourceTree = "<group>"; };
 		FF2605FA1FD8F7F600FF3E17 /* LoginDataRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginDataRequest.m; sourceTree = "<group>"; };
-		FF2605FE1FD90A7D00FF3E17 /* CustomNavgationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavgationBar.m; sourceTree = "<group>"; };
-		FF2605FF1FD90A7D00FF3E17 /* CustomNavgationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavgationBar.h; sourceTree = "<group>"; };
 		FF2606011FD90AC100FF3E17 /* BaseRequestData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRequestData.h; sourceTree = "<group>"; };
 		FF2606021FD90AC100FF3E17 /* BaseRequestData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseRequestData.m; sourceTree = "<group>"; };
 		FF33C6DB1FBC224300552A38 /* TestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,8 +94,6 @@
 		FF56CB651FCBAC2C00A52EAD /* CommonUnitCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUnitCenter.h; sourceTree = "<group>"; };
 		FF56CB661FCBAC2C00A52EAD /* CommonUnitCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonUnitCenter.m; sourceTree = "<group>"; };
 		FF56CB681FCBAD9200A52EAD /* CommonUnitCenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUnitCenterProtocol.h; sourceTree = "<group>"; };
-		FF5A6B421FBEB64800D29C01 /* CalulatorMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalulatorMaker.h; sourceTree = "<group>"; };
-		FF5A6B431FBEB64800D29C01 /* CalulatorMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalulatorMaker.m; sourceTree = "<group>"; };
 		FF5A6B4A1FBED45800D29C01 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		FF5A6B4B1FBED45800D29C01 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		FF5A6B4D1FBED4B000D29C01 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -129,9 +130,7 @@
 		FFA0294A1FC5707E00F3B71D /* PageControllerCenterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageControllerCenterProtocol.h; sourceTree = "<group>"; };
 		FFE828651FD7C9A7007417C9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FFE82A051FD7D9A6007417C9 /* BusinessConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessConstants.h; sourceTree = "<group>"; };
-		FFE82A061FD7D9A6007417C9 /* InfoConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoConfig.h; sourceTree = "<group>"; };
 		FFE82A071FD7D9A6007417C9 /* BusinessConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessConstants.m; sourceTree = "<group>"; };
-		FFE82A081FD7D9A6007417C9 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FFE82A0C1FD7DA03007417C9 /* UITableView+UpdateFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+UpdateFont.h"; sourceTree = "<group>"; };
 		FFE82A0D1FD7DA03007417C9 /* UITableView+UpdateFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+UpdateFont.m"; sourceTree = "<group>"; };
 		FFEE48A11FD5344100C75354 /* CommonUnitCenter+ShowProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CommonUnitCenter+ShowProgressHUD.h"; sourceTree = "<group>"; };
@@ -165,6 +164,24 @@
 				98E49FFC51E532D7CD5D87A6 /* Pods-TestDemo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		531E07271FDBAA4300EFBB48 /* 函数式编程 */ = {
+			isa = PBXGroup;
+			children = (
+				531E07281FDBAA4300EFBB48 /* CalulatorMaker.h */,
+				531E07291FDBAA4300EFBB48 /* CalulatorMaker.m */,
+			);
+			path = "函数式编程";
+			sourceTree = "<group>";
+		};
+		531E072B1FDD185E00EFBB48 /* BasePageTurn */ = {
+			isa = PBXGroup;
+			children = (
+				531E072C1FDD189300EFBB48 /* BasePageTurn.h */,
+				531E072D1FDD189300EFBB48 /* BasePageTurn.m */,
+			);
+			path = BasePageTurn;
 			sourceTree = "<group>";
 		};
 		D9BBA903F9F39DDE41D7936B /* Frameworks */ = {
@@ -221,15 +238,6 @@
 			path = BaseRequestData;
 			sourceTree = "<group>";
 		};
-		FF2605FD1FD90A7D00FF3E17 /* UINavgationBar+Custom */ = {
-			isa = PBXGroup;
-			children = (
-				FF2605FF1FD90A7D00FF3E17 /* CustomNavgationBar.h */,
-				FF2605FE1FD90A7D00FF3E17 /* CustomNavgationBar.m */,
-			);
-			path = "UINavgationBar+Custom";
-			sourceTree = "<group>";
-		};
 		FF33C6D21FBC224300552A38 = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +260,7 @@
 		FF33C6DD1FBC224300552A38 /* TestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				531E07271FDBAA4300EFBB48 /* 函数式编程 */,
 				FFE82A0A1FD7DA03007417C9 /* Foundation */,
 				FFE82A041FD7D9A6007417C9 /* Config */,
 				FF5A6B451FBED3EE00D29C01 /* Class */,
@@ -325,10 +334,10 @@
 			children = (
 				FF56CB651FCBAC2C00A52EAD /* CommonUnitCenter.h */,
 				FF56CB661FCBAC2C00A52EAD /* CommonUnitCenter.m */,
-				FFEE48A11FD5344100C75354 /* CommonUnitCenter+ShowProgressHUD.h */,
-				FFEE48A21FD5344100C75354 /* CommonUnitCenter+ShowProgressHUD.m */,
 				FFEE48A41FD5376300C75354 /* CommonUnitCenter+MyTool.h */,
 				FFEE48A51FD5376300C75354 /* CommonUnitCenter+MyTool.m */,
+				FFEE48A11FD5344100C75354 /* CommonUnitCenter+ShowProgressHUD.h */,
+				FFEE48A21FD5344100C75354 /* CommonUnitCenter+ShowProgressHUD.m */,
 				FF56CB681FCBAD9200A52EAD /* CommonUnitCenterProtocol.h */,
 			);
 			path = CommonUnitCenter;
@@ -337,8 +346,6 @@
 		FF5A6B3E1FBE851B00D29C01 /* resource */ = {
 			isa = PBXGroup;
 			children = (
-				FF5A6B421FBEB64800D29C01 /* CalulatorMaker.h */,
-				FF5A6B431FBEB64800D29C01 /* CalulatorMaker.m */,
 			);
 			path = resource;
 			sourceTree = "<group>";
@@ -390,6 +397,7 @@
 		FF5A6B491FBED43200D29C01 /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
+				531E072B1FDD185E00EFBB48 /* BasePageTurn */,
 				FF2605FC1FD90A2A00FF3E17 /* BaseRequestData */,
 				FF5A6B521FBED5F200D29C01 /* BaseModel */,
 				FF5A6B501FBED5F200D29C01 /* BaseView */,
@@ -522,8 +530,7 @@
 		FFE82A041FD7D9A6007417C9 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				FFE82A081FD7D9A6007417C9 /* PrefixHeader.pch */,
-				FFE82A061FD7D9A6007417C9 /* InfoConfig.h */,
+				531E07261FDBA84D00EFBB48 /* PrefixHeader.pch */,
 				FFE82A051FD7D9A6007417C9 /* BusinessConstants.h */,
 				FFE82A071FD7D9A6007417C9 /* BusinessConstants.m */,
 			);
@@ -534,7 +541,6 @@
 			isa = PBXGroup;
 			children = (
 				FFE82A0B1FD7DA03007417C9 /* Category */,
-				FFE82A0E1FD7DA03007417C9 /* Custom */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -546,14 +552,6 @@
 				FFE82A0D1FD7DA03007417C9 /* UITableView+UpdateFont.m */,
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		FFE82A0E1FD7DA03007417C9 /* Custom */ = {
-			isa = PBXGroup;
-			children = (
-				FF2605FD1FD90A7D00FF3E17 /* UINavgationBar+Custom */,
-			);
-			path = Custom;
 			sourceTree = "<group>";
 		};
 		FFEE48A71FD53C0800C75354 /* Features */ = {
@@ -742,11 +740,11 @@
 				FF5A6B4C1FBED45800D29C01 /* BaseViewController.m in Sources */,
 				FFEE48B41FD53DF100C75354 /* CityModel.m in Sources */,
 				FFA029491FC5601D00F3B71D /* PageControllerCenter.m in Sources */,
+				531E072E1FDD189300EFBB48 /* BasePageTurn.m in Sources */,
 				FF2605F31FD8DEAA00FF3E17 /* SwitchPageTurn.m in Sources */,
 				FF5A6B4F1FBED4B000D29C01 /* LoginViewController.m in Sources */,
 				FF56CB671FCBAC2C00A52EAD /* CommonUnitCenter.m in Sources */,
 				FF33C6EE1FBC224300552A38 /* main.m in Sources */,
-				FF5A6B441FBEB64800D29C01 /* CalulatorMaker.m in Sources */,
 				FF2605F71FD8ECB700FF3E17 /* MainPageTurn.m in Sources */,
 				FFEE48AD1FD53D0C00C75354 /* CityChooseView.m in Sources */,
 				FF56CB561FC7F31300A52EAD /* NetWorkManagerCenter.m in Sources */,
@@ -758,10 +756,10 @@
 				FF5A6B6A1FBEDB4F00D29C01 /* BaseView.m in Sources */,
 				FFEE48A31FD5344100C75354 /* CommonUnitCenter+ShowProgressHUD.m in Sources */,
 				FF56CB5D1FC803A700A52EAD /* MainPageView.m in Sources */,
+				531E072A1FDBAA4400EFBB48 /* CalulatorMaker.m in Sources */,
 				FFE82A091FD7D9A7007417C9 /* BusinessConstants.m in Sources */,
 				FF2605FB1FD8F7F600FF3E17 /* LoginDataRequest.m in Sources */,
 				FFA029451FC55F3B00F3B71D /* KeychainUUID.m in Sources */,
-				FF2606001FD90A7E00FF3E17 /* CustomNavgationBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

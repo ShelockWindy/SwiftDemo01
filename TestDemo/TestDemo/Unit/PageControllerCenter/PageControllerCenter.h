@@ -13,6 +13,11 @@
 
 
 /**
+ 保存所有跳转界面
+ */
+@property (nonatomic,strong) NSMutableDictionary * pageDictionary;
+
+/**
  界面跳转中心单例
 
  @return PageControllerCenter

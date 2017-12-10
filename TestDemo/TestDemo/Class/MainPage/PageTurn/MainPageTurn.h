@@ -7,10 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MainPageViewController.h"
+#import "BasePageTurn.h"
 
-@interface MainPageTurn : NSObject
-
--(UIViewController*)turnToMainPageFromVC:(UIViewController*)fromVC;
+@interface MainPageTurn : BasePageTurn
 
 @end

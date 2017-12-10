@@ -10,9 +10,8 @@
 
 @implementation LoginPageTurn
 
--(void)turnToLoginPage:(UIViewController*)vc
+-(void)turnToLoginPage
 {
-    [[[UIApplication sharedApplication]keyWindow]setRootViewController:vc];
 }
 
 @end

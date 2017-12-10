@@ -37,7 +37,7 @@
 -(void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear:animated];
-//    self.navigationController.navigationBarHidden = NO;
+    self.navigationController.navigationBarHidden = NO;
 
 }
 
@@ -79,6 +79,8 @@
             NSLog(@"已经完成城市选择！");
             NSLog(@"cityName---%@",cityModel.cityName);
             NSLog(@"cityId---%@",cityModel.cityCode);
+            
+            weakSelf.loginViewModel.loginView.userNameTextFiled.text = @"15137133490";
             
         }];
     };

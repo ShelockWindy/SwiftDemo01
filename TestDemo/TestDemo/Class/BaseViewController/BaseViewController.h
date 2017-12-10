@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PageControllerCenterProtocol.h"
-#import "CustomNavgationBar.h"
+//#import "CustomNavgationBar.h"
 
 /* 导航条样式 分两种，解决不同界面的导航条设置后互相影响 */
 typedef NS_ENUM(NSInteger,UIBaseViewControllerNavgationBarStyle) {
@@ -22,7 +22,7 @@ typedef NS_ENUM(NSInteger,UIBaseViewControllerNavgationBarStyle) {
 @property (nonatomic,strong) UIView * backItem; //有默认样式
 @property (nonatomic,strong) UIView * rightItem; //默认无
 
-@property (nonatomic,strong) CustomNavgationBar * my_NavgationBar;//自定义导航条
+@property (nonatomic,strong) UINavigationBar * my_NavgationBar;//自定义导航条
 @property (nonatomic,strong) UINavigationItem * my_NavgationItem;//自定义导航条按钮
 
 /**

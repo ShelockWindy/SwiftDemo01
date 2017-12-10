@@ -7,10 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SwitchViewController.h"
+#import "BasePageTurn.h"
 
-@interface SwitchPageTurn : NSObject
-
--(UIViewController*)turnToSwitchPageFromVC:(UIViewController *)fromVC;
+@interface SwitchPageTurn : BasePageTurn
 
 @end

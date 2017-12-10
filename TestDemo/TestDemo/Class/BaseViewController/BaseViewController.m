@@ -165,10 +165,10 @@
 }
 
 
--(CustomNavgationBar *)my_NavgationBar
+-(UINavigationBar *)my_NavgationBar
 {
     if (!_my_NavgationBar) {
-        _my_NavgationBar = [[CustomNavgationBar alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
+        _my_NavgationBar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64)];
         _my_NavgationBar.translucent = NO;
     }
     
