@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "LoginViewController.h"
+#import "DPNormalObject.h"
+#import "DPDynamicProxy.h"
 
 @interface AppDelegate ()
 

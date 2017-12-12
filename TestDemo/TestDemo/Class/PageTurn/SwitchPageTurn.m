@@ -17,7 +17,6 @@
     
     if ([fromVC isKindOfClass:[LoginViewController class]]) {
         LoginViewController * loginVC = (LoginViewController*)fromVC;
-        loginVC.backgroundColor = [UIColor orangeColor];
         switchVC.view.backgroundColor = [UIColor redColor];
         switchVC.loginStyle = @"密码登录！！！";
         [switchVC logLoginStyle];

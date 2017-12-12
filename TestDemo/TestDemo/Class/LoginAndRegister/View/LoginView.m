@@ -8,7 +8,6 @@
 
 #import "LoginView.h"
 
-
 @implementation LoginView
 
 -(void)addSubViews
@@ -65,7 +64,7 @@
 {
     if (_userNameLabel==nil) {
         _userNameLabel = [[UILabel alloc] init];
-        _userNameLabel.text = @"密码：";
+        _userNameLabel.text = @"用户名：";
         _passwordLabel.textAlignment = NSTextAlignmentLeft;
         _userNameLabel.font = [UIFont systemFontOfSize:15];
         _userNameLabel.textColor = [UIColor blackColor];
@@ -78,7 +77,7 @@
 {
     if (_passwordLabel==nil) {
         _passwordLabel = [[UILabel alloc]init];
-        _passwordLabel.text = @"用户名：";
+        _passwordLabel.text = @"密码：";
         _passwordLabel.textColor = [UIColor blackColor];
         _userNameLabel.textAlignment = NSTextAlignmentLeft;
         _passwordLabel.font = [UIFont systemFontOfSize:15];
@@ -88,10 +87,10 @@
     return _passwordLabel;
 }
 
--(UITextField *)userNameTextFiled
+-(TXLimitedTextField *)userNameTextFiled
 {
     if (_userNameTextFiled==nil) {
-        _userNameTextFiled = [[UITextField alloc]init];
+        _userNameTextFiled = [[TXLimitedTextField alloc]init];
         _userNameTextFiled.textColor = [UIColor darkTextColor];
         _userNameTextFiled.placeholder = @"请输入用户名";
         _userNameTextFiled.font = [UIFont systemFontOfSize:15];

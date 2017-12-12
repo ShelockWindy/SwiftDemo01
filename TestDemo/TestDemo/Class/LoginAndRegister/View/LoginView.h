@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseView.h"
+#import "TXLimitedTextField.h"
 
 @interface LoginView : BaseView
 
-@property (nonatomic,strong) UITextField * userNameTextFiled;
+@property (nonatomic,strong) TXLimitedTextField * userNameTextFiled;
 @property (nonatomic,strong) UITextField * passWordTextFiled;
 @property (nonatomic,strong) UILabel * userNameLabel;
 @property (nonatomic,strong) UILabel * passwordLabel;

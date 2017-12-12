@@ -14,6 +14,8 @@
 		FF2605FB1FD8F7F600FF3E17 /* LoginDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2605FA1FD8F7F600FF3E17 /* LoginDataRequest.m */; };
 		FF2606001FD90A7E00FF3E17 /* CustomNavgationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2605FE1FD90A7D00FF3E17 /* CustomNavgationBar.m */; };
 		FF2606031FD90AC100FF3E17 /* BaseRequestData.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2606021FD90AC100FF3E17 /* BaseRequestData.m */; };
+		FF26060B1FD935FC00FF3E17 /* DPNormalObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FF26060A1FD935FC00FF3E17 /* DPNormalObject.m */; };
+		FF26060E1FD9369C00FF3E17 /* DPDynamicProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF26060D1FD9369C00FF3E17 /* DPDynamicProxy.m */; };
 		FF33C6E01FBC224300552A38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33C6DF1FBC224300552A38 /* AppDelegate.m */; };
 		FF33C6E31FBC224300552A38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33C6E21FBC224300552A38 /* ViewController.m */; };
 		FF33C6E61FBC224300552A38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF33C6E41FBC224300552A38 /* Main.storyboard */; };
@@ -39,6 +41,11 @@
 		FF799E421FC2D89F00C86E40 /* NSData+AES128.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E401FC2D89F00C86E40 /* NSData+AES128.m */; };
 		FF799E4D1FC2D98900C86E40 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E4B1FC2D98800C86E40 /* Base64.m */; };
 		FF799E551FC2DEF500C86E40 /* BaseNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E541FC2DEF500C86E40 /* BaseNetWorkManager.m */; };
+		FF9B49D61FDA5D65006F43DB /* TXMatchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9B49D11FDA5D64006F43DB /* TXMatchManager.m */; };
+		FF9B49D71FDA5D65006F43DB /* TXDynamicDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9B49D21FDA5D64006F43DB /* TXDynamicDelegate.m */; };
+		FF9B49D81FDA5D65006F43DB /* TXMatchConst.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9B49D31FDA5D64006F43DB /* TXMatchConst.m */; };
+		FF9B49D91FDA5D65006F43DB /* TXLimitedTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9B49D41FDA5D64006F43DB /* TXLimitedTextField.m */; };
+		FF9B49DA1FDA5D65006F43DB /* TXLimitedTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9B49D51FDA5D64006F43DB /* TXLimitedTextView.m */; };
 		FFA0293E1FC554AE00F3B71D /* SwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA0293D1FC554AE00F3B71D /* SwitchViewController.m */; };
 		FFA029441FC55F3B00F3B71D /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA029401FC55F3A00F3B71D /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FFA029451FC55F3B00F3B71D /* KeychainUUID.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA029411FC55F3A00F3B71D /* KeychainUUID.m */; };
@@ -68,6 +75,11 @@
 		FF2605FF1FD90A7D00FF3E17 /* CustomNavgationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavgationBar.h; sourceTree = "<group>"; };
 		FF2606011FD90AC100FF3E17 /* BaseRequestData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRequestData.h; sourceTree = "<group>"; };
 		FF2606021FD90AC100FF3E17 /* BaseRequestData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseRequestData.m; sourceTree = "<group>"; };
+		FF2606081FD935C000FF3E17 /* DPDynamicProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPDynamicProtocol.h; sourceTree = "<group>"; };
+		FF2606091FD935FC00FF3E17 /* DPNormalObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPNormalObject.h; sourceTree = "<group>"; };
+		FF26060A1FD935FC00FF3E17 /* DPNormalObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPNormalObject.m; sourceTree = "<group>"; };
+		FF26060C1FD9369C00FF3E17 /* DPDynamicProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPDynamicProxy.h; sourceTree = "<group>"; };
+		FF26060D1FD9369C00FF3E17 /* DPDynamicProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPDynamicProxy.m; sourceTree = "<group>"; };
 		FF33C6DB1FBC224300552A38 /* TestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF33C6DE1FBC224300552A38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FF33C6DF1FBC224300552A38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -118,6 +130,17 @@
 		FF799E4C1FC2D98800C86E40 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		FF799E531FC2DEF500C86E40 /* BaseNetWorkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNetWorkManager.h; sourceTree = "<group>"; };
 		FF799E541FC2DEF500C86E40 /* BaseNetWorkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNetWorkManager.m; sourceTree = "<group>"; };
+		FF9B49CB1FDA5D64006F43DB /* TXDynamicDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXDynamicDelegate.h; sourceTree = "<group>"; };
+		FF9B49CC1FDA5D64006F43DB /* InputKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputKit.h; sourceTree = "<group>"; };
+		FF9B49CD1FDA5D64006F43DB /* TXMatchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXMatchManager.h; sourceTree = "<group>"; };
+		FF9B49CE1FDA5D64006F43DB /* TXMatchConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXMatchConst.h; sourceTree = "<group>"; };
+		FF9B49CF1FDA5D64006F43DB /* TXLimitedTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXLimitedTextView.h; sourceTree = "<group>"; };
+		FF9B49D01FDA5D64006F43DB /* TXLimitedTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXLimitedTextField.h; sourceTree = "<group>"; };
+		FF9B49D11FDA5D64006F43DB /* TXMatchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXMatchManager.m; sourceTree = "<group>"; };
+		FF9B49D21FDA5D64006F43DB /* TXDynamicDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXDynamicDelegate.m; sourceTree = "<group>"; };
+		FF9B49D31FDA5D64006F43DB /* TXMatchConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXMatchConst.m; sourceTree = "<group>"; };
+		FF9B49D41FDA5D64006F43DB /* TXLimitedTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXLimitedTextField.m; sourceTree = "<group>"; };
+		FF9B49D51FDA5D64006F43DB /* TXLimitedTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXLimitedTextView.m; sourceTree = "<group>"; };
 		FFA0293C1FC554AE00F3B71D /* SwitchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchViewController.h; sourceTree = "<group>"; };
 		FFA0293D1FC554AE00F3B71D /* SwitchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchViewController.m; sourceTree = "<group>"; };
 		FFA029401FC55F3A00F3B71D /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
@@ -228,6 +251,18 @@
 				FF2605FE1FD90A7D00FF3E17 /* CustomNavgationBar.m */,
 			);
 			path = "UINavgationBar+Custom";
+			sourceTree = "<group>";
+		};
+		FF2606041FD9353300FF3E17 /* DPDynamicProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				FF2606081FD935C000FF3E17 /* DPDynamicProtocol.h */,
+				FF2606091FD935FC00FF3E17 /* DPNormalObject.h */,
+				FF26060A1FD935FC00FF3E17 /* DPNormalObject.m */,
+				FF26060C1FD9369C00FF3E17 /* DPDynamicProxy.h */,
+				FF26060D1FD9369C00FF3E17 /* DPDynamicProxy.m */,
+			);
+			path = DPDynamicProtocol;
 			sourceTree = "<group>";
 		};
 		FF33C6D21FBC224300552A38 = {
@@ -487,6 +522,24 @@
 			path = Base64;
 			sourceTree = "<group>";
 		};
+		FF9B49CA1FDA5D64006F43DB /* InputKit */ = {
+			isa = PBXGroup;
+			children = (
+				FF9B49CC1FDA5D64006F43DB /* InputKit.h */,
+				FF9B49CB1FDA5D64006F43DB /* TXDynamicDelegate.h */,
+				FF9B49D21FDA5D64006F43DB /* TXDynamicDelegate.m */,
+				FF9B49D01FDA5D64006F43DB /* TXLimitedTextField.h */,
+				FF9B49D41FDA5D64006F43DB /* TXLimitedTextField.m */,
+				FF9B49CF1FDA5D64006F43DB /* TXLimitedTextView.h */,
+				FF9B49D51FDA5D64006F43DB /* TXLimitedTextView.m */,
+				FF9B49CE1FDA5D64006F43DB /* TXMatchConst.h */,
+				FF9B49D31FDA5D64006F43DB /* TXMatchConst.m */,
+				FF9B49CD1FDA5D64006F43DB /* TXMatchManager.h */,
+				FF9B49D11FDA5D64006F43DB /* TXMatchManager.m */,
+			);
+			path = InputKit;
+			sourceTree = "<group>";
+		};
 		FFA0293B1FC5542900F3B71D /* SwitchViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -551,6 +604,8 @@
 		FFE82A0E1FD7DA03007417C9 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				FF9B49CA1FDA5D64006F43DB /* InputKit */,
+				FF2606041FD9353300FF3E17 /* DPDynamicProtocol */,
 				FF2605FD1FD90A7D00FF3E17 /* UINavgationBar+Custom */,
 			);
 			path = Custom;
@@ -735,6 +790,8 @@
 				FF799E421FC2D89F00C86E40 /* NSData+AES128.m in Sources */,
 				FF5A6B611FBED74D00D29C01 /* LoginModel.m in Sources */,
 				FF5A6B5D1FBED6CA00D29C01 /* BaseModel.m in Sources */,
+				FF9B49D61FDA5D65006F43DB /* TXMatchManager.m in Sources */,
+				FF9B49D91FDA5D65006F43DB /* TXLimitedTextField.m in Sources */,
 				FFEE48A61FD5376300C75354 /* CommonUnitCenter+MyTool.m in Sources */,
 				FF799E551FC2DEF500C86E40 /* BaseNetWorkManager.m in Sources */,
 				FFA029441FC55F3B00F3B71D /* KeychainItemWrapper.m in Sources */,
@@ -743,16 +800,21 @@
 				FFEE48B41FD53DF100C75354 /* CityModel.m in Sources */,
 				FFA029491FC5601D00F3B71D /* PageControllerCenter.m in Sources */,
 				FF2605F31FD8DEAA00FF3E17 /* SwitchPageTurn.m in Sources */,
+				FF9B49D81FDA5D65006F43DB /* TXMatchConst.m in Sources */,
+				FF9B49D71FDA5D65006F43DB /* TXDynamicDelegate.m in Sources */,
 				FF5A6B4F1FBED4B000D29C01 /* LoginViewController.m in Sources */,
 				FF56CB671FCBAC2C00A52EAD /* CommonUnitCenter.m in Sources */,
 				FF33C6EE1FBC224300552A38 /* main.m in Sources */,
+				FF26060E1FD9369C00FF3E17 /* DPDynamicProxy.m in Sources */,
 				FF5A6B441FBEB64800D29C01 /* CalulatorMaker.m in Sources */,
 				FF2605F71FD8ECB700FF3E17 /* MainPageTurn.m in Sources */,
 				FFEE48AD1FD53D0C00C75354 /* CityChooseView.m in Sources */,
 				FF56CB561FC7F31300A52EAD /* NetWorkManagerCenter.m in Sources */,
+				FF26060B1FD935FC00FF3E17 /* DPNormalObject.m in Sources */,
 				FF2606031FD90AC100FF3E17 /* BaseRequestData.m in Sources */,
 				FF56CB601FC8057500A52EAD /* MainPageViewModel.m in Sources */,
 				FF5A6B641FBED8F900D29C01 /* LoginView.m in Sources */,
+				FF9B49DA1FDA5D65006F43DB /* TXLimitedTextView.m in Sources */,
 				FF33C6E01FBC224300552A38 /* AppDelegate.m in Sources */,
 				FF799E411FC2D89F00C86E40 /* SecurityUtil.m in Sources */,
 				FF5A6B6A1FBEDB4F00D29C01 /* BaseView.m in Sources */,
