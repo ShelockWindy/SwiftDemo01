@@ -97,7 +97,7 @@
 
 -(NSString *)userName
 {
-    if (_userName==nil) {
+    if (_userName.length<1) {
         _userName = self.loginView.userNameTextFiled.text;
     }
     return _userName;
@@ -105,7 +105,7 @@
 
 -(NSString *)password
 {
-    if (_password==nil) {
+    if (_password.length<1) {
         _password = self.loginView.passWordTextFiled.text;
     }
     return _userName;
