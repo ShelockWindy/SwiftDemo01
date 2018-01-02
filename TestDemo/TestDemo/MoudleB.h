@@ -9,6 +9,6 @@
 #import <Objection/Objection.h>
 #import "ViewControllerB.h"
 
-@interface MoudleB : JSObjectionModule
+@interface MoudleB : JSObjectionModule<UIApplicationDelegate>
 
 @end

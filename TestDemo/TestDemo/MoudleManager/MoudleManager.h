@@ -10,6 +10,8 @@
 #import "MoudleConsit.h"
 
 @interface MoudleManager : NSObject
+@property(nonatomic, strong)  NSMutableArray      *BHModules;
+
 +(MoudleManager*)instance;
 -(id)getControllerWithProtocol:(Protocol*)protocol;
 

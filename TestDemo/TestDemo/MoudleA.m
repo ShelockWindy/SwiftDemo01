@@ -7,6 +7,7 @@
 //
 
 #import "MoudleA.h"
+#import <malloc/malloc.h>
 
 @implementation MoudleA
 
@@ -21,8 +22,20 @@
 - (void)configure
 {
     [self bindClass:[ViewControllerA class] toProtocol:@protocol(ViewControllerAProtocol)];
+    
+
 }
 
+-(void)dealloc
+{
+    NSLog(@"MoudleA----dealloc!!!");
+}
 
+-(void)applicationDidEnterBackground:(UIApplication *)application
+{
+    NSLog(@"Size of %@: %zd",@"MoudleA" , malloc_size((__bridge const void *) self));
+
+    NSLog(@"ModleA-----modDidEnterBackground");
+}
 
 @end

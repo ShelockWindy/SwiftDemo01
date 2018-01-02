@@ -7,6 +7,8 @@
 //
 
 #import "MoudleManager.h"
+#import <malloc/malloc.h>
+
 
 @implementation MoudleManager
 
@@ -38,6 +40,17 @@
     JSObjectionInjector *injector = [JSObjection defaultInjector]; // [1]
     UIViewController <ViewControllerAProtocol> *vc = [injector getObject:protocol];
     return vc;
+}
+
+
+-(NSMutableArray *)BHModules
+{
+    _BHModules = [NSMutableArray arrayWithArray:[JSObjection defaultInjector].modules];
+    
+    NSLog(@"Size of %@: %zd",@"_BHModules" , malloc_size((__bridge const void *) _BHModules));
+
+    
+    return _BHModules;
 }
 
 

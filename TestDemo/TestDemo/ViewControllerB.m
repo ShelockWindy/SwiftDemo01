@@ -38,11 +38,18 @@
 -(void)buttAction:(UIButton*)sender
 {
     [self intoViewControllerA];
+    
 }
 
 -(void)butt2Action:(UIButton*)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [[UIApplication sharedApplication]keyWindow].rootViewController = [UIViewController new];
+//
+//    });
+
 }
 
 

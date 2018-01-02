@@ -46,6 +46,7 @@
 		FF6FA93A1FFB4343000AEC15 /* MoudleConsit.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6FA9391FFB4343000AEC15 /* MoudleConsit.m */; };
 		FF6FA93D1FFB5871000AEC15 /* NotifyIntoViewControllerB.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6FA93C1FFB5871000AEC15 /* NotifyIntoViewControllerB.m */; };
 		FF6FA9401FFB58FD000AEC15 /* NotifyIntoViewControllerA.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6FA93F1FFB58FD000AEC15 /* NotifyIntoViewControllerA.m */; };
+		FF6FA9461FFB619D000AEC15 /* BHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6FA9421FFB619B000AEC15 /* BHAppDelegate.m */; };
 		FF799E411FC2D89F00C86E40 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E3D1FC2D89F00C86E40 /* SecurityUtil.m */; };
 		FF799E421FC2D89F00C86E40 /* NSData+AES128.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E401FC2D89F00C86E40 /* NSData+AES128.m */; };
 		FF799E4D1FC2D98900C86E40 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E4B1FC2D98800C86E40 /* Base64.m */; };
@@ -148,6 +149,8 @@
 		FF6FA93C1FFB5871000AEC15 /* NotifyIntoViewControllerB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotifyIntoViewControllerB.m; sourceTree = "<group>"; };
 		FF6FA93E1FFB58FD000AEC15 /* NotifyIntoViewControllerA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotifyIntoViewControllerA.h; sourceTree = "<group>"; };
 		FF6FA93F1FFB58FD000AEC15 /* NotifyIntoViewControllerA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotifyIntoViewControllerA.m; sourceTree = "<group>"; };
+		FF6FA9411FFB619B000AEC15 /* BHAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHAppDelegate.h; sourceTree = "<group>"; };
+		FF6FA9421FFB619B000AEC15 /* BHAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHAppDelegate.m; sourceTree = "<group>"; };
 		FF799E3D1FC2D89F00C86E40 /* SecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityUtil.m; sourceTree = "<group>"; };
 		FF799E3E1FC2D89F00C86E40 /* NSData+AES128.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES128.h"; sourceTree = "<group>"; };
 		FF799E3F1FC2D89F00C86E40 /* SecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityUtil.h; sourceTree = "<group>"; };
@@ -528,6 +531,8 @@
 		FF6FA9341FFB343E000AEC15 /* MoudleManager */ = {
 			isa = PBXGroup;
 			children = (
+				FF6FA9411FFB619B000AEC15 /* BHAppDelegate.h */,
+				FF6FA9421FFB619B000AEC15 /* BHAppDelegate.m */,
 				FF6FA9351FFB346B000AEC15 /* MoudleManager.h */,
 				FF6FA9361FFB346B000AEC15 /* MoudleManager.m */,
 				FF6FA93B1FFB5871000AEC15 /* NotifyIntoViewControllerB.h */,
@@ -852,6 +857,7 @@
 				FF291C381FDF862D004056B4 /* UIViewController+UmengMobclik.m in Sources */,
 				FFA029441FC55F3B00F3B71D /* KeychainItemWrapper.m in Sources */,
 				FF799E4D1FC2D98900C86E40 /* Base64.m in Sources */,
+				FF6FA9461FFB619D000AEC15 /* BHAppDelegate.m in Sources */,
 				FF5A6B4C1FBED45800D29C01 /* BaseViewController.m in Sources */,
 				FFEE48B41FD53DF100C75354 /* CityModel.m in Sources */,
 				FFA029491FC5601D00F3B71D /* PageControllerCenter.m in Sources */,
