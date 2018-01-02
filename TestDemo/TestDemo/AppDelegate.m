@@ -11,6 +11,7 @@
 #import "LoginViewController.h"
 #import "DPNormalObject.h"
 #import "DPDynamicProxy.h"
+#import "MoudleManager.h"
 
 @interface AppDelegate ()
 
@@ -26,13 +27,30 @@
     [self.window makeKeyWindow];
     
     
-    LoginViewController * mainViewController = [[LoginViewController alloc]init];
-    mainViewController.view.backgroundColor = [UIColor whiteColor];
+//    LoginViewController * mainViewController = [[LoginViewController alloc]init];
+//    mainViewController.view.backgroundColor = [UIColor whiteColor];
+//
+//    UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController: mainViewController];
+//
+//    self.window.rootViewController = nav;
     
-    UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController: mainViewController];
+    [MoudleManager instance];
     
-    self.window.rootViewController = nav;
+   // ViewControllerA* vc = (ViewControllerA*)[[MoudleManager instance]getControllerWithProtocol:@protocol(ViewControllerAProtocol)]; // [2]
+    
+    UIViewController<ViewControllerAProtocol> * vc =  [[MoudleManager instance] getControllerWithProtocol:@protocol(ViewControllerAProtocol)];
+    
+     // UIViewController<ViewControllerAProtocol> * vc =  [[JSObjection defaultInjector] getObject:@protocol(ViewControllerAProtocol)];
+    
+    vc.controllerName = @"ViewControllerA"; // [3]
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = nc;
+    
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    [vc testViewControllerA];
+    
+
     
     return YES;
 }

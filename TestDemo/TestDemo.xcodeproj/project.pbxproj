@@ -16,6 +16,7 @@
 		FF2606031FD90AC100FF3E17 /* BaseRequestData.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2606021FD90AC100FF3E17 /* BaseRequestData.m */; };
 		FF26060B1FD935FC00FF3E17 /* DPNormalObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FF26060A1FD935FC00FF3E17 /* DPNormalObject.m */; };
 		FF26060E1FD9369C00FF3E17 /* DPDynamicProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF26060D1FD9369C00FF3E17 /* DPDynamicProxy.m */; };
+		FF291C381FDF862D004056B4 /* UIViewController+UmengMobclik.m in Sources */ = {isa = PBXBuildFile; fileRef = FF291C371FDF862D004056B4 /* UIViewController+UmengMobclik.m */; };
 		FF33C6E01FBC224300552A38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33C6DF1FBC224300552A38 /* AppDelegate.m */; };
 		FF33C6E31FBC224300552A38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF33C6E21FBC224300552A38 /* ViewController.m */; };
 		FF33C6E61FBC224300552A38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF33C6E41FBC224300552A38 /* Main.storyboard */; };
@@ -37,6 +38,14 @@
 		FF5A6B641FBED8F900D29C01 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B631FBED8F900D29C01 /* LoginView.m */; };
 		FF5A6B671FBED92A00D29C01 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B661FBED92A00D29C01 /* LoginViewModel.m */; };
 		FF5A6B6A1FBEDB4F00D29C01 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5A6B691FBEDB4F00D29C01 /* BaseView.m */; };
+		FF6FA9281FFB2201000AEC15 /* ViewControllerA.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6FA9271FFB2201000AEC15 /* ViewControllerA.m */; };
+		FF6FA92B1FFB2211000AEC15 /* ViewControllerB.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6FA92A1FFB2211000AEC15 /* ViewControllerB.m */; };
+		FF6FA92E1FFB2251000AEC15 /* MoudleA.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6FA92D1FFB2251000AEC15 /* MoudleA.m */; };
+		FF6FA9311FFB2261000AEC15 /* MoudleB.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6FA9301FFB2261000AEC15 /* MoudleB.m */; };
+		FF6FA9371FFB346B000AEC15 /* MoudleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6FA9361FFB346B000AEC15 /* MoudleManager.m */; };
+		FF6FA93A1FFB4343000AEC15 /* MoudleConsit.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6FA9391FFB4343000AEC15 /* MoudleConsit.m */; };
+		FF6FA93D1FFB5871000AEC15 /* NotifyIntoViewControllerB.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6FA93C1FFB5871000AEC15 /* NotifyIntoViewControllerB.m */; };
+		FF6FA9401FFB58FD000AEC15 /* NotifyIntoViewControllerA.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6FA93F1FFB58FD000AEC15 /* NotifyIntoViewControllerA.m */; };
 		FF799E411FC2D89F00C86E40 /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E3D1FC2D89F00C86E40 /* SecurityUtil.m */; };
 		FF799E421FC2D89F00C86E40 /* NSData+AES128.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E401FC2D89F00C86E40 /* NSData+AES128.m */; };
 		FF799E4D1FC2D98900C86E40 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = FF799E4B1FC2D98800C86E40 /* Base64.m */; };
@@ -80,6 +89,8 @@
 		FF26060A1FD935FC00FF3E17 /* DPNormalObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPNormalObject.m; sourceTree = "<group>"; };
 		FF26060C1FD9369C00FF3E17 /* DPDynamicProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPDynamicProxy.h; sourceTree = "<group>"; };
 		FF26060D1FD9369C00FF3E17 /* DPDynamicProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPDynamicProxy.m; sourceTree = "<group>"; };
+		FF291C361FDF862D004056B4 /* UIViewController+UmengMobclik.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UmengMobclik.h"; sourceTree = "<group>"; };
+		FF291C371FDF862D004056B4 /* UIViewController+UmengMobclik.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UmengMobclik.m"; sourceTree = "<group>"; };
 		FF33C6DB1FBC224300552A38 /* TestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF33C6DE1FBC224300552A38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FF33C6DF1FBC224300552A38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -121,6 +132,22 @@
 		FF5A6B661FBED92A00D29C01 /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		FF5A6B681FBEDB4F00D29C01 /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		FF5A6B691FBEDB4F00D29C01 /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		FF6FA9261FFB2201000AEC15 /* ViewControllerA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerA.h; sourceTree = "<group>"; };
+		FF6FA9271FFB2201000AEC15 /* ViewControllerA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerA.m; sourceTree = "<group>"; };
+		FF6FA9291FFB2211000AEC15 /* ViewControllerB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerB.h; sourceTree = "<group>"; };
+		FF6FA92A1FFB2211000AEC15 /* ViewControllerB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerB.m; sourceTree = "<group>"; };
+		FF6FA92C1FFB2251000AEC15 /* MoudleA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoudleA.h; sourceTree = "<group>"; };
+		FF6FA92D1FFB2251000AEC15 /* MoudleA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoudleA.m; sourceTree = "<group>"; };
+		FF6FA92F1FFB2261000AEC15 /* MoudleB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoudleB.h; sourceTree = "<group>"; };
+		FF6FA9301FFB2261000AEC15 /* MoudleB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoudleB.m; sourceTree = "<group>"; };
+		FF6FA9351FFB346B000AEC15 /* MoudleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoudleManager.h; sourceTree = "<group>"; };
+		FF6FA9361FFB346B000AEC15 /* MoudleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoudleManager.m; sourceTree = "<group>"; };
+		FF6FA9381FFB4343000AEC15 /* MoudleConsit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoudleConsit.h; sourceTree = "<group>"; };
+		FF6FA9391FFB4343000AEC15 /* MoudleConsit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoudleConsit.m; sourceTree = "<group>"; };
+		FF6FA93B1FFB5871000AEC15 /* NotifyIntoViewControllerB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotifyIntoViewControllerB.h; sourceTree = "<group>"; };
+		FF6FA93C1FFB5871000AEC15 /* NotifyIntoViewControllerB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotifyIntoViewControllerB.m; sourceTree = "<group>"; };
+		FF6FA93E1FFB58FD000AEC15 /* NotifyIntoViewControllerA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotifyIntoViewControllerA.h; sourceTree = "<group>"; };
+		FF6FA93F1FFB58FD000AEC15 /* NotifyIntoViewControllerA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotifyIntoViewControllerA.m; sourceTree = "<group>"; };
 		FF799E3D1FC2D89F00C86E40 /* SecurityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecurityUtil.m; sourceTree = "<group>"; };
 		FF799E3E1FC2D89F00C86E40 /* NSData+AES128.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES128.h"; sourceTree = "<group>"; };
 		FF799E3F1FC2D89F00C86E40 /* SecurityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityUtil.h; sourceTree = "<group>"; };
@@ -298,6 +325,15 @@
 				FF33C6DF1FBC224300552A38 /* AppDelegate.m */,
 				FF33C6E11FBC224300552A38 /* ViewController.h */,
 				FF33C6E21FBC224300552A38 /* ViewController.m */,
+				FF6FA9261FFB2201000AEC15 /* ViewControllerA.h */,
+				FF6FA9271FFB2201000AEC15 /* ViewControllerA.m */,
+				FF6FA92C1FFB2251000AEC15 /* MoudleA.h */,
+				FF6FA92D1FFB2251000AEC15 /* MoudleA.m */,
+				FF6FA9291FFB2211000AEC15 /* ViewControllerB.h */,
+				FF6FA92A1FFB2211000AEC15 /* ViewControllerB.m */,
+				FF6FA92F1FFB2261000AEC15 /* MoudleB.h */,
+				FF6FA9301FFB2261000AEC15 /* MoudleB.m */,
+				FF6FA9341FFB343E000AEC15 /* MoudleManager */,
 				FF33C6E41FBC224300552A38 /* Main.storyboard */,
 				FF33C6E71FBC224300552A38 /* Assets.xcassets */,
 				FF33C6E91FBC224300552A38 /* LaunchScreen.storyboard */,
@@ -489,6 +525,21 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		FF6FA9341FFB343E000AEC15 /* MoudleManager */ = {
+			isa = PBXGroup;
+			children = (
+				FF6FA9351FFB346B000AEC15 /* MoudleManager.h */,
+				FF6FA9361FFB346B000AEC15 /* MoudleManager.m */,
+				FF6FA93B1FFB5871000AEC15 /* NotifyIntoViewControllerB.h */,
+				FF6FA93C1FFB5871000AEC15 /* NotifyIntoViewControllerB.m */,
+				FF6FA93E1FFB58FD000AEC15 /* NotifyIntoViewControllerA.h */,
+				FF6FA93F1FFB58FD000AEC15 /* NotifyIntoViewControllerA.m */,
+				FF6FA9381FFB4343000AEC15 /* MoudleConsit.h */,
+				FF6FA9391FFB4343000AEC15 /* MoudleConsit.m */,
+			);
+			path = MoudleManager;
+			sourceTree = "<group>";
+		};
 		FF799E3B1FC2D89F00C86E40 /* BaseNetWork */ = {
 			isa = PBXGroup;
 			children = (
@@ -597,6 +648,8 @@
 			children = (
 				FFE82A0C1FD7DA03007417C9 /* UITableView+UpdateFont.h */,
 				FFE82A0D1FD7DA03007417C9 /* UITableView+UpdateFont.m */,
+				FF291C361FDF862D004056B4 /* UIViewController+UmengMobclik.h */,
+				FF291C371FDF862D004056B4 /* UIViewController+UmengMobclik.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -782,6 +835,7 @@
 				FF33C6E31FBC224300552A38 /* ViewController.m in Sources */,
 				FFEE48B01FD53D5300C75354 /* CityViewModel.m in Sources */,
 				FFE82A0F1FD7DA03007417C9 /* UITableView+UpdateFont.m in Sources */,
+				FF6FA9401FFB58FD000AEC15 /* NotifyIntoViewControllerA.m in Sources */,
 				FFA0293E1FC554AE00F3B71D /* SwitchViewController.m in Sources */,
 				FF54BD2D1FC6C37D0031E838 /* MainPageViewController.m in Sources */,
 				FF2605F01FD8DCD000FF3E17 /* LoginPageTurn.m in Sources */,
@@ -792,8 +846,10 @@
 				FF5A6B5D1FBED6CA00D29C01 /* BaseModel.m in Sources */,
 				FF9B49D61FDA5D65006F43DB /* TXMatchManager.m in Sources */,
 				FF9B49D91FDA5D65006F43DB /* TXLimitedTextField.m in Sources */,
+				FF6FA92E1FFB2251000AEC15 /* MoudleA.m in Sources */,
 				FFEE48A61FD5376300C75354 /* CommonUnitCenter+MyTool.m in Sources */,
 				FF799E551FC2DEF500C86E40 /* BaseNetWorkManager.m in Sources */,
+				FF291C381FDF862D004056B4 /* UIViewController+UmengMobclik.m in Sources */,
 				FFA029441FC55F3B00F3B71D /* KeychainItemWrapper.m in Sources */,
 				FF799E4D1FC2D98900C86E40 /* Base64.m in Sources */,
 				FF5A6B4C1FBED45800D29C01 /* BaseViewController.m in Sources */,
@@ -804,12 +860,16 @@
 				FF9B49D71FDA5D65006F43DB /* TXDynamicDelegate.m in Sources */,
 				FF5A6B4F1FBED4B000D29C01 /* LoginViewController.m in Sources */,
 				FF56CB671FCBAC2C00A52EAD /* CommonUnitCenter.m in Sources */,
+				FF6FA93A1FFB4343000AEC15 /* MoudleConsit.m in Sources */,
 				FF33C6EE1FBC224300552A38 /* main.m in Sources */,
 				FF26060E1FD9369C00FF3E17 /* DPDynamicProxy.m in Sources */,
 				FF5A6B441FBEB64800D29C01 /* CalulatorMaker.m in Sources */,
+				FF6FA92B1FFB2211000AEC15 /* ViewControllerB.m in Sources */,
+				FF6FA9371FFB346B000AEC15 /* MoudleManager.m in Sources */,
 				FF2605F71FD8ECB700FF3E17 /* MainPageTurn.m in Sources */,
 				FFEE48AD1FD53D0C00C75354 /* CityChooseView.m in Sources */,
 				FF56CB561FC7F31300A52EAD /* NetWorkManagerCenter.m in Sources */,
+				FF6FA9281FFB2201000AEC15 /* ViewControllerA.m in Sources */,
 				FF26060B1FD935FC00FF3E17 /* DPNormalObject.m in Sources */,
 				FF2606031FD90AC100FF3E17 /* BaseRequestData.m in Sources */,
 				FF56CB601FC8057500A52EAD /* MainPageViewModel.m in Sources */,
@@ -820,7 +880,9 @@
 				FF5A6B6A1FBEDB4F00D29C01 /* BaseView.m in Sources */,
 				FFEE48A31FD5344100C75354 /* CommonUnitCenter+ShowProgressHUD.m in Sources */,
 				FF56CB5D1FC803A700A52EAD /* MainPageView.m in Sources */,
+				FF6FA93D1FFB5871000AEC15 /* NotifyIntoViewControllerB.m in Sources */,
 				FFE82A091FD7D9A7007417C9 /* BusinessConstants.m in Sources */,
+				FF6FA9311FFB2261000AEC15 /* MoudleB.m in Sources */,
 				FF2605FB1FD8F7F600FF3E17 /* LoginDataRequest.m in Sources */,
 				FFA029451FC55F3B00F3B71D /* KeychainUUID.m in Sources */,
 				FF2606001FD90A7E00FF3E17 /* CustomNavgationBar.m in Sources */,

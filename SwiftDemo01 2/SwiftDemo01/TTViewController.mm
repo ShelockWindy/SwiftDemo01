@@ -9,6 +9,9 @@
 #import "TTViewController.h"
 #import "TestAutoHeightCell.h"
 #import "UIWebView+HOOKDelegate.h"
+#import <objc/runtime.h>
+
+
 @interface TTViewController ()<UITableViewDelegate,UITableViewDataSource,UIWebViewDelegate>
 {
     UIWebView * _webView ;
@@ -41,6 +44,18 @@
     NSURLRequest * request = [NSURLRequest requestWithURL:url];
     [webView loadRequest:request];
     _webView = webView;
+    
+    
+    Class newClass = NSClassFromString(@"People");
+    
+    
+    id people = [[newClass alloc]init];
+    [people setValue:@"男" forKey:@"sex"];
+    [people setValue:@"18" forKey:@"age"];
+    [people setValue:@"小明" forKey:@"name"];
+
+    NSLog(@"%@",[people valueForKey:@"sex"]);
+    
 
 }
 

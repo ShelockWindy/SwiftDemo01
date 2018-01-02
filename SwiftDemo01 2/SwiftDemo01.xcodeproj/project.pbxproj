@@ -28,6 +28,7 @@
 		FF5AFB8D1E4C10AF00B48E82 /* MainPageCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5AFB8C1E4C10AF00B48E82 /* MainPageCycleScrollView.swift */; };
 		FF5CE4A21E54256D00164067 /* ExclItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5CE4A11E54256D00164067 /* ExclItem.m */; };
 		FF5CE4A51E5435A700164067 /* ExclView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5CE4A41E5435A700164067 /* ExclView.m */; };
+		FF5DE1F11FF22C620073C435 /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5DE1F01FF22C620073C435 /* People.m */; };
 		FF6103D71EEE9E7600AD4873 /* UIFontView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6103D61EEE9E7600AD4873 /* UIFontView.m */; };
 		FF65DC5B1EA84B4400989111 /* NSObject+Cl_Ivars_Method_Protocol.m in Sources */ = {isa = PBXBuildFile; fileRef = FF65DC5A1EA84B4400989111 /* NSObject+Cl_Ivars_Method_Protocol.m */; };
 		FF671E001FCFF14500B338B7 /* UIFont+AutoChange.m in Sources */ = {isa = PBXBuildFile; fileRef = FF671DFF1FCFF14500B338B7 /* UIFont+AutoChange.m */; };
@@ -116,6 +117,8 @@
 		FF5CE4A11E54256D00164067 /* ExclItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExclItem.m; sourceTree = "<group>"; };
 		FF5CE4A31E5435A700164067 /* ExclView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExclView.h; sourceTree = "<group>"; };
 		FF5CE4A41E5435A700164067 /* ExclView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExclView.m; sourceTree = "<group>"; };
+		FF5DE1EF1FF22C620073C435 /* People.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
+		FF5DE1F01FF22C620073C435 /* People.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
 		FF6103D51EEE9E7600AD4873 /* UIFontView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFontView.h; sourceTree = "<group>"; };
 		FF6103D61EEE9E7600AD4873 /* UIFontView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFontView.m; sourceTree = "<group>"; };
 		FF65DC591EA84B4400989111 /* NSObject+Cl_Ivars_Method_Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Cl_Ivars_Method_Protocol.h"; sourceTree = "<group>"; };
@@ -375,6 +378,8 @@
 				FF5753F91EC340F0007D7DB5 /* MainPageViewController.m */,
 				FF6D685B1E2F4B69002289D0 /* ViewController.h */,
 				FF6D685C1E2F4B69002289D0 /* ViewController.m */,
+				FF5DE1EF1FF22C620073C435 /* People.h */,
+				FF5DE1F01FF22C620073C435 /* People.m */,
 				FFDD9B9D1EFA6C7B00DB0EA8 /* GoodBoy.hpp */,
 				FFDD9B9C1EFA6C7B00DB0EA8 /* GoodBoy.cpp */,
 				FF6103D51EEE9E7600AD4873 /* UIFontView.h */,
@@ -645,6 +650,7 @@
 				FF5CE4A21E54256D00164067 /* ExclItem.m in Sources */,
 				FF65DC5B1EA84B4400989111 /* NSObject+Cl_Ivars_Method_Protocol.m in Sources */,
 				FF5AFB8D1E4C10AF00B48E82 /* MainPageCycleScrollView.swift in Sources */,
+				FF5DE1F11FF22C620073C435 /* People.m in Sources */,
 				FFFC1E221E9DFD0B002017A7 /* ShareObject.m in Sources */,
 				FFF0846D1EB323410070F164 /* UIBaseViewController.m in Sources */,
 				FF49A7BA1E49A6E8002B3C5E /* GloabConst.swift in Sources */,
