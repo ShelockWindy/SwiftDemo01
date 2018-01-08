@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#define SayHello   NSLog(@"hello ! boy");
+
 @interface BaseView : UIView
 
 -(void)addSubViews;

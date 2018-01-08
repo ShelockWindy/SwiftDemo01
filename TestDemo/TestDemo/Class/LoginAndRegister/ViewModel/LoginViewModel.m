@@ -45,6 +45,12 @@
 
 #pragma mark  UITextFieldDelegate
 
+-(BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    NSLog(@"我才是真正的调用者");
+    SayHello
+    return YES;
+}
 
 
 #pragma mark- Events
