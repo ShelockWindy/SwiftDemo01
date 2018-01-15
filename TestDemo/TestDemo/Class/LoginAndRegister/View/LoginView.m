@@ -87,10 +87,10 @@
     return _passwordLabel;
 }
 
--(TXLimitedTextField *)userNameTextFiled
+-(UITextField *)userNameTextFiled
 {
     if (_userNameTextFiled==nil) {
-        _userNameTextFiled = [[TXLimitedTextField alloc]init];
+        _userNameTextFiled = [[UITextField alloc]init];
         _userNameTextFiled.textColor = [UIColor darkTextColor];
         _userNameTextFiled.placeholder = @"请输入用户名";
         _userNameTextFiled.font = [UIFont systemFontOfSize:15];
